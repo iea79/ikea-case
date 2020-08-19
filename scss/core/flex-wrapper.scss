@@ -1,0 +1,17 @@
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    // &.justify-content-start {
+    //     text-align: left;
+    //     flex-wrap: wrap;
+    // }
+
+    // &.justify-content-end {
+    //     text-align: right;
+    //     flex-wrap: wrap;
+    // }
+}

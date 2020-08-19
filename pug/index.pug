@@ -1,9 +1,35 @@
 extends layout/layout.pug
 
 block content
-    .container_center
-
-        .grid
-            .grid__item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, in.
-            .grid__item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam sequi officiis. Quia sed modi voluptatem, aut rem possimus at ipsa nobis iure non corporis nulla suscipit praesentium quos numquam quasi magni delectus eius illo, harum hic id! Laboriosam culpa recusandae nesciunt ab natus molestiae porro reiciendis, eveniet architecto temporibus!
-            .grid__item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fugiat, pariatur, explicabo ut quidem deleniti velit sed error dolor! Voluptates dignissimos consectetur repudiandae ipsam. Iusto, rerum, quam! Corporis, nisi, inventore?
+    section.tasks
+        .container
+            .tasks__container
+                .section__heading Задачи документального фильма
+                .flex-wrapper
+                    .tasks__item
+                        .tasks__num 1
+                        .tasks__text Раскрыть компанию IKEA, как одного из лучших работодателей в мире
+                    .tasks__item
+                        .tasks__num 2
+                        .tasks__text Рассказать о философии бренда
+                    .tasks__item
+                        .tasks__num 3
+                        .tasks__text Показать технологичность и производство компании
+                    figure.tasks__img
+                        img(src="img/tasks.png", alt="futniture-draft")
+    section.design
+        .container
+            .section__title Демократичный дизайн от IKEA
+            .design__container
+                figure.design__item.design__item_first.section__img.section__img_rotate_left.section__img_size_xl
+                    img.section__photo(src="img/first.jpg", alt="first")
+                    figcaption
+                        span.section__figcaption.section__figcaption_style_big 1958 год 
+                        span.section__figcaption.section__figcaption_style_light первый магазин
+                figure.design__item.design__item_second.section__img.section__img_rotate_left-more.section__img_size_xl
+                    img.section__photo(src="img/second.jpg", alt="second")
+                    figcaption.section__figcaption.section__figcaption_style_bold Каждый десятый европеец сделан на нашей кровати
+                figure.design__item.design__item_third.section__img.section__img_rotate_right.section__img_size_lg
+                    img.section__photo(src="img/third.jpg", alt="third")
+                figure.design__item.design__item_fourth.section__img.section__img_rotate_left.section__img_size_sm
+                    img.section__photo(src="img/fourth.jpg", alt="fourth")

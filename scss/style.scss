@@ -9,16 +9,21 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900); // Mixin for include fonts
 @include font-face("ArialMT", 'fonts/CenturyGothic', normal, normal);
 // Import files
+@import 'core/fonts';
 @import 'variables/variables';
 @import 'core/reset';
 @import 'core/template';
+@import 'core/section';
 @import 'core/header';
-@import 'core/navbar';
-@import 'core/footer';
-@import 'core/form';
-@import 'core/grid';
-@import 'core/soc';
-@import 'core/breadcrumb';
-@import 'core/pagination';
-@import 'core/buttons';
-@import 'core/video';
+@import 'core/btn';
+@import 'core/flex-wrapper';
+@import 'core/tasks';
+@import 'core/design';
+// @import 'core/navbar';
+// @import 'core/footer';
+// @import 'core/form';
+// // @import 'core/grid';
+// @import 'core/soc';
+// @import 'core/breadcrumb';
+// @import 'core/pagination';
+// @import 'core/video';

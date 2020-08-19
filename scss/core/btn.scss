@@ -1,0 +1,46 @@
+// Style for button and pseudo button for input and link
+.btn {
+	// color: $btn_default_text_color;
+	font-family: $main_font_family;
+	// font-size: 16px;
+	// font-weight: 300;
+	padding: 1.8em;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	text-decoration: none;
+	display: block;
+	background-color: $btn_default_bg_color;
+	text-align: center;
+	max-width: 100%;
+	cursor: pointer;
+	transition: all 0.3s;
+	text-decoration: none;
+	&:hover {
+		background-color: #fff;
+		color: #000;
+		text-decoration: none;
+	}
+	&:focus,&:active {
+		background-color: transparentize(#fff, .2);
+		color: #000;
+	}
+	&_theme_video-play {
+		background-color: #000;
+		&:hover {
+			background-color: #000;
+			&:before{
+				border-color: transparent transparent transparent #ffea00;
+			}
+		}
+		&:before {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0.8em 0 0.8em 1.6em;
+			border-color: transparent transparent transparent #fff;
+		}
+	}
+}
