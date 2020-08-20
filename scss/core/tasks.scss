@@ -1,0 +1,55 @@
+.tasks {
+    position: relative;
+    &__item {
+        position: relative;
+        padding: 2em 0.5em;
+    }
+    &__num {
+        color: #ffee84;
+        font-family: "Freestyle Script";
+        font-size: 8.7em;
+        line-height: 0.221em;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.1em;
+        left: 0;
+        z-index: 1;
+    }
+    &__text {
+        font-family: $main_font_family;
+        font-size: 0.6em;
+        line-height: 0.84em;
+        position: relative;
+        z-index: 2;
+    }
+    &__img {
+
+    }
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-image: url('../img/pencil.png');
+		background-repeat: no-repeat;
+		width: 11.867em;
+        height: 16.433em;
+	}
+    &:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		background-image: url('../img/ruler.png');
+		background-repeat: no-repeat;
+		width: 18.167em;
+        height: 18.167em;
+	}
+}

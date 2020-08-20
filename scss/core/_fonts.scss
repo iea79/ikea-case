@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Berlingske Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Berlingske Sans.eot"); /* IE9*/
+    src: url("../fonts/Berlingske Sans.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Berlingske Sans.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Berlingske Sans.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Berlingske Sans.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+    font-family: "Berlingske Sans";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/Berlingske Sans Bold.eot"); /* IE9*/
+    src: url("../fonts/Berlingske Sans Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Berlingske Sans Bold.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Berlingske Sans Bold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Berlingske Sans Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {font-family: "Freestyle Script";
+    src: url("../fonts/Freestyle Script.eot"); /* IE9*/
+    src: url("../fonts/Freestyle Script.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Freestyle Script.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Freestyle Script.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Freestyle Script.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+    font-family: 'GentlemensScript';
+    src: url('../fonts/GentlemensScript-Regular.eot');
+    src: url('../fonts/GentlemensScript-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GentlemensScript-Regular.woff2') format('woff2'),
+        url('../fonts/GentlemensScript-Regular.woff') format('woff'),
+        url('../fonts/GentlemensScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Bold.eot');
+    src: url('../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Regular.eot');
+    src: url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Light.eot');
+    src: url('../fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Light.woff') format('woff'),
+        url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-UltralightItalic.eot');
+    src: url('../fonts/SFProDisplay-UltralightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-UltralightItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay-UltralightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+

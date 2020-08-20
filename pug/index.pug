@@ -1,9 +1,136 @@
 extends layout/layout.pug
 
 block content
-    .container_center
+    section.section
+        .tasks
+            .container
+                .tasks__container
+                    .section__heading.section__heading_align_center Задачи документального фильма
+                    .flex-wrapper
+                        .tasks__item
+                            .tasks__num 1
+                            .tasks__text Раскрыть компанию IKEA, как одного из лучших работодателей в мире
+                        .tasks__item
+                            .tasks__num 2
+                            .tasks__text Рассказать о философии бренда
+                        .tasks__item
+                            .tasks__num 3
+                            .tasks__text Показать технологичность и производство компании
+                        figure.tasks__img
+                            img(src="img/tasks.png", alt="futniture-draft")
+    section.section
+        .container
+            .design
+                .section__title.section__title_style_left Демократичный дизайн от IKEA
+                .design__container
+                    figure.design__item.design__item_first.section__img.section__img_rotate_left.section__img_size_xl
+                        img.section__photo(src="img/first.jpg", alt="first")
+                        figcaption
+                            span.section__figcaption.section__figcaption_style_big.section__figcaption_style_line-before 1958 год 
+                            span.section__figcaption первый магазин
+                    figure.design__item.design__item_second.section__img.section__img_rotate_left-more.section__img_size_xl
+                        img.section__photo(src="img/second.jpg", alt="second")
+                        figcaption.section__figcaption.section__figcaption_style_bold Каждый десятый европеец сделан на нашей кровати
+                    figure.design__item.design__item_third.section__img.section__img_rotate_right.section__img_size_lg
+                        img.section__photo(src="img/third.jpg", alt="third")
+                    figure.design__item.design__item_fourth.section__img.section__img_rotate_left.section__img_size_sm
+                        img.section__photo(src="img/fourth.jpg", alt="fourth")
+                    .design__pentagon
+                        .pentagon
+                            .pentagon__container
+                                .pentagon__item.pentagon__item_first
+                                    .pentagon__text Form
+                                .pentagon__item.pentagon__item_second
+                                    .pentagon__text low price
+                                .pentagon__item.pentagon__item_third
+                                    .pentagon__text Sustainability
+                                .pentagon__item.pentagon__item_fourth
+                                    .pentagon__text Quality
+                                .pentagon__item.pentagon__item_fifth
+                                    .pentagon__text Function
 
-        .grid
-            .grid__item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, in.
-            .grid__item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam sequi officiis. Quia sed modi voluptatem, aut rem possimus at ipsa nobis iure non corporis nulla suscipit praesentium quos numquam quasi magni delectus eius illo, harum hic id! Laboriosam culpa recusandae nesciunt ab natus molestiae porro reiciendis, eveniet architecto temporibus!
-            .grid__item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fugiat, pariatur, explicabo ut quidem deleniti velit sed error dolor! Voluptates dignissimos consectetur repudiandae ipsam. Iusto, rerum, quam! Corporis, nisi, inventore?
+    section.section
+        .container
+            .cenario
+                .cenario__container.flex-wrapper.flex-wrapper_align_center
+                    .flex-wrapper__item.cenario__img
+                        img(src="img/cenario.jpg", alt="")
+                    .flex-wrapper__item.cenario__descr
+                        .section__title Подготовка сценария
+                        p Это был один из самых сложных этапов, так как нам требовалось связать в единую динамичную историю интервью десятков сотрудников и топ-менеджеров IKEA из разных стран.
+
+                        p Отдельным лирическим сюжетом была встреча с Ингваром Кампрадом. Мы ехали в Швецию, чтобы пожать ему руку и сказать "спасибо". Потому что он является примером для миллионов предпринимателей со всего мира
+    
+    section.section.section_background_clouds
+        .location
+            .container
+                .section__title.section__title_style_center Выбор локации для съемок
+                .location__container
+                    .location__img
+                            img(src="img/location.png", alt="countries")
+                    .location__lists.flex-wrapper.flex-wrapper_align_bottom
+                        .flex-wrapper__item
+                            ul.list
+                                li.list__item Головной офис                        
+                                li.list__item Музей IKEA                        
+                                li.list__item Производство                       
+                                li.list__item Первый магазин IKEA                                             
+                        .flex-wrapper__item
+                            ul.list
+                                li.list__item Магазин IKEA                        
+                                li.list__item Российский офис     
+
+    section.section
+        .foundator
+            .foundator__container.foundator__container_theme_black
+                .container
+                    .foundator__img
+                        img(src="img/foundator.png", alt="foundator")    
+                    .foundator__content
+                        .foundator__text Когда мы прилетели в Швецию, нам передали, что накануне ночью ушел из жизни основатель компании IKEA – Ингвар Кампрад. Это был настоящий удар для всей страны                                
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="12%" height="5%" viewBox="0 0 1280.000000 960.000000" preserveAspectRatio="xMidYMid meet">
+                            <desc>quore</desc>
+                            <g transform="translate(0.000000,960.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+                                <path d="M5425 8934 c-509 -91 -1448 -550 -2205 -1077 -567 -395 -923 -722 -1230 -1132 -474 -632 -840 -1434 -1025 -2250 -238 -1050 -156 -2018 237 -2799 136 -272 357 -572 543 -739 391 -353 861 -575 1370 -649 139 -20 543 -17 680 5 709 116 1291 495 1641 1067 206 338 324 771 324 1190 0 192 -27 551 -56 745 -80 529 -325 914 -797 1253 -226 162 -385 249 -977 534 -746 359 -946 689 -711 1173 111 227 358 545 745 959 179 193 432 390 824 646 539 351 644 422 739 499 160 128 247 247 260 350 7 59 -18 148 -51 189 -45 53 -149 65 -311 36z"/>
+                                <path d="M11640 8915 c-8 -2 -49 -9 -90 -15 -506 -82 -1567 -615 -2341 -1177 -590 -429 -928 -774 -1273 -1301 -515 -785 -843 -1704 -948 -2657 -17 -160 -18 -762 0 -905 85 -697 295 -1234 671 -1717 282 -363 779 -684 1265 -818 242 -66 350 -79 641 -80 273 0 340 6 543 51 173 39 342 98 517 183 716 347 1165 985 1256 1781 8 70 10 192 6 370 -9 377 -36 626 -93 855 -146 578 -571 1006 -1394 1403 -102 49 -255 123 -341 165 -440 211 -678 411 -771 646 -32 83 -32 256 0 361 54 171 177 378 367 615 102 128 400 466 506 575 169 174 494 410 1080 785 274 175 407 273 516 380 125 123 163 192 163 296 0 87 -34 159 -88 185 -34 16 -154 28 -192 19z"/>
+                            </g>
+                        </svg>
+                        blockquote.foundator__quote To create a better everyday for many people
+            .foundator__container
+                .container
+                    .foundator__resume Мы не могли продолжать работать по прежнему сценарию, но и отменить съемки мы  тоже не могли, у нас были договоренности с IKEA. Посоветовавшись внутри команды, мы  приняли решение, что должны внести изменения в задачи фильма.  Теперь это будет фильм не только о компании, это будет фильм о великом человеке,  посвятивший себя служению людям.
+
+    section.section.section_background_drafts
+        .camera
+            .container
+                .section__title Камера, мотор!
+                .camera__container
+                    figure.camera__item.camera__item_first.section__img.section__img_rotate_left.section__img_size_lg
+                        img.section__photo(src="img/room.jpg", alt="room")
+                    figure.camera__item.camera__item_second.section__img.section__img_size_xl
+                        img.section__photo(src="img/big-room.jpg", alt="big-room")
+                    figure.camera__item.camera__item_third.section__img.section__img_rotate_left-more.section__img_size_lg
+                        img.section__photo(src="img/manager.jpg", alt="manager")
+                        figcaption
+                            .section__figcaption.section__figcaption_style_bold.section__figcaption_style_line-after Исак Ярнхель 
+                            .section__figcaption Менеджер по работе с клиентами
+                    figure.camera__item.camera__item_fourth.section__img.section__img_size_lg
+                        img(src="img/meatballs.png", alt="meatballs")
+                    figure.camera__item.camera__item_fifth.section__img.section__img_rotate_right.section__img_size_xl
+                        img.section__photo(src="img/people.jpg", alt="people")
+                    figure.camera__item.camera__item_sixth.section__img.section__img_rotate_left.section__img_size_sm
+                        img.section__photo(src="img/production.jpg", alt="production")
+                    figure.camera__item.camera__item_seventh.section__img.section__img_rotate_right.section__img_size_xl
+                        img.section__photo(src="img/test-lab-manager.jpg", alt="test-lab-manager")
+                        figcaption
+                            .section__figcaption.section__figcaption_style_bold.section__figcaption_style_line-before Ларс Альблад
+                            .section__figcaption Руководитель тестовой лаборатории
+                    figure.camera__item.camera__item_eigth.section__img.section__img_rotate_right.section__img_size_xl
+                        img.section__photo(src="img/quality-check.jpg", alt="quality-check")
+                        figcaption.section__figcaption.section__figcaption_style_floating.section__figcaption_style_line-before-reverse Проверка качества с помощью роботов
+                    .camera__history
+                        .section__heading История
+                        p Нужно показать зрителям, что компания уже давно на рынке
+                    .camera__production
+                        .section__heading Производство
+                        p В этом блоке мы показываем, как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков

@@ -1,0 +1,12 @@
+.location {
+    &__container {
+        position: relative;
+        padding: 20em 0 5em;
+    }
+    
+    &__img {
+        position: absolute;
+        top: 0;
+        right: -15em;
+    }
+}

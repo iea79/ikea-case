@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Berlingske Sans";
+  src: url("../fonts/Berlingske Sans.eot");
+  /* IE9*/
+  src: url("../fonts/Berlingske Sans.eot?#iefix") format("embedded-opentype"), url("../fonts/Berlingske Sans.woff2") format("woff2"), url("../fonts/Berlingske Sans.woff") format("woff"), url("../fonts/Berlingske Sans.ttf") format("truetype"); }

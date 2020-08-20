@@ -1,0 +1,12 @@
+.cenario {
+    &__container {
+        flex-wrap: nowrap;
+    }
+
+    &__img {
+        flex-basis: 14.6em;
+    }
+    &__descr {
+        flex-basis: 24.9em;
+    }
+}
