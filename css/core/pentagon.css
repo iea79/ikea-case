@@ -1,0 +1,18 @@
+.pentagon__text {
+  font-family: "New Standard Old Italic";
+  font-size: 0.633em;
+  line-height: 0.661em; }
+
+.pentagon__item {
+  position: relative; }
+  .pentagon__item:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8em 0 8em 16em;
+    border-color: transparent transparent transparent #f6f6f6; }
+  .pentagon__item:after {
+    content: '';
+    position: absolute; }

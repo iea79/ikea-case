@@ -1,0 +1,64 @@
+.pentagon {
+
+    &__container {
+    
+    }
+
+    &__text {
+        font-family: "New Standard Old Italic";
+        font-size: 0.633em;
+        line-height: 0.661em;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 104px;
+        left: 5px;
+        z-index: 2;
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+        width: 0;
+		height: 0;
+        // font-size: 0;
+        // letter-spacing: -1px;
+        transform-origin: 208px 104px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 104px 0 104px 208px;
+			border-color: transparent transparent transparent #f6f6f6;
+        }
+        &:after {
+            content: '';
+			position: absolute;
+            top: 4px;
+            left: 2px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 100px 0 100px 200px;
+			border-color: transparent transparent transparent #fff;
+        }
+        &_first {
+            transform: rotate(144deg);
+        }
+        &_second {
+            transform: rotate(216deg);
+        }
+        &_third {
+            transform: rotate(288deg);
+        }
+        &_fourth {
+            transform: rotate(0deg);
+        }
+        &_fifth {
+            transform: rotate(72deg);
+        }
+    }
+}

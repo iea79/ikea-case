@@ -1,0 +1,62 @@
+.camera {
+    // padding-bottom: 100em;
+    &__container {
+        position: relative;
+        padding-top: 10em;
+        font-family: "Berlingske Sans";
+        font-size: 0.6em;
+        line-height: 0.8em;
+    }
+    &__item {
+        position: absolute;
+
+        &_first{
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        &_second{
+            top: 8em;
+            left: 0;
+            z-index: 2;
+        }
+        &_third{
+            top: 15em;
+            left: 5em;
+            z-index: 3;
+        }
+        &_fourth{
+            top: 25em;
+            right: 5em;
+            z-index: 4;
+        }
+        &_fifth{
+            top: 55em;
+            right: 5em;
+            z-index: 5;
+        }
+        &_sixth{
+            top: 65em;
+            left: 25em;
+            z-index: 6;
+        }
+        &_seventh{
+            top: 75em;
+            left: -5em;
+            z-index: 5;
+        }
+        &_eigth{
+            top: 85em;
+            right: 5em;
+            z-index: 6;
+        }
+    }
+
+    &__history {
+        padding: 1em 2em 30em 55em;
+    }
+
+    &__production {
+        padding: 1em 30em 55em 2em;
+    }
+}

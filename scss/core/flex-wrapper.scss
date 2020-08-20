@@ -4,7 +4,21 @@
     align-items: center;
     align-content: space-between;
     flex-wrap: wrap;
+    margin-left: -1em;
+    margin-right: -1em;
 
+    &__item {     
+        padding-left: 1em;
+        padding-right: 1em;
+        flex-grow: 1;
+    }
+
+    &_align_center {
+        justify-content: center;
+    }
+    &_align_bottom {
+        align-items: flex-end;
+    }
     // &.justify-content-start {
     //     text-align: left;
     //     flex-wrap: wrap;
