@@ -16,14 +16,14 @@
         &:before {
             content: '';
             position: absolute;
-            bottom: -6.667em;
-            left: -7em;
+            bottom: -12.5em;
+            left: -26em;
             z-index: 1;
             background-image: url('../img/clouds-left.png');
             background-repeat: no-repeat;
-            width: 34.8em;
-            height: 52.933em;
-            opacity: 0.5;
+            width: 58em;
+            height: 88.2em;
+            // opacity: 0.5;
         }
 
         &:after {
@@ -45,7 +45,7 @@
         &:before {
             content: '';
             position: absolute;
-            top: 6.667em;
+            top: 60.667em;
             left: -7em;
             z-index: 1;
             background-image: url('../img/room-draft-left.png');
@@ -206,14 +206,15 @@
             position: relative;
             &:after {
                 content: '';
-                width: 1.233em;
-                height: 1.4em;
+                width: 1.1em;
+                height: 1.6em;
                 opacity: 0.4;
-                border-radius: 50%;
-                border-right: 1px solid;
+                border-radius: 100%;
+                border-right: 2px solid;
                 position: absolute;
                 top: -1em;
-                right: 1em;
+                right: 1.5em;
+                transform: rotate(45deg);
             }
         }
     }

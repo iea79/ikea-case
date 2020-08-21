@@ -2,8 +2,6 @@
     font-family: "SF Pro Display", serif;
     
     &__container {
-        font-size: 1em;
-        line-height: 1.5em;
         position: relative;
         
         &_theme_black {
@@ -28,6 +26,8 @@
     }
     
     &__content {
+        font-size: 1em;
+        line-height: 1.5em;
         font-weight: 300;
         position: relative;
         z-index: 2;
@@ -44,7 +44,9 @@
     }
 
     &__resume {
-        margin: 2em auto;
+        font-size: 1.67em;
+        line-height: 1.55em;
+        margin: 3.4em auto;
         text-align: center;
         max-width: 38.7em;
     }

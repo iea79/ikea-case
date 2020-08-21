@@ -1,46 +1,44 @@
 .camera {
+    padding-top: 3em;
     // padding-bottom: 100em;
     position: relative;
     z-index: 2;
     &:after {
         content: '';
         position: absolute;
-        top: 1em;
+        top: -2em;
         right: 0;
         z-index: 0;
         background-image: url('../img/camera.png');
         background-repeat: no-repeat;
-        width: 42.833em;
-        height: 29.933em;
+        width: 70em;
+        height: 49.9em;
     }
-    &__conteiner {
+    &__container {
 		position: relative;
 		z-index: 2;
 	}
     &__content {
         position: relative;
-        padding-top: 10em;
-        font-family: "Berlingske Sans";
-        font-size: 0.6em;
-        line-height: 0.8em;
+        padding-top: 40em;
         z-index: 2;
     }
     &__item {
         position: absolute;
-
+        
         &_first{
-            top: 0;
-            left: 0;
+            top: 4em;
+            left: 0.9em;
             z-index: 1;
         }
         &_second{
-            top: 8em;
+            top: 23.5em;
             left: 0;
             z-index: 2;
         }
         &_third{
-            top: 15em;
-            left: 5em;
+            top: 39em;
+            left: 11em;
             z-index: 3;
         }
         &_history-first{
@@ -85,18 +83,36 @@
         }
     }
 
-    &__history {
+    &__text {
+        // font-family: "Berlingske Sans";
+        font-size: 0.6em;
+        line-height: 0.8em;
+
+    }
+    
+    &__partition {
         position: relative;
-        padding: 1em 2em 30em 55em;
+        
+        &_theme_history {
+            padding: 1em 2em 30em 55em;
+        }
+    
+        &_theme_production {
+            padding: 1em 30em 55em 2em;
+        }
+    
+        &_theme_design {
+            padding: 20em 40em 20em 1em;
+        }
     }
 
-    &__production {
-        position: relative;
-        padding: 1em 30em 55em 2em;
-    }
-
-    &__design {
-        position: relative;
-        padding: 20em 40em 20em 1em;
-    }
+    &__figcaption {
+        position: absolute;
+    
+        &_first {
+            transform: rotate(-15deg);
+            bottom: 1.2em;
+            left: 8em;
+        }
+    } 
 }

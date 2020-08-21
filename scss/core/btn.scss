@@ -24,16 +24,20 @@
 		background-color: transparentize(#fff, .2);
 		color: #000;
 	}
+	.header__video-btn & {
+		position: relative;
+		z-index: 2;
+	}
 	&_theme_video-play {
-		background-color: #000;
 		&:hover {
-			background-color: #000;
+			background-color: #131313;
 			&:before{
 				border-color: transparent transparent transparent #ffea00;
 			}
 		}
 		&:before {
 			content: '';
+			transition: all 0.3s;
 			display: block;
 			width: 0;
 			height: 0;
