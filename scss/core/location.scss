@@ -1,12 +1,28 @@
 .location {
+    padding-top: 1.3em;
+
     &__container {
         position: relative;
-        padding: 20em 0 5em;
+        padding: 26em 0 16.5em;
     }
     
     &__img {
         position: absolute;
-        top: 0;
-        right: -15em;
+        top: -3em;
+        right: -23em;
+    }
+
+    &__list-item {
+        position: absolute;
+
+        &_left {
+            bottom: 7.5em;
+            left: 7em;
+        }
+
+        &_right {
+            bottom: 6.1em;
+            right: 29em;
+        }
     }
 }

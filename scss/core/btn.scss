@@ -1,10 +1,9 @@
-// Style for button and pseudo button for input and link
 .btn {
 	// color: $btn_default_text_color;
 	font-family: $main_font_family;
 	// font-size: 16px;
 	// font-weight: 300;
-	padding: 1.8em;
+	padding: 3.2em;
 	border: none;
 	border-radius: 50%;
 	outline: none;
@@ -39,7 +38,7 @@
 			width: 0;
 			height: 0;
 			border-style: solid;
-			border-width: 0.8em 0 0.8em 1.6em;
+			border-width: 10px 0 10px 20px;
 			border-color: transparent transparent transparent #fff;
 		}
 	}

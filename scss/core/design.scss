@@ -3,7 +3,7 @@
     &__container {
         position: relative;
         padding-top: 5em;
-        padding-bottom: 30em;
+        padding-bottom: 46.2em;
     }
 
     &__item {
@@ -11,28 +11,42 @@
 
         &_first{
             top: 0;
-            left: 0;
+            left: -1em;
             z-index: 1;
         }
         &_second{
-            top: 5em;
-            left: 20em;
+            top: 9.5em;
+            left: 18em;
             z-index: 3;
         }
         &_third{
-            top: 10em;
-            right: 0;
+            top: 12.5em;
+            right: -1.9em;
             z-index: 2;
         }
         &_fourth{
             bottom: 0;
-            left: 5em;
+            left: 6em;
             z-index: 4;
+        }
+    }
+    &__figcaption {
+        position: absolute;
+        &_first {
+            transform: rotate(-5deg);
+            bottom: 0.9em;
+            left: 9em;
+        }
+        &_second {
+            transform: rotate(-17deg);
+            bottom: 0.2em;
+            left: 5.1em;
+            max-width: 8em;
         }
     }
     &__pentagon {
         position: absolute;
-        top: -1em;
-        right: 10em;
+        top: -17em;
+        right: 6em;
     }
 }

@@ -7,17 +7,23 @@
         position: relative;
         
         &_theme_black {
-            font-size: 1.467em;
-            line-height: 2em;
             background-color: #000;
             color: #fff;
+            word-spacing: 0.2em;
         }
+    }
+    
+    &__text {
+        font-size: 2.4em;
+        font-weight: 300;
+        line-height: 1.4em;
+        margin-bottom: 0.9em;
     }
     
     &__img {
         position: absolute;
-        top: 0;
-        left: 0;
+        bottom: 0;
+        left: 13em;
         z-index: 1;
     }
     
@@ -25,14 +31,16 @@
         font-weight: 300;
         position: relative;
         z-index: 2;
-        padding: 1em 2em 1em 20em;
+        padding: 6.96em 4em 6.7em 31.2em;
     }
-
+    
     &__quote {
-        font-size: 0.933em;
+        font-size: 1.5em;
         font-weight: 400;
         line-height: 1.274em;
         font-style: italic;
+        margin-left: 2.5em;
+        margin-top: 0.8em;
     }
 
     &__resume {

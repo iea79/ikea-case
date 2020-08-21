@@ -1,28 +1,36 @@
 .tasks {
     position: relative;
+    font-size: 1em;
+    line-height: 1.3em;
     &__item {
         position: relative;
-        padding: 2em 0.5em;
+        padding: 3.7em 1em;
+        max-width: 18.5em;
     }
     &__num {
         color: #ffee84;
         font-family: "Freestyle Script";
-        font-size: 8.7em;
+        font-size: 13.5em;
         line-height: 0.221em;
         position: absolute;
         top: 50%;
-        margin-top: -0.1em;
-        left: 0;
+        margin-top: -0.14em;
+        left: -0.07em;
         z-index: 1;
     }
     &__text {
-        font-family: $main_font_family;
-        font-size: 0.6em;
-        line-height: 0.84em;
         position: relative;
         z-index: 2;
     }
     &__img {
+        width: 66.9em;
+        margin: 0;
+        margin-left: auto;
+    }
+    &__content {
+        max-width: 60.6em;
+        margin-left: auto;
+        margin-right: 3em;
 
     }
     &__container {
@@ -30,26 +38,21 @@
         z-index: 2;
     }
 
-    &:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		background-image: url('../img/pencil.png');
-		background-repeat: no-repeat;
-		width: 11.867em;
-        height: 16.433em;
-	}
-    &:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: 1;
-		background-image: url('../img/ruler.png');
-		background-repeat: no-repeat;
-		width: 18.167em;
-        height: 18.167em;
-	}
+    &__background {
+        position: absolute;
+        z-index: 1;
+
+        &_left {
+            top: 13em;
+            left: 1em;
+            width: 22.25em;
+            height: 30.813em;  
+        }
+        &_right {
+            bottom: -26.5em;
+            right: -15.5em;
+            width: 34.063em;
+            height: 34.063em;
+        }
+    }
 }
