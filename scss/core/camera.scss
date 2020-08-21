@@ -1,11 +1,29 @@
 .camera {
     // padding-bottom: 100em;
-    &__container {
+    position: relative;
+    z-index: 2;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 1em;
+        right: 0;
+        z-index: 0;
+        background-image: url('../img/camera.png');
+        background-repeat: no-repeat;
+        width: 42.833em;
+        height: 29.933em;
+    }
+    &__conteiner {
+		position: relative;
+		z-index: 2;
+	}
+    &__content {
         position: relative;
         padding-top: 10em;
         font-family: "Berlingske Sans";
         font-size: 0.6em;
         line-height: 0.8em;
+        z-index: 2;
     }
     &__item {
         position: absolute;
@@ -25,38 +43,60 @@
             left: 5em;
             z-index: 3;
         }
-        &_fourth{
-            top: 25em;
+        &_history-first{
+            top: 15em;
             right: 5em;
             z-index: 4;
         }
-        &_fifth{
-            top: 55em;
-            right: 5em;
+        &_production-first{
+            top: -1em;
+            right: 15em;
             z-index: 5;
         }
-        &_sixth{
-            top: 65em;
-            left: 25em;
+        &_production-second{
+            top: 15em;
+            left: 30em;
             z-index: 6;
         }
-        &_seventh{
-            top: 75em;
+        &_production-third{
+            top: 20em;
             left: -5em;
             z-index: 5;
         }
-        &_eigth{
-            top: 85em;
+        &_production-fourth{
+            top: 25em;
             right: 5em;
+            z-index: 6;
+        }
+        &_design-first {
+            top: 5em;
+            left: 5em;
+            z-index: 6;
+        }
+        &_design-second {
+            top: 15em;
+            right: 25em;
+            z-index: 6;
+        }
+        &_design-third {
+            bottom: 5em;
+            right: 15em;
             z-index: 6;
         }
     }
 
     &__history {
+        position: relative;
         padding: 1em 2em 30em 55em;
     }
 
     &__production {
+        position: relative;
         padding: 1em 30em 55em 2em;
+    }
+
+    &__design {
+        position: relative;
+        padding: 20em 40em 20em 1em;
     }
 }

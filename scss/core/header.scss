@@ -1,50 +1,58 @@
 .header {
 	background-color: $color_primary;
-	padding: 13.3em 0 6.6em;
+	padding: 9.9em 22.6em 0;
 	position: relative;
 	
 	&:before {
 		content: '';
 		position: absolute;
 		top: 0;
-		left: 50%;
-		margin-left: -13em;
+		left: 33.5em;
 		z-index: 1;
 		background-image: url('../img/lamp.png');
 		background-repeat: no-repeat;
-		width: 26.967em;
-		height: 59.133em;
+		width: 50.6em;
+		height: 45em;
 	}
 
-	&__video {
+	&__video-btn {
 		position: relative;
+		left: -0.9em;
 		display: inline-block;
+		padding-bottom: 8.2em;
 		
 		&:after {
 			content: '';
 			position: absolute;
-			bottom: -6.667em;
-			left: -7em;
+			bottom: -1.4em;
+			left: -10em;
 			z-index: 1;
 			background-image: url('../img/hand.png');
 			background-repeat: no-repeat;
-			width: 18.7em;
-			height: 6.667em;
+			width: 35.063em;
+			height: 12.5em;
 		}
 	}
 
-	&__btn {
-
+	&__logo {
+		line-height: 0;
 	}
 	
 	&__text{
 		font-weight: bold;
-		font-size: 4.25em;
-		line-height: 1.076em;
+		font-size: 3.75em;
+		line-height: 2em;
+		letter-spacing: 0.01em;
 		color: #000000;
 	}
 
-	&__content {
+	&__sub {
+		margin-top: 1.5em;
+		margin-bottom: 2.8em;
+		font-size: 1.67em;
+	}
+
+	&__container {
 		position: relative;
 		z-index: 2;
 	}

@@ -1,12 +1,22 @@
 .cenario {
+    padding: 1.3em 0;
+
     &__container {
         flex-wrap: nowrap;
     }
 
     &__img {
-        flex-basis: 14.6em;
+        flex-basis: 14em;
     }
+    
     &__descr {
-        flex-basis: 24.9em;
+        flex-basis: 34em;
+    }
+    
+    &__text {
+        font-size: 0.9em;
+        line-height: 1.893em;
+        letter-spacing: 0.01em;
+        max-width: 46.688em;
     }
 }

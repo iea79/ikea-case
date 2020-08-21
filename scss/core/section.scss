@@ -29,13 +29,13 @@
         &:after {
             content: '';
             position: absolute;
-            bottom: -1em;
-            right: -19em;
+            bottom: -9em;
+            right: -38em;
             z-index: 1;
             background-image: url('../img/clouds-right.png');
             background-repeat: no-repeat;
-            width: 43.367em;
-            height: 30.9em;
+            width: 81.313em;
+    height: 57.938em;
         }
     }
     &_background_drafts {
@@ -70,26 +70,36 @@
     }
     &__title {
         font-family: "SF Pro Display", sans-serif;
-        font-size: 2.433em;
+        font-size: 4.1em;
         font-weight: 700;
-        line-height: 1.5em;
-
+        line-height: 1.3em;
+        
         &_style_center {
             text-align: center;
         }
-
+        
+        &_style_margin {
+            margin-left: 1.4em;
+        }
+        
         &_style_left {
             text-align: left;
             max-width: 10em;
+            margin-left: 0.8em;
         }
     }
     
     
     &__heading {
         font-family: 'SF Pro Display', sans-serif;
-        font-size: 2em;
+        font-size: 3.5em;
         font-weight: 700;
-        line-height: 2.853em;
+        line-height: 1.4em;
+        max-width: 15em;
+        margin-top: 0.5em;
+        margin-left: 3.2em;
+        letter-spacing: -0.03em;
+        word-spacing: 0.09em;
 
         &_align_center {
             text-align: center;
@@ -105,52 +115,50 @@
     }
 
     &__photo {
-        box-shadow: 0 0.667em 1.9em rgba(0, 0, 0, 0.15);
-        border: 0.433em solid #ffffff;
-        object-fit: cover;
-        object-position: 30% 50%;
-        height: 100%;
+        // box-shadow: 0 1.25em 3.563em rgba(0, 0, 0, 0.15);
+        // border: 0.813em solid #ffffff;
+        // object-fit: cover;
+        // object-position: 80% 10%;
+        // height: 100%;
     }
     &__img {
-        &_rotate_left {
-            transform: rotate(-5deg);
-        }
-        &_rotate_left-more {
-            transform: rotate(-10deg);
-        }
-        &_rotate_right {
-            transform: rotate(5deg);
-        }
+        // &_rotate_left {
+        //     transform: rotate(-5deg);
+        // }
+        // &_rotate_left-more {
+        //     transform: rotate(-16deg);
+        // }
+        // &_rotate_right {
+        //     transform: rotate(5deg);
+        // }
         &_size_xl {
-            width: 17em;
-            height: 17em;
+            width: 35em;
         }
         &_size_lg {
-            width: 15em;
-            height: 15em;
+            width: 27em;
         }
         &_size_sm {
-            width: 10em;
-            height: 10em;
+            width: 23em;
         }
     }
 
     &__figcaption {
         font-family: 'GentlemensScript';
         color: rgba(0, 0, 0, 0.46);
-        font-size: 2.267em;
+        font-size: 1.7em;
         // line-height: 1.113em;
         // opacity: 0.66;
         // font-size: 1em;
         line-height: 0.83em;
         &_style_big{
-            font-size: 1.333em;
+            color: rgba(0, 0, 0, 1);
+            font-size: 2em;
             line-height: 1.029em;
         }
         &_style_bold{
             color: #000;
             font-size: 2.3em;
-            line-height: 0.813em;
+            line-height: 0.9em;
         }
         // &_style_light{
         //     font-size: 1em;
@@ -167,14 +175,16 @@
             position: relative;
             &:before {
                 content: '';
-                width: 1.233em;
-                height: 1.4em;
+                width: 0.4em;
+                height: 1.3em;
                 opacity: 0.4;
-                border-radius: 50%;
-                border-left: 1px solid;
+                border-radius: 100%;
+                border-left: 2px solid;
+                // border-bottom: 2px solid;
                 position: absolute;
-                top: -1em;
-                left: -1em;
+                top: -0.5em;
+                left: -1.1em;
+                transform: rotate(-45deg);
             }
         }
         &_style_line-before-reverse {
