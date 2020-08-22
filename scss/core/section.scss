@@ -35,7 +35,7 @@
             background-image: url('../img/clouds-right.png');
             background-repeat: no-repeat;
             width: 81.313em;
-    height: 57.938em;
+            height: 57.938em;
         }
     }
     &_background_drafts {
@@ -107,7 +107,11 @@
     }
 
     &__subtitle {
-
+        font-family: "SF Pro Display";
+        font-size: 2.938em;
+        font-weight: 700;
+        line-height: 1em;
+        letter-spacing: -0.06em;
     }
 
     &__text {
@@ -131,15 +135,15 @@
         // &_rotate_right {
         //     transform: rotate(5deg);
         // }
-        &_size_xl {
-            width: 35em;
-        }
-        &_size_lg {
-            width: 27em;
-        }
-        &_size_sm {
-            width: 23em;
-        }
+        // &_size_xl {
+        //     width: 35em;
+        // }
+        // &_size_lg {
+        //     width: 27em;
+        // }
+        // &_size_sm {
+        //     width: 23em;
+        // }
     }
 
     &__figcaption {
@@ -150,14 +154,35 @@
         // opacity: 0.66;
         // font-size: 1em;
         line-height: 0.83em;
-        &_style_big{
+        position: absolute;
+        &_style_bold{
             color: rgba(0, 0, 0, 1);
-            font-size: 2em;
+            font-size: 2.3em;
             line-height: 1.029em;
         }
-        &_style_bold{
+        &_rotate_left-5{
+            transform: rotate(-5deg);
+            bottom: 0.4em;
+            left: 5.1em;
+        }
+        &_rotate_left-15{
+            transform: rotate(-15deg);
+            bottom: 0.7em;
+            left: 4.6em;
+        }
+        &_rotate_left-17{
+            transform: rotate(-17deg);
+            bottom: 0.3em;
+            left: 5.2em;
+        }
+        &_rotate_right-13{
+            transform: rotate(13deg);
+            bottom: 0.4em;
+            left: 4em;
+        }
+        &-title{
             color: #000;
-            font-size: 2.3em;
+            font-size: 1.3em;
             line-height: 0.9em;
         }
         // &_style_light{
@@ -165,25 +190,36 @@
         //     line-height: 0.83em;
         //     opacity: 0.46;
         // }
-        &_style_floating{
-            position: absolute;
-            top: -2em;
-            right: -2em;
-        }
-
+        
         &_style_line-before {
-            position: relative;
+            // position: relative;
             &:before {
                 content: '';
-                width: 0.4em;
-                height: 1.3em;
+                width: 2.1em;
+                height: 2.6em;
                 opacity: 0.4;
                 border-radius: 100%;
                 border-left: 2px solid;
                 // border-bottom: 2px solid;
                 position: absolute;
-                top: -0.5em;
-                left: -1.1em;
+                top: -2.2em;
+                left: -2.3em;
+                transform: rotate(-45deg);
+            }
+        }
+        &_style_line-before-sm {
+            // position: relative;
+            &:before {
+                content: '';
+                width: 1.233em;
+                height: 1.9em;
+                opacity: 0.4;
+                border-radius: 100%;
+                border-left: 2px solid;
+                // border-bottom: 2px solid;
+                position: absolute;
+                top: -1.2em;
+                left: -1.2em;
                 transform: rotate(-45deg);
             }
         }
@@ -191,31 +227,35 @@
             position: relative;
             &:before {
                 content: '';
-                width: 1.233em;
-                height: 1.4em;
+                width: 2em;
+                height: 3em;
                 opacity: 0.4;
                 border-radius: 50%;
-                border-left: 1px solid;
+                border-left: 2px solid;
                 position: absolute;
-                top: 0.5em;
-                left: -1.5em;
-                transform: rotate(90deg);
+                top: 0.3em;
+                left: -2.5em;
+                transform: rotate(40deg);
             }
         }
         &_style_line-after {
-            position: relative;
+            // position: relative;
             &:after {
                 content: '';
-                width: 1.1em;
-                height: 1.6em;
+                width: 2.1em;
+                height: 2.6em;
                 opacity: 0.4;
                 border-radius: 100%;
                 border-right: 2px solid;
                 position: absolute;
-                top: -1em;
-                right: 1.5em;
+                top: -2em;
+                right: 1.6em;
                 transform: rotate(45deg);
             }
+        }
+        &_style_floating{
+            top: -15.8em;
+            left: 6.3em;
         }
     }
 }

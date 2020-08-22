@@ -28,17 +28,17 @@ block content
             .design
                 .section__title.section__title_style_left Демократичный дизайн от IKEA
                 .design__container
-                    figure.design__item.design__item_first.section__img.section__img_rotate_left.section__img_size_xl
+                    figure.design__item.design__item_first.section__img
                         img(src="img/first.png", alt="first")
-                        figcaption.design__figcaption.design__figcaption_first
-                            .section__figcaption.section__figcaption_style_big.section__figcaption_style_line-before 1958 год 
-                            .section__figcaption первый магазин
-                    figure.design__item.design__item_second.section__img.section__img_rotate_left-more.section__img_size_xl
+                        figcaption.section__figcaption.section__figcaption_rotate_left-5.section__figcaption_style_line-before-sm
+                            .section__figcaption-title 1958 год 
+                            | первый магазин
+                    figure.design__item.design__item_second.section__img
                         img(src="img/second.png", alt="second")
-                        figcaption.design__figcaption.design__figcaption_second.section__figcaption.section__figcaption_style_bold Каждый десятый европеец сделан на нашей кровати
-                    figure.design__item.design__item_third.section__img.section__img_rotate_right.section__img_size_lg
+                        figcaption.section__figcaption.section__figcaption_rotate_left-17.section__figcaption_style_bold Каждый десятый европеец сделан на нашей кровати
+                    figure.design__item.design__item_third
                         img(src="img/third.png", alt="third")
-                    figure.design__item.design__item_fourth.section__img.section__img_rotate_left.section__img_size_sm
+                    figure.design__item.design__item_fourth.section__img
                         img(src="img/fourth.png", alt="fourth")
                     .design__pentagon
                         img(src="img/pentagon.png", alt="pentagon")
@@ -99,35 +99,35 @@ block content
             .container.camera__container
                 .section__title.section__title_style_margin Камера, мотор!
                 .camera__content
-                    figure.camera__item.camera__item_first.section__img.section__img_rotate_left.section__img_size_xl
+                    figure.camera__item.camera__item_first.section__img
                         img(src="img/room.png", alt="room")
-                    figure.camera__item.camera__item_second.section__img.section__img_size_xl
+                    figure.camera__item.camera__item_second.section__img
                         img(src="img/big-room.png", alt="big-room")
-                    figure.camera__item.camera__item_third.section__img.section__img_rotate_left-more.section__img_size_xl
+                    figure.camera__item.camera__item_third.section__img
                         img(src="img/manager.png", alt="manager")
-                        figcaption.camera__figcaption.camera__figcaption_first
-                            .section__figcaption.section__figcaption_style_bold.section__figcaption_style_line-after Исак Ярнхель 
-                            .section__figcaption Менеджер по работе с клиентами
+                        figcaption.section__figcaption.section__figcaption_style_line-after.section__figcaption_rotate_left-15
+                            .section__figcaption-title Исак Ярнхель 
+                            | Менеджер по работе с клиентами
                     .camera__partition.camera__partition_theme_history
-                        .section__heading История
-                        .camera__text Нужно показать зрителям, что компания уже давно на рынке
-                        figure.camera__item.camera__item_history-first.section__img.section__img_size_lg
+                        .section__subtitle История
+                        p Нужно показать зрителям, </br> что компания уже давно на рынке
+                        figure.camera__item.camera__item_history-first
                             img(src="img/meatballs.png", alt="meatballs")
                     .camera__partition.camera__partition_theme_production
-                        .section__heading Производство
-                        .camera__text В этом блоке мы показываем, как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков
-                        figure.camera__item.camera__item_production-first.section__img.section__img_rotate_right.section__img_size_xl
+                        .section__subtitle Производство
+                        p В этом блоке мы показываем, как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков
+                        figure.camera__item.camera__item_production-first.section__img
                             img(src="img/people.png", alt="people")
-                        figure.camera__item.camera__item_production-second.section__img.section__img_rotate_left.section__img_size_sm
+                        figure.camera__item.camera__item_production-second.section__img
                             img(src="img/production.png", alt="production")
-                        figure.camera__item.camera__item_production-third.section__img.section__img_rotate_right.section__img_size_xl
+                        figure.camera__item.camera__item_production-third.section__img
                             img(src="img/test-lab-manager.png", alt="test-lab-manager")
-                            figcaption
-                                .section__figcaption.section__figcaption_style_bold.section__figcaption_style_line-before Ларс Альблад
-                                .section__figcaption Руководитель тестовой лаборатории
-                        figure.camera__item.camera__item_production-fourth.section__img.section__img_rotate_right.section__img_size_xl
+                            figcaption.section__figcaption.section__figcaption_rotate_right-13.section__figcaption_style_line-before
+                                .section__figcaption-title Ларс Альблад
+                                | Руководитель тестовой лаборатории
+                        figure.camera__item.camera__item_production-fourth.section__img
                             img(src="img/quality-check.png", alt="quality-check")
-                            figcaption.section__figcaption.section__figcaption_style_floating.section__figcaption_style_line-before-reverse Проверка качества с помощью роботов
+                            figcaption.section__figcaption.section__figcaption_rotate_left-5.section__figcaption_style_floating.section__figcaption_style_line-before-reverse Проверка качества с помощью роботов
 
                     .camera__logo
                         <svg xmlns="http://www.w3.org/2000/svg" width="72%" height="5%" viewBox="0 25 82 18" version="1.1">
@@ -148,14 +148,14 @@ block content
                             blockquote Мы продаем не товары, а идеи для обустройства дома
 
                     .camera__partition.camera__partition_theme_design
-                        .section__heading Дизайн
-                        .camera__text IKEA открыла для человечества новые интерьеры, которые теперь можно увидеть по всему миру
-                        figure.camera__item.camera__item_design-first.section__img.section__img_rotate_left-more.section__img_size_sm
+                        .section__subtitle Дизайн
+                        p IKEA открыла для человечества новые интерьеры, которые теперь можно увидеть по всему миру
+                        figure.camera__item.camera__item_design-first.section__img
                             img(src="img/design-people.jpg", alt="design-people")
-                        figure.camera__item.camera__item_design-second.section__img.section__img_rotate_right.section__img_size_xl
+                        figure.camera__item.camera__item_design-second.section__img
                             img(src="img/design-carpet.jpg", alt="design-carpet")
                             figcaption.section__figcaption.section__figcaption_style_floating.section__figcaption_style_line-before-reverse Коллаборация с Off-White
-                        figure.camera__item.camera__item_design-third.section__img.section__img_rotate_left-more.section__img_size_xl
+                        figure.camera__item.camera__item_design-third.section__img
                             img(src="img/design-lead.jpg", alt="design-lead")
                             figcaption
                                 .section__figcaption.section__figcaption_style_bold.section__figcaption_style_line-before Хенрик Мост

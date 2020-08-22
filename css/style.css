@@ -604,77 +604,108 @@ p {
   .section__heading_align_center {
     text-align: center; }
 
-.section__img_size_xl {
-  width: 35em; }
-
-.section__img_size_lg {
-  width: 27em; }
-
-.section__img_size_sm {
-  width: 23em; }
+.section__subtitle {
+  font-family: "SF Pro Display";
+  font-size: 2.938em;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: -0.06em; }
 
 .section__figcaption {
   font-family: 'GentlemensScript';
   color: rgba(0, 0, 0, 0.46);
   font-size: 1.7em;
-  line-height: 0.83em; }
-  .section__figcaption_style_big {
-    color: black;
-    font-size: 2em;
-    line-height: 1.029em; }
+  line-height: 0.83em;
+  position: absolute; }
   .section__figcaption_style_bold {
-    color: #000;
+    color: black;
     font-size: 2.3em;
+    line-height: 1.029em; }
+  .section__figcaption_rotate_left-5 {
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    bottom: 0.4em;
+    left: 5.1em; }
+  .section__figcaption_rotate_left-15 {
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    bottom: 0.7em;
+    left: 4.6em; }
+  .section__figcaption_rotate_left-17 {
+    -webkit-transform: rotate(-17deg);
+    -ms-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+    bottom: 0.3em;
+    left: 5.2em; }
+  .section__figcaption_rotate_right-13 {
+    -webkit-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    transform: rotate(13deg);
+    bottom: 0.4em;
+    left: 4em; }
+  .section__figcaption-title {
+    color: #000;
+    font-size: 1.3em;
     line-height: 0.9em; }
-  .section__figcaption_style_floating {
+  .section__figcaption_style_line-before:before {
+    content: '';
+    width: 2.1em;
+    height: 2.6em;
+    opacity: 0.4;
+    border-radius: 100%;
+    border-left: 2px solid;
     position: absolute;
-    top: -2em;
-    right: -2em; }
-  .section__figcaption_style_line-before {
-    position: relative; }
-    .section__figcaption_style_line-before:before {
-      content: '';
-      width: 0.4em;
-      height: 1.3em;
-      opacity: 0.4;
-      border-radius: 100%;
-      border-left: 2px solid;
-      position: absolute;
-      top: -0.5em;
-      left: -1.1em;
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
+    top: -2.2em;
+    left: -2.3em;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .section__figcaption_style_line-before-sm:before {
+    content: '';
+    width: 1.233em;
+    height: 1.9em;
+    opacity: 0.4;
+    border-radius: 100%;
+    border-left: 2px solid;
+    position: absolute;
+    top: -1.2em;
+    left: -1.2em;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
   .section__figcaption_style_line-before-reverse {
     position: relative; }
     .section__figcaption_style_line-before-reverse:before {
       content: '';
-      width: 1.233em;
-      height: 1.4em;
+      width: 2em;
+      height: 3em;
       opacity: 0.4;
       border-radius: 50%;
-      border-left: 1px solid;
+      border-left: 2px solid;
       position: absolute;
-      top: 0.5em;
-      left: -1.5em;
-      -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg); }
-  .section__figcaption_style_line-after {
-    position: relative; }
-    .section__figcaption_style_line-after:after {
-      content: '';
-      width: 1.1em;
-      height: 1.6em;
-      opacity: 0.4;
-      border-radius: 100%;
-      border-right: 2px solid;
-      position: absolute;
-      top: -1em;
-      right: 1.5em;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
+      top: 0.3em;
+      left: -2.5em;
+      -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg); }
+  .section__figcaption_style_line-after:after {
+    content: '';
+    width: 2.1em;
+    height: 2.6em;
+    opacity: 0.4;
+    border-radius: 100%;
+    border-right: 2px solid;
+    position: absolute;
+    top: -2em;
+    right: 1.6em;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .section__figcaption_style_floating {
+    top: -15.8em;
+    left: 6.3em; }
 
 .header {
   background-color: #ffda00;
@@ -864,22 +895,6 @@ p {
     left: 6em;
     z-index: 4; }
 
-.design__figcaption {
-  position: absolute; }
-  .design__figcaption_first {
-    -webkit-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    bottom: 0.9em;
-    left: 9em; }
-  .design__figcaption_second {
-    -webkit-transform: rotate(-17deg);
-    -ms-transform: rotate(-17deg);
-    transform: rotate(-17deg);
-    bottom: 0.2em;
-    left: 5.1em;
-    max-width: 8em; }
-
 .design__pentagon {
   position: absolute;
   top: -17em;
@@ -975,23 +990,23 @@ p {
   .foundator__resume {
     font-size: 1.67em;
     line-height: 1.55em;
-    margin: 3.4em auto;
+    margin: 3.4em auto 2.3em;
     text-align: center;
     max-width: 38.7em; }
 
 .camera {
-  padding-top: 3em;
+  padding-top: 5em;
   position: relative;
   z-index: 2; }
   .camera:after {
     content: '';
     position: absolute;
-    top: -2em;
+    top: 0;
     right: 0;
     z-index: 0;
     background-image: url("../img/camera.png");
     background-repeat: no-repeat;
-    width: 70em;
+    width: 70.4em;
     height: 49.9em; }
   .camera__container {
     position: relative;
@@ -1015,24 +1030,24 @@ p {
       left: 11em;
       z-index: 3; }
     .camera__item_history-first {
-      top: 15em;
-      right: 5em;
+      bottom: -4.5em;
+      right: -1em;
       z-index: 4; }
     .camera__item_production-first {
-      top: -1em;
-      right: 15em;
+      top: -2em;
+      right: 0em;
       z-index: 5; }
     .camera__item_production-second {
-      top: 15em;
-      left: 30em;
+      top: 13em;
+      left: 20.2em;
       z-index: 6; }
     .camera__item_production-third {
       top: 20em;
-      left: -5em;
+      left: 0.5em;
       z-index: 5; }
     .camera__item_production-fourth {
-      top: 25em;
-      right: 5em;
+      top: 33.5em;
+      right: 11.2em;
       z-index: 6; }
     .camera__item_design-first {
       top: 5em;
@@ -1046,22 +1061,11 @@ p {
       bottom: 5em;
       right: 15em;
       z-index: 6; }
-  .camera__text {
-    font-size: 0.6em;
-    line-height: 0.8em; }
   .camera__partition {
     position: relative; }
     .camera__partition_theme_history {
-      padding: 1em 2em 30em 55em; }
+      padding: 2em 10em 22em 47.3em; }
     .camera__partition_theme_production {
-      padding: 1em 30em 55em 2em; }
+      padding: 2em 30em 55em 19em; }
     .camera__partition_theme_design {
       padding: 20em 40em 20em 1em; }
-  .camera__figcaption {
-    position: absolute; }
-    .camera__figcaption_first {
-      -webkit-transform: rotate(-15deg);
-      -ms-transform: rotate(-15deg);
-      transform: rotate(-15deg);
-      bottom: 1.2em;
-      left: 8em; }

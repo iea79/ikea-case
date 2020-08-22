@@ -1,17 +1,17 @@
 .camera {
-    padding-top: 3em;
+    padding-top: 5em;
     // padding-bottom: 100em;
     position: relative;
     z-index: 2;
     &:after {
         content: '';
         position: absolute;
-        top: -2em;
+        top: 0;
         right: 0;
         z-index: 0;
         background-image: url('../img/camera.png');
         background-repeat: no-repeat;
-        width: 70em;
+        width: 70.4em;
         height: 49.9em;
     }
     &__container {
@@ -42,28 +42,28 @@
             z-index: 3;
         }
         &_history-first{
-            top: 15em;
-            right: 5em;
+            bottom: -4.5em;
+            right: -1em;
             z-index: 4;
         }
         &_production-first{
-            top: -1em;
-            right: 15em;
+            top: -2em;
+            right: 0em;
             z-index: 5;
         }
         &_production-second{
-            top: 15em;
-            left: 30em;
+            top: 13em;
+            left: 20.2em;
             z-index: 6;
         }
         &_production-third{
             top: 20em;
-            left: -5em;
+            left: 0.5em;
             z-index: 5;
         }
         &_production-fourth{
-            top: 25em;
-            right: 5em;
+            top: 33.5em;
+            right: 11.2em;
             z-index: 6;
         }
         &_design-first {
@@ -85,20 +85,21 @@
 
     &__text {
         // font-family: "Berlingske Sans";
-        font-size: 0.6em;
-        line-height: 0.8em;
-
+        // font-size: 0.6em;
+        // line-height: 1em;
+        
     }
     
     &__partition {
         position: relative;
+        // padding-top: 2em;
         
         &_theme_history {
-            padding: 1em 2em 30em 55em;
+            padding: 2em 10em 22em 47.3em;
         }
     
         &_theme_production {
-            padding: 1em 30em 55em 2em;
+            padding: 2em 30em 55em 19em;
         }
     
         &_theme_design {
@@ -106,13 +107,13 @@
         }
     }
 
-    &__figcaption {
-        position: absolute;
+    // &__figcaption {
+    //     position: absolute;
     
-        &_first {
-            transform: rotate(-15deg);
-            bottom: 1.2em;
-            left: 8em;
-        }
-    } 
+    //     &_first {
+    //         transform: rotate(-15deg);
+    //         bottom: 1.2em;
+    //         left: 8em;
+    //     }
+    // } 
 }
