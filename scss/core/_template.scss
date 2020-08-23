@@ -3,10 +3,11 @@
 body {
 	display: flex;
 	flex-direction: column;
+	font-size: calc(.00937 * 100vw + 0px);
 	// font-size: calc(.034 * 100vw + 0px);
 	height: auto;
 	min-height: 100%;
-	font-size: $main_font_size;
+	// font-size: $main_font_size;
     letter-spacing: $main_letter_spacing;
 	// color: $color_withe;
 

@@ -1,9 +1,10 @@
 .btn {
 	// color: $btn_default_text_color;
-	font-family: $main_font_family;
+	// font-family: $main_font_family;
 	// font-size: 16px;
 	// font-weight: 300;
-	padding: 3.2em;
+	font-size: inherit;
+	padding: 2.3em;
 	border: none;
 	border-radius: 50%;
 	outline: none;
@@ -17,12 +18,12 @@
 	text-decoration: none;
 	&:hover {
 		background-color: #fff;
-		color: #000;
+		// color: #000;
 		text-decoration: none;
 	}
 	&:focus,&:active {
-		background-color: transparentize(#fff, .2);
-		color: #000;
+		background-color: transparentize(#000, .2);
+		// color: #000;
 	}
 	.header__video-btn & {
 		position: relative;
@@ -37,12 +38,13 @@
 		}
 		&:before {
 			content: '';
+			font-size: inherit;
 			transition: all 0.3s;
 			display: block;
 			width: 0;
 			height: 0;
 			border-style: solid;
-			border-width: 10px 0 10px 20px;
+			border-width: 0.7em 0 0.7em 1.2em;
 			border-color: transparent transparent transparent #fff;
 		}
 	}

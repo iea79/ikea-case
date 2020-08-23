@@ -21,6 +21,7 @@
             z-index: 1;
             background-image: url('../img/clouds-left.png');
             background-repeat: no-repeat;
+            background-size: cover;
             width: 58em;
             height: 88.2em;
             // opacity: 0.5;
@@ -34,37 +35,40 @@
             z-index: 1;
             background-image: url('../img/clouds-right.png');
             background-repeat: no-repeat;
+            background-size: cover;
             width: 81.313em;
             height: 57.938em;
         }
     }
-    &_background_drafts {
-        overflow: hidden;
+    &_background_draft-chairs {
+        // overflow: hidden;
         position: relative;
         
         &:before {
             content: '';
             position: absolute;
-            top: 60.667em;
-            left: -7em;
+            top: 67em;
+            left: -8em;
             z-index: 1;
             background-image: url('../img/room-draft-left.png');
             background-repeat: no-repeat;
-            width: 24.367em;
-            height: 24.467em;
-            opacity: 0.61;
+            background-size: cover;
+            width: 39em;
+            height: 43.9em;
+            opacity: -1.39;
         }
 
         &:after {
             content: '';
             position: absolute;
-            bottom: 10em;
-            right: -10em;
+            bottom: 37em;
+            right: -7.6em;
             z-index: 1;
             background-image: url('../img/room-draft-right.png');
             background-repeat: no-repeat;
-            width: 20.733em;
-            height: 25.4em;
+            background-size: cover;
+            width: 34.556em;
+            height: 42.334em;
             opacity: 0.55;
         }
     }
@@ -170,6 +174,10 @@
             bottom: 0.7em;
             left: 4.6em;
         }
+        &_margin-l{
+            bottom: 0.9em;
+            left: 8.4em;
+        }
         &_rotate_left-17{
             transform: rotate(-17deg);
             bottom: 0.3em;
@@ -191,71 +199,67 @@
         //     opacity: 0.46;
         // }
         
-        &_style_line-before {
-            // position: relative;
+        &_style_floating-top {
+            top: -1.2em;
+            left: 7.1em;
+        }
+        &_style_floating-bottom {
+            bottom: 1.5em;
+            left: -6.9em;
+        }
+    }
+    &__line {
+        position: relative;
+        &:before {
+            content: '';
+            color: rgba(0, 0, 0, 0.4);
+            border-radius: 100%;
+            border-left: 2px solid;
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+        
+        &_before {
             &:before {
-                content: '';
                 width: 2.1em;
                 height: 2.6em;
-                opacity: 0.4;
-                border-radius: 100%;
-                border-left: 2px solid;
-                // border-bottom: 2px solid;
-                position: absolute;
                 top: -2.2em;
                 left: -2.3em;
-                transform: rotate(-45deg);
             }
         }
-        &_style_line-before-sm {
-            // position: relative;
+        &_before-sm {
             &:before {
-                content: '';
                 width: 1.233em;
                 height: 1.9em;
-                opacity: 0.4;
-                border-radius: 100%;
-                border-left: 2px solid;
-                // border-bottom: 2px solid;
-                position: absolute;
                 top: -1.2em;
                 left: -1.2em;
-                transform: rotate(-45deg);
+                // transform: rotate(-45deg);
             }
         }
-        &_style_line-before-reverse {
-            position: relative;
+        &_before-reverse {
             &:before {
-                content: '';
                 width: 2em;
                 height: 3em;
-                opacity: 0.4;
-                border-radius: 50%;
-                border-left: 2px solid;
-                position: absolute;
                 top: 0.3em;
                 left: -2.5em;
                 transform: rotate(40deg);
             }
         }
-        &_style_line-after {
-            // position: relative;
-            &:after {
-                content: '';
-                width: 2.1em;
-                height: 2.6em;
-                opacity: 0.4;
-                border-radius: 100%;
-                border-right: 2px solid;
-                position: absolute;
-                top: -2em;
-                right: 1.6em;
-                transform: rotate(45deg);
+        &_after {
+            &:before {
+                width: 2em;
+                height: 2.4em;
+                top: -1.6em;
+                left: 0.4em;
+                transform: rotate(-135deg);
             }
         }
-        &_style_floating{
-            top: -15.8em;
-            left: 6.3em;
+        &_rotate_right {
+            &:before {
+                top: -1.3em;
+                left: 1em;
+                transform: rotate(-115deg);
+            }
         }
     }
 }

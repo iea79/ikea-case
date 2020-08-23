@@ -7,14 +7,15 @@
 		content: '';
 		position: absolute;
 		top: 0;
-		left: 33.5em;
+		left: 33.2em;
 		z-index: 1;
 		background-image: url('../img/lamp.png');
 		background-repeat: no-repeat;
-		width: 50.6em;
-		height: 45em;
+		background-size: cover;
+		width: 44.6em;
+		height: 40.7em;
 	}
-
+	
 	&__video-btn {
 		position: relative;
 		left: -0.9em;
@@ -24,13 +25,14 @@
 		&:after {
 			content: '';
 			position: absolute;
-			bottom: -1.4em;
-			left: -10em;
+			bottom: 0em;
+			left: -10.4em;
 			z-index: 1;
 			background-image: url('../img/hand.png');
 			background-repeat: no-repeat;
-			width: 35.063em;
-			height: 12.5em;
+			background-size: cover;
+			width: 31.6em;
+			height: 11.3em;
 		}
 	}
 
