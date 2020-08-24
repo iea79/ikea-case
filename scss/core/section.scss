@@ -72,11 +72,22 @@
             opacity: 0.55;
         }
     }
+
+    &_on-top {
+        position: relative;
+        z-index: 1;
+    }
     &__title {
         font-family: "SF Pro Display", sans-serif;
-        font-size: 4.1em;
+        font-size: 2.5em;
         font-weight: 700;
-        line-height: 1.3em;
+        line-height: 1.5em;
+        
+        @include desktop {
+            font-size: 4.1em;
+            line-height: 1.3em;
+
+        }
         
         &_style_center {
             text-align: center;
@@ -86,24 +97,29 @@
             margin-left: 1.4em;
         }
         
-        &_style_left {
-            text-align: left;
-            max-width: 10em;
-            margin-left: 0.8em;
-        }
+        // &_style_sm {
+        //     max-width: 10em;
+        // }
     }
     
     
     &__heading {
         font-family: 'SF Pro Display', sans-serif;
-        font-size: 3.5em;
+        font-size: 2em;
         font-weight: 700;
         line-height: 1.4em;
         max-width: 15em;
-        margin-top: 0.5em;
-        margin-left: 3.2em;
+        max-width: 15em;
+        margin-top: 1.6em;
         letter-spacing: -0.03em;
         word-spacing: 0.09em;
+        
+        @include desktop {
+            font-size: 3.5em;
+            margin-top: 0.5em;
+            margin-left: 3.2em;
+
+        }
 
         &_align_center {
             text-align: center;
@@ -151,7 +167,7 @@
     }
 
     &__figcaption {
-        font-family: 'GentlemensScript';
+        font-family: 'GentlemensScript', sans-serif;
         color: rgba(0, 0, 0, 0.46);
         font-size: 1.7em;
         // line-height: 1.113em;
@@ -160,9 +176,9 @@
         line-height: 0.83em;
         position: absolute;
         &_style_bold{
-            color: rgba(0, 0, 0, 1);
-            font-size: 2.3em;
-            line-height: 1.029em;
+            // color: rgba(0, 0, 0, 1);
+            // font-size: 2.3em;
+            // line-height: 1.029em;
         }
         &_rotate_left-5{
             transform: rotate(-5deg);
@@ -206,6 +222,11 @@
         &_style_floating-bottom {
             bottom: 1.5em;
             left: -6.9em;
+        }
+        &_style_sm {
+            max-width: 5em;
+            bottom: -0.7em;
+            left: 10.7em;
         }
     }
     &__line {
@@ -259,6 +280,13 @@
                 top: -1.3em;
                 left: 1em;
                 transform: rotate(-115deg);
+            }
+        }
+        &_rotate_left {
+            &:before {
+                // top: -1.3em;
+                left: -0.6em;
+                transform: rotate(5deg);
             }
         }
     }

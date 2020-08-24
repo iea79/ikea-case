@@ -4,9 +4,9 @@ block content
     section.section
         .tasks
             .container
-                .tasks__background.tasks__background_left
+                figure.tasks__background.tasks__background_left
                     img(src="img/pencil.png", alt="pencil")
-                .tasks__background.tasks__background_right
+                figure.tasks__background.tasks__background_right
                     img(src="img/ruler.png", alt="ruler")
                 .tasks__container
                     .section__heading.section__heading_align_center Задачи документального фильма
@@ -23,27 +23,54 @@ block content
                                 .tasks__text Показать технологичность и производство компании
                     figure.tasks__img
                         img(src="img/tasks.png", alt="futniture-draft")
-    section.section
+    section.section.section_on-top
         .container
-            .design
-                .section__title.section__title_style_left Демократичный дизайн от IKEA
-                .design__container
-                    figure.design__item.design__item_first.section__img
-                        img(src="img/first.png", alt="first")
-                        figcaption.section__figcaption.section__figcaption_rotate_left-5
-                            span.section__line.section__line_before-sm
-                            .section__figcaption-title 1958 год 
-                            | первый магазин
-                    figure.design__item.design__item_second.section__img
-                        img(src="img/second.png", alt="second")
-                        figcaption.section__figcaption.section__figcaption_rotate_left-17.section__figcaption_style_bold Каждый десятый европеец сделан на нашей кровати
-                    figure.design__item.design__item_third
-                        img(src="img/third.png", alt="third")
-                    figure.design__item.design__item_fourth.section__img
-                        img(src="img/fourth.png", alt="fourth")
-                    .design__pentagon
-                        img(src="img/pentagon.png", alt="pentagon")
-
+             .slider.js-slider
+                .slider__top.flex-wrapper.flex-wrapper_align_start
+                    .slider__dots
+                    .slider__arrow
+                    .slider__arrow.slider__arrow_reverse
+                .slider__slide(data-title="основатель")
+                    .history
+                        .history__container
+                            .section__title Изучение архивных материалов.
+                            .history__subtitle Создание IKEA
+                            .history__text
+                                p IKEA была основана в далеком 1943 году Ингваром Кампрадом и расшифровывалась как  Ingvar Kamprad Elmtaryd Agunnaryd.
+                            figure.history__item.history__item_first
+                                img(src="img/history-first.png", alt="history-first")
+                                figcaption.section__figcaption.section__figcaption_style_sm
+                                    span.section__line.section__line_before-sm.section__line_rotate_left
+                                    .section__figcaption-title Ингвар Кампрад
+                                    | Основатель IKEA
+                            figure.history__item.history__item_second
+                                img(src="img/history-second.png", alt="history-second")
+                            figure.history__item.history__item_third
+                                img(src="img/history-third.png", alt="history-third")
+                            figure.history__item.history__item_fourth
+                                img(src="img/history-fourth.png", alt="history-fourth")
+                            figure.history__item.history__item_fifth
+                                img(src="img/history-fifth.png", alt="history-fifth")
+                .slider__slide(data-title="дизайн")
+                    .design
+                        .design__container
+                            .section__title Демократичный дизайн от IKEA
+                            figure.design__item.design__item_first
+                                img(src="img/first.png", alt="first")
+                                figcaption.section__figcaption.section__figcaption_rotate_left-5
+                                    span.section__line.section__line_before-sm
+                                    .section__figcaption-title 1958 год 
+                                    | первый магазин
+                            figure.design__item.design__item_second
+                                img(src="img/second.png", alt="second")
+                            figure.design__item.design__item_third
+                                img(src="img/third.png", alt="third")
+                            figure.design__item.design__item_fourth
+                                img(src="img/fourth.png", alt="fourth")
+                            figure.design__item.design__item_pentagon
+                                img(src="img/pentagon.png", alt="pentagon")
+                            figure.design__item.design__item_text Каждый десятый европеец сделан на нашей кровати
+                
     section.section
         .container
             .cenario
@@ -100,11 +127,11 @@ block content
             .container.camera__container
                 .section__title.section__title_style_margin Камера, мотор!
                 .camera__content
-                    figure.camera__item.camera__item_first.section__img
+                    figure.camera__item.camera__item_first
                         img(src="img/room.png", alt="room")
-                    figure.camera__item.camera__item_second.section__img
+                    figure.camera__item.camera__item_second
                         img(src="img/big-room.png", alt="big-room")
-                    figure.camera__item.camera__item_third.section__img
+                    figure.camera__item.camera__item_third
                         img(src="img/manager.png", alt="manager")
                         figcaption.section__figcaption.section__figcaption_rotate_left-15
                             .section__figcaption-title 
@@ -119,17 +146,17 @@ block content
                     .camera__partition.camera__partition_theme_production
                         .section__subtitle Производство
                         p В этом блоке мы показываем, </br> как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков
-                        figure.camera__item.camera__item_production-first.section__img
+                        figure.camera__item.camera__item_production-first
                             img(src="img/people.png", alt="people")
-                        figure.camera__item.camera__item_production-second.section__img
+                        figure.camera__item.camera__item_production-second
                             img(src="img/production.png", alt="production")
-                        figure.camera__item.camera__item_production-third.section__img
+                        figure.camera__item.camera__item_production-third
                             img(src="img/test-lab-manager.png", alt="test-lab-manager")
                             figcaption.section__figcaption.section__figcaption_rotate_right-13
                                 span.section__line.section__line_before
                                 .section__figcaption-title Ларс Альблад
                                 | Руководитель тестовой лаборатории
-                        figure.camera__item.camera__item_production-fourth.section__img
+                        figure.camera__item.camera__item_production-fourth
                             img(src="img/quality-check.png", alt="quality-check")
                             figcaption.section__figcaption.section__figcaption_rotate_left-5.section__figcaption_style_floating-top
                                 span.section__line.section__line_before-reverse 
@@ -159,14 +186,14 @@ block content
                     .camera__partition.camera__partition_theme_design
                         .section__subtitle Дизайн
                         p IKEA открыла для человечества новые интерьеры, которые теперь можно увидеть по всему миру
-                        figure.camera__item.camera__item_design-first.section__img
+                        figure.camera__item.camera__item_design-first
                             img(src="img/design-people.png", alt="design-people")
-                        figure.camera__item.camera__item_design-second.section__img
+                        figure.camera__item.camera__item_design-second
                             img(src="img/design-carpet.png", alt="design-carpet")
                             figcaption.section__figcaption.section__figcaption_style_floating-bottom
                                 span Коллаборация с Off-White
                                 span.section__line.section__line_after.section__line_rotate_right
-                        figure.camera__item.camera__item_design-third.section__img
+                        figure.camera__item.camera__item_design-third
                             img(src="img/design-lead.png", alt="design-lead")
                             figcaption.section__figcaption.section__figcaption_rotate_left-15.section__figcaption_margin-l
                                 span.section__line.section__line_before
@@ -176,4 +203,6 @@ block content
     //-     .voice 
     //-         .container.voice__container
     //-             .section__title.section__title_style_center Дикторская озвучка
+
+
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>Document</title><link rel="stylesheet" type="text/css" href="css/libs/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css?0.1"/>
   </head>
   <body>
@@ -32,8 +32,8 @@
       <section class="section">
         <div class="tasks">
           <div class="container">
-            <div class="tasks__background tasks__background_left"><img src="img/pencil.png" alt="pencil"/></div>
-            <div class="tasks__background tasks__background_right"><img src="img/ruler.png" alt="ruler"/></div>
+            <figure class="tasks__background tasks__background_left"><img src="img/pencil.png" alt="pencil"/></figure>
+            <figure class="tasks__background tasks__background_right"><img src="img/ruler.png" alt="ruler"/></figure>
             <div class="tasks__container">
               <div class="section__heading section__heading_align_center">Задачи документального фильма</div>
               <div class="tasks__content">
@@ -57,22 +57,50 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_on-top">
         <div class="container">
-          <div class="design">
-            <div class="section__title section__title_style_left">Демократичный дизайн от IKEA</div>
-            <div class="design__container">
-              <figure class="design__item design__item_first section__img"><img src="img/first.png" alt="first"/>
-                <figcaption class="section__figcaption section__figcaption_rotate_left-5"><span class="section__line section__line_before-sm"></span>
-                  <div class="section__figcaption-title">1958 год </div>первый магазин
-                </figcaption>
-              </figure>
-              <figure class="design__item design__item_second section__img"><img src="img/second.png" alt="second"/>
-                <figcaption class="section__figcaption section__figcaption_rotate_left-17 section__figcaption_style_bold">Каждый десятый европеец сделан на нашей кровати</figcaption>
-              </figure>
-              <figure class="design__item design__item_third"><img src="img/third.png" alt="third"/></figure>
-              <figure class="design__item design__item_fourth section__img"><img src="img/fourth.png" alt="fourth"/></figure>
-              <div class="design__pentagon"><img src="img/pentagon.png" alt="pentagon"/></div>
+          <div class="slider js-slider">
+            <div class="slider__top flex-wrapper flex-wrapper_align_start">
+              <div class="slider__dots"></div>
+              <div class="slider__arrow"></div>
+              <div class="slider__arrow slider__arrow_reverse"></div>
+            </div>
+            <div class="slider__slide" data-title="основатель">
+              <div class="history">
+                <div class="history__container">
+                  <div class="section__title">Изучение архивных материалов.</div>
+                  <div class="history__subtitle">Создание IKEA</div>
+                  <div class="history__text">
+                    <p>IKEA была основана в далеком 1943 году Ингваром Кампрадом и расшифровывалась как  Ingvar Kamprad Elmtaryd Agunnaryd.</p>
+                  </div>
+                  <figure class="history__item history__item_first"><img src="img/history-first.png" alt="history-first"/>
+                    <figcaption class="section__figcaption section__figcaption_style_sm"><span class="section__line section__line_before-sm section__line_rotate_left"></span>
+                      <div class="section__figcaption-title">Ингвар Кампрад</div>Основатель IKEA
+                    </figcaption>
+                  </figure>
+                  <figure class="history__item history__item_second"><img src="img/history-second.png" alt="history-second"/></figure>
+                  <figure class="history__item history__item_third"><img src="img/history-third.png" alt="history-third"/></figure>
+                  <figure class="history__item history__item_fourth"><img src="img/history-fourth.png" alt="history-fourth"/></figure>
+                  <figure class="history__item history__item_fifth"><img src="img/history-fifth.png" alt="history-fifth"/></figure>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide" data-title="дизайн">
+              <div class="design">
+                <div class="design__container">
+                  <div class="section__title">Демократичный дизайн от IKEA</div>
+                  <figure class="design__item design__item_first"><img src="img/first.png" alt="first"/>
+                    <figcaption class="section__figcaption section__figcaption_rotate_left-5"><span class="section__line section__line_before-sm"></span>
+                      <div class="section__figcaption-title">1958 год </div>первый магазин
+                    </figcaption>
+                  </figure>
+                  <figure class="design__item design__item_second"><img src="img/second.png" alt="second"/></figure>
+                  <figure class="design__item design__item_third"><img src="img/third.png" alt="third"/></figure>
+                  <figure class="design__item design__item_fourth"><img src="img/fourth.png" alt="fourth"/></figure>
+                  <figure class="design__item design__item_pentagon"><img src="img/pentagon.png" alt="pentagon"/></figure>
+                  <figure class="design__item design__item_text">Каждый десятый европеец сделан на нашей кровати</figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -148,9 +176,9 @@
           <div class="container camera__container">
             <div class="section__title section__title_style_margin">Камера, мотор!</div>
             <div class="camera__content">
-              <figure class="camera__item camera__item_first section__img"><img src="img/room.png" alt="room"/></figure>
-              <figure class="camera__item camera__item_second section__img"><img src="img/big-room.png" alt="big-room"/></figure>
-              <figure class="camera__item camera__item_third section__img"><img src="img/manager.png" alt="manager"/>
+              <figure class="camera__item camera__item_first"><img src="img/room.png" alt="room"/></figure>
+              <figure class="camera__item camera__item_second"><img src="img/big-room.png" alt="big-room"/></figure>
+              <figure class="camera__item camera__item_third"><img src="img/manager.png" alt="manager"/>
                 <figcaption class="section__figcaption section__figcaption_rotate_left-15">
                   <div class="section__figcaption-title"> <span>Исак Ярнхель </span><span class="section__line section__line_after"></span></div>Менеджер по работе с клиентами
                 </figcaption>
@@ -163,14 +191,14 @@
               <div class="camera__partition camera__partition_theme_production">
                 <div class="section__subtitle">Производство</div>
                 <p>В этом блоке мы показываем, </br> как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков</p>
-                <figure class="camera__item camera__item_production-first section__img"><img src="img/people.png" alt="people"/></figure>
-                <figure class="camera__item camera__item_production-second section__img"><img src="img/production.png" alt="production"/></figure>
-                <figure class="camera__item camera__item_production-third section__img"><img src="img/test-lab-manager.png" alt="test-lab-manager"/>
+                <figure class="camera__item camera__item_production-first"><img src="img/people.png" alt="people"/></figure>
+                <figure class="camera__item camera__item_production-second"><img src="img/production.png" alt="production"/></figure>
+                <figure class="camera__item camera__item_production-third"><img src="img/test-lab-manager.png" alt="test-lab-manager"/>
                   <figcaption class="section__figcaption section__figcaption_rotate_right-13"><span class="section__line section__line_before"></span>
                     <div class="section__figcaption-title">Ларс Альблад</div>Руководитель тестовой лаборатории
                   </figcaption>
                 </figure>
-                <figure class="camera__item camera__item_production-fourth section__img"><img src="img/quality-check.png" alt="quality-check"/>
+                <figure class="camera__item camera__item_production-fourth"><img src="img/quality-check.png" alt="quality-check"/>
                   <figcaption class="section__figcaption section__figcaption_rotate_left-5 section__figcaption_style_floating-top"><span class="section__line section__line_before-reverse"> </span><span>Проверка качества с помощью роботов</span></figcaption>
                 </figure>
               </div>
@@ -197,11 +225,11 @@
               <div class="camera__partition camera__partition_theme_design">
                 <div class="section__subtitle">Дизайн</div>
                 <p>IKEA открыла для человечества новые интерьеры, которые теперь можно увидеть по всему миру</p>
-                <figure class="camera__item camera__item_design-first section__img"><img src="img/design-people.png" alt="design-people"/></figure>
-                <figure class="camera__item camera__item_design-second section__img"><img src="img/design-carpet.png" alt="design-carpet"/>
+                <figure class="camera__item camera__item_design-first"><img src="img/design-people.png" alt="design-people"/></figure>
+                <figure class="camera__item camera__item_design-second"><img src="img/design-carpet.png" alt="design-carpet"/>
                   <figcaption class="section__figcaption section__figcaption_style_floating-bottom"><span>Коллаборация с Off-White</span><span class="section__line section__line_after section__line_rotate_right"></span></figcaption>
                 </figure>
-                <figure class="camera__item camera__item_design-third section__img"><img src="img/design-lead.png" alt="design-lead"/>
+                <figure class="camera__item camera__item_design-third"><img src="img/design-lead.png" alt="design-lead"/>
                   <figcaption class="section__figcaption section__figcaption_rotate_left-15 section__figcaption_margin-l"><span class="section__line section__line_before"></span>
                     <div class="section__figcaption-title">Хенрик Мост</div>Кративный директор IKEA of Sweden
                   </figcaption>
@@ -218,6 +246,7 @@
       </div>
     </footer>
     <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/function.js?0.1"></script>
   </body>
 </html>

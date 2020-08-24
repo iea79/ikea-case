@@ -13,11 +13,12 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
 }
 
 .slick-list {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     display: block;
     margin: 0;
     padding: 0;
@@ -90,6 +91,13 @@
 
     .slick-initialized & {
         display: block;
+        visibility: hidden;
+        &.slick-active {
+            visibility: visible;
+        }
+        @include desktop {
+            visibility: visible;
+        }
     }
 
     .slick-loading & {
@@ -106,3 +114,4 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+

@@ -1,0 +1,107 @@
+.history {
+    &__container {
+        position: relative;
+        padding-top: 2.5em;
+        padding-bottom: 99.8em;
+        @include desktop {
+            padding-top: 2.5em;
+            padding-left: 3.1em;
+            padding-bottom: 39.8em;
+            padding-right: 30em;
+        }
+    }
+
+    &__subtitle {
+        color: #ff533c;
+        font-family: "SF Pro Display";
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 2.428em;
+        @include desktop {
+            font-size: 1.55em;
+        }
+    }
+
+    &__text {
+        font-size: 1em;
+        letter-spacing: 0.03em;
+        line-height: 1.3em;
+        margin-right: 1em;
+        @include desktop {
+            line-height: inherit;
+            font-size: 0.95em;
+            margin-right: 15em;
+        }
+    }
+    &__item {
+        position: absolute;
+
+        &_first{
+            z-index: 4;
+            top: 18.7em;
+            left: -2em;
+            width: 27.9em;
+            height: 27.4em;
+            @include desktop {
+                top: -2.5em;
+                left: 42.1em;
+                width: 32.375em;
+                height: 29.4em;
+            }
+        }
+        &_second{
+            z-index: 1;
+            top: 45.5em;
+            left: -0.7em;
+            width: 24.3em;
+            height: 22em;
+            @include desktop {
+                z-index: 3;
+                top: 12.5em;
+                left: 30.3em;
+                width: 33.3em;
+                height: 29.731em;
+            }
+        }
+        &_third{
+            z-index: 2;
+            top: 60em;
+            left: -2.5em;
+            width: 28.2em;
+            height: 21.875em;
+            @include desktop {
+                top: 23.5em;
+                left: 19em;
+                width: 28.2em;
+                height: 21.875em;
+            }
+        }
+        &_fourth{
+            z-index: 3;
+            bottom: 23.1em;
+            left: -2.2em;
+            width: 28.375em;
+            height: 21.563em;
+            @include desktop {
+                z-index: 1;
+                bottom: 15.7em;
+                left: 2.4em;
+                width: 28.375em;
+                height: 21.563em;
+            }
+        }
+        &_fifth{
+            z-index: 5;
+            bottom: 5em;
+            left: -0.6em;
+            width: 28.375em;
+            height: 21.563em;
+            @include desktop {
+                bottom: 4.5em;
+                left: 43.4em;
+                width: 28.375em;
+                height: 21.563em;
+            }
+        }
+    }
+}

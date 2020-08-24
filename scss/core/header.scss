@@ -1,38 +1,59 @@
 .header {
 	background-color: $color_primary;
-	padding: 9.9em 22.6em 0;
+	padding: 1.6em 0 0;
 	position: relative;
-	
+	overflow: hidden;
+	@include desktop {
+		padding: 9.9em 22.6em 0;
+	}
 	&:before {
 		content: '';
 		position: absolute;
-		top: 0;
-		left: 33.2em;
 		z-index: 1;
 		background-image: url('../img/lamp.png');
 		background-repeat: no-repeat;
 		background-size: cover;
-		width: 44.6em;
-		height: 40.7em;
+		top: -3em;
+		left: 10.2em;
+		width: 15em;
+		height: 18.5em;
+		@include desktop {
+			top: 0;
+			left: 33.2em;
+			width: 44.6em;
+			height: 40.7em;
+		}
 	}
 	
 	&__video-btn {
 		position: relative;
-		left: -0.9em;
 		display: inline-block;
-		padding-bottom: 8.2em;
+		left: 50%;
+		margin-left: -3.25em;
+		padding-bottom: 7.3em;
+		@include desktop {
+			left: -0.9em;
+			margin-left: 0;
+			padding-bottom: 8.1em;
+		}
 		
 		&:after {
 			content: '';
 			position: absolute;
-			bottom: 0em;
-			left: -10.4em;
 			z-index: 1;
 			background-image: url('../img/hand.png');
 			background-repeat: no-repeat;
 			background-size: cover;
-			width: 31.6em;
-			height: 11.3em;
+			bottom: 0em;
+			left: -9.4em;
+			width: 29.1em;
+			height: 10.217em;
+			@include desktop {
+				bottom: 0em;
+				left: -10.4em;
+				width: 31.6em;
+				height: 11.3em;
+			}
 		}
 	}
 
@@ -42,16 +63,26 @@
 	
 	&__text{
 		font-weight: bold;
-		font-size: 3.75em;
-		line-height: 2em;
 		letter-spacing: 0.01em;
-		color: #000000;
+		font-size: 1.5em;
+		line-height: 2.7em;
+		// color: #000000;
+		@include desktop {
+			font-size: 3.75em;
+			line-height: 2em;
+		}
 	}
 
 	&__sub {
-		margin-top: 1.5em;
-		margin-bottom: 2.8em;
-		font-size: 1.67em;
+		margin-top: 1.1em;
+		margin-bottom: 4.3em;
+		font-size: 1.2em;
+		// line-height: 1em;
+		@include desktop {
+			margin-top: 1.5em;
+			margin-bottom: 2.8em;
+			font-size: 1.67em;
+		}
 	}
 
 	&__container {

@@ -4,33 +4,50 @@
     line-height: 1.3em;
     &__item {
         position: relative;
-        padding: 3.7em 1em;
-        max-width: 18.5em;
+        padding: 3.5em 1em 5.6em 1em;
+        width: 100%;
+        @include desktop {
+            max-width: 18.5em;
+            padding: 3.7em 1em;
+        }
     }
     &__num {
         color: #ffee84;
         font-family: "Freestyle Script";
-        font-size: 13.5em;
+        font-size: 14.5em;
         line-height: 0.221em;
         position: absolute;
         top: 50%;
-        margin-top: -0.14em;
+        margin-top: -0.2em;
         left: -0.07em;
         z-index: 1;
+        @include desktop {
+            font-size: 13.5em;
+            margin-top: -0.14em;
+        }
     }
     &__text {
         position: relative;
         z-index: 2;
     }
     &__img {
-        width: 66.9em;
-        margin: 0;
-        margin-left: auto;
+        width: 21em;
+        margin-top: 2.9em;
+        margin-left: 1em;
+        @include desktop {
+            width: 66.9em;
+            margin: 0;
+            margin-left: auto;
+        }
     }
     &__content {
-        max-width: 60.6em;
-        margin-left: auto;
-        margin-right: 3em;
+        margin: 0 auto;
+        max-width: 16.6em;
+        @include desktop {
+            max-width: 60.6em;
+            margin-left: auto;
+            margin-right: 3em;
+        }
 
     }
     &__container {
@@ -43,16 +60,32 @@
         z-index: 1;
 
         &_left {
-            top: 13em;
-            left: 1em;
-            width: 22.25em;
-            height: 30.813em;  
+            top: 15em;
+            right: -8.2em;
+            width: 14.25em;
+            height: 20em;
+            // transform: rotate(-5deg);
+            transform: rotate(5deg) scale(-1, 1);
+            @include desktop {
+                top: 13em;
+                left: 1em;
+                width: 22.25em;
+                height: 30.813em;  
+                transform: none;
+            }
         }
         &_right {
-            bottom: -26.5em;
-            right: -15.5em;
-            width: 34.063em;
-            height: 34.063em;
+            bottom: -7.1em;
+            right: -10.8em;
+            width: 15.063em;
+            height: 11.063em;
+            
+            @include desktop {
+                bottom: -26.5em;
+                right: -15.5em;
+                width: 34.063em;
+                height: 34.063em;
+            }
         }
     }
 }

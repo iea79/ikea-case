@@ -16,6 +16,9 @@
     &_align_center {
         justify-content: center;
     }
+    &_align_start {
+        justify-content: flex-start;
+    }
     &_align_bottom {
         align-items: flex-end;
     }
