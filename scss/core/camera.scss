@@ -1,174 +1,301 @@
 .camera {
-    padding-top: 5em;
-    // padding-bottom: 100em;
+    padding-top: 3.1em;
     position: relative;
     z-index: 2;
+
+    @include desktop {
+        padding-top: 5em;
+    }
+
     &:before {
         content: '';
         position: absolute;
-        top: 0;
+        top: 8em;
         right: 0;
         z-index: 0;
         background-image: url('../img/camera-before.png');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 70.4em;
-        height: 49.9em;
+        width: 10.4em;
+        height: 6.9em;
+
+        @include desktop {
+            top: 0;
+            width: 70.4em;
+            height: 49.9em;
+        }
     }
+
     &:after {
-        content: '';
-        position: absolute;
-        bottom: -2em;
-        left: -3em;
-        z-index: 0;
-        background-image: url('../img/camera-after.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 25em;
-        height: 28em;
+        @include desktop {
+            content: '';
+            position: absolute;
+            bottom: -2em;
+            left: -3em;
+            z-index: 0;
+            background-image: url('../img/camera-after.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 25em;
+            height: 28em;
+        }
     }
+
     &__container {
 		position: relative;
 		z-index: 2;
 	}
+
     &__content {
         position: relative;
-        padding-top: 40em;
+        padding-top: 0;
         z-index: 2;
+
+        @include desktop {
+            padding-top: 40em;
+        }
     }
+
     &__logo {
         position: relative;
-        margin: 0 0 4.5em 10.4em;
+        margin: 3.6em 0 0em 0;
+
+        @include desktop {
+            margin: 0 0 4.5em 10.4em;
+            max-width: 73%;
+        }
     }
+
     &__quote {
-        position: absolute;
-        bottom: 0.9em;
-        left: 8.1em;
+        margin-top: 1em;
+
+        @include desktop {
+            position: absolute;
+            margin-top: 0;
+            bottom: 0.9em;
+            left: 8.1em;
+        }
     }
+
     &__blockquote {
         display: inline-block;
-        color: #000000;
         font-family: "SF Pro Display";
-        font-style: italic;
-        font-size: 1.6em;
-        font-weight: 300;
+        font-size: 1em;
         line-height: 1.388em;
         margin: 0 0 0 0.2em;
+        max-width: 15em;
+        vertical-align: top;
+
+        @include desktop {
+            vertical-align: middle;
+            max-width: 100%;
+            font-style: italic;
+            font-size: 1.6em;
+            font-weight: 300;
+        }
     }
+
     &__item {
         position: absolute;
         
         &_first{
-            top: 5em;
-            left: 3em;
+            top: 14.8em;
+            left: 8.2em;
             z-index: 1;
-            width: 28.063em;
-            height: 24.563em;
+            width: 15.3em;
+
+            @include desktop {
+                width: 28.063em;
+                top: 5em;
+                left: 3em;
+            }
         }
-        &_second{
-            top: 24em;
-            left: 2.2em;
+
+        &_second {
             z-index: 2;
-            width: 29.688em;
-            height: 23em;
+            top: 25.9em;
+            left: 2.2em;
+            width: 17.2em;
+            transform: rotate(11deg);
+
+            @include desktop {
+                transform: rotate(0deg);
+                top: 24em;
+                left: 2.2em;
+                width: 29.688em;
+            }
         }
-        &_third{
-            top: 40.5em;
-            left: 13.3em;
+
+        &_third {
             z-index: 3;
-            width: 29.938em;
-            height: 28.625em;
+            top: 36.1em;
+            left: -1.1em;
+            width: 25.9em;
+            height: 25.4em;
+
+            @include desktop {
+                top: 40.5em;
+                left: 13.3em;
+                width: 29.938em;
+                height: 28.625em;
+            }
         }
-        &_history-first{
-            bottom: -3.8em;
-            right: 1em;
+
+        &_history-first {
             z-index: 4;
-            width: 27.2em;
-            height: 27.4em;
+            bottom: 33.8em;
+            right: 17em;
+            width: 18.2em;
+
+            @include desktop {
+                bottom: -3.8em;
+                right: 1em;
+                width: 27.2em;
+            }
         }
-        &_production-first{
-            top: -1em;
-            right: 2em;
+
+        &_production-first {
             z-index: 5;
-            width: 34.7em;
-            height: 32em;
+            top: 15.8em;
+            right: -2em;
+            width: 27.7em;
+            transform: rotate(-9deg);
+
+            @include desktop {
+                transform: rotate(0deg);
+                top: -1em;
+                right: 2em;
+                width: 34.7em;
+            }
         }
-        &_production-second{
-            top: 14em;
-            left: 22.5em;
-            z-index: 6;
-            width: 23.7em;
-            height: 17.875em;
-        }
-        &_production-third{
-            top: 21em;
-            left: 2.7em;
+
+        &_production-second {
             z-index: 5;
-            width: 37.313em;
-            height: 34.4em;
+            top: 34.4em;
+            left: -2.9em;
+            width: 29.5em;
+
+            @include desktop {
+                z-index: 6;
+                top: 14em;
+                left: 22.5em;
+                width: 23.7em;
+            }
         }
-        &_production-fourth{
-            top: 34.5em;
-            right: 9.2em;
+
+        &_production-third {
             z-index: 6;
-            width: 30.063em;
-            height: 21.438em;
-            padding-right: 4em;
+            top: 52.2em;
+            left: -1.7em;
+            width: 27em;
+            height: 28.4em;
+
+            @include desktop {
+                z-index: 5;
+                top: 21em;
+                left: 2.7em;
+                width: 37.313em;
+                height: 34.4em;
+            }
         }
+
+        &_production-fourth {
+            z-index: 6;
+            top: 84em;
+            right: -2.1em;
+            width: 28em;
+
+            @include desktop {
+                top: 34.5em;
+                right: 9.2em;
+                width: 30.063em;
+                height: 21.438em;
+                padding-right: 4em;
+            }
+        }
+
         &_design-first {
-            top: 1.1em;
-            left: 4.2em;
             z-index: 6;
-            width: 24.625em;
-            height: 18em;
+            top: 12.7em;
+            left: -2.2em;
+            width: 28.825em;
+            transform: rotate(5deg);
+
+            @include desktop {
+                transform: rotate(0deg);
+                top: 1.1em;
+                left: 4.2em;
+                width: 24.625em;
+            }
         }
+
         &_design-second {
-            top: 2.1em;
-            left: 18.5em;
             z-index: 6;
-            width: 30.063em;
+            top: 29.1em;
+            left: -1.5em;
+            width: 27.063em;
             height: 25.688em;
+
+            @include desktop {
+                top: 2.1em;
+                left: 18.5em;
+                width: 30.063em;
+                height: 25.688em;
+            }
         }
+
         &_design-third {
-            top: 17em;
-            right: 8.4em;
             z-index: 6;
-            width: 37em;
-            height: 34.9em;
+            top: 53.9em;
+            right: -1.6em;
+            width: 29em;
+            height: 29.4em;
+            transform: rotate(11deg);
+
+            @include desktop {
+                transform: rotate(0deg);
+                top: 17em;
+                right: 8.4em;
+                width: 37em;
+                height: 34.9em;
+            }
         }
     }
 
     &__text {
-        // font-family: "Berlingske Sans";
-        // font-size: 0.6em;
-        // line-height: 1em;
-        
+        font-size: 1.25em;
+        line-height: 1.55em;
+
+        @include desktop {
+            font-size: inherit;
+        }        
     }
     
     &__partition {
         position: relative;
-        // padding-top: 2em;
         
         &_theme_history {
-            padding: 2em 10em 22em 47.3em;
+            padding: 5em 1em 50em 0em;
+
+            @include desktop {
+                padding: 2em 10em 22em 47.3em;
+            }
         }
     
         &_theme_production {
-            padding: 2em 39em 48.3em 19em;
+            padding: 3.5em 1.2em 93.3em 2em;
+
+            @include desktop {
+                padding: 2em 39em 48.6em 19em;
+            }
         }
     
         &_theme_design {
-            padding: 29.7em 49em 20em 6.5em;
+            padding: 4.8em 1em 120em 1.7em;
+
+            @include desktop {
+                padding: 29.7em 49em 20.4em 6.5em;
+            }
         }
     }
-
-    // &__figcaption {
-    //     position: absolute;
-    
-    //     &_first {
-    //         transform: rotate(-15deg);
-    //         bottom: 1.2em;
-    //         left: 8em;
-    //     }
-    // } 
 }

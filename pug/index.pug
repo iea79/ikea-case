@@ -1,12 +1,12 @@
 extends layout/layout.pug
 
 block content
-    section.section
+    section.section.parallaxBox
         .tasks
             .container
-                figure.tasks__background.tasks__background_left
+                figure.tasks__background.tasks__background_left.parallaxMouse(data-speed="1")
                     img(src="img/pencil.png", alt="pencil")
-                figure.tasks__background.tasks__background_right
+                figure.tasks__background.tasks__background_right.parallaxMouse(data-speed="-1")
                     img(src="img/ruler.png", alt="ruler")
                 .tasks__container
                     .section__heading.section__heading_align_center Задачи документального фильма
@@ -41,7 +41,7 @@ block content
                                 img(src="img/history-first.png", alt="history-first")
                                 figcaption.section__figcaption.section__figcaption_style_sm
                                     span.section__line.section__line_before-sm.section__line_rotate_left
-                                    .section__figcaption-title Ингвар Кампрад
+                                    .section__figcaption-title.section__figcaption-title_span-sm Ингвар Кампрад 
                                     | Основатель IKEA
                             figure.history__item.history__item_second
                                 img(src="img/history-second.png", alt="history-second")
@@ -59,7 +59,7 @@ block content
                                 img(src="img/first.png", alt="first")
                                 figcaption.section__figcaption.section__figcaption_rotate_left-5
                                     span.section__line.section__line_before-sm
-                                    .section__figcaption-title 1958 год 
+                                    .section__figcaption-title.section__figcaption-title_span-sm 1958 год  
                                     | первый магазин
                             figure.design__item.design__item_second
                                 img(src="img/second.png", alt="second")
@@ -74,10 +74,10 @@ block content
     section.section
         .container
             .cenario
-                .cenario__container.flex-wrapper.flex-wrapper_align_center
-                    .flex-wrapper__item.cenario__img
+                .cenario__container
+                    figure.cenario__img
                         img(src="img/cenario.png", alt="")
-                    .flex-wrapper__item.cenario__descr
+                    .cenario__descr
                         .section__title Подготовка сценария
                         .cenario__text 
                             p Это был один из самых сложных этапов, так как нам требовалось связать в единую динамичную историю интервью десятков сотрудников и топ-менеджеров IKEA из разных стран.
@@ -89,7 +89,7 @@ block content
                 .section__title.section__title_style_center.section__title_style_margin Выбор локации для съемок
                 .location__container
                     .location__img
-                            img(src="img/location.png", alt="countries")
+                            //- img(src="img/location.png", alt="countries")
                     .location__lists.flex-wrapper.flex-wrapper_align_bottom
                         .location__list-item.location__list-item_left
                             ul.list
@@ -110,17 +110,18 @@ block content
                         img(src="img/foundator.png", alt="foundator")    
                     .foundator__content
                         .foundator__text Когда мы прилетели в Швецию, нам передали, что накануне ночью ушел из жизни основатель компании IKEA – Ингвар Кампрад. Это был настоящий удар для всей страны                                
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="7%" height="5%" viewBox="0 0 1280.000000 960.000000" preserveAspectRatio="xMidYMid meet">
-                            <desc>quore</desc>
-                            <g transform="translate(0.000000,960.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
-                                <path d="M5425 8934 c-509 -91 -1448 -550 -2205 -1077 -567 -395 -923 -722 -1230 -1132 -474 -632 -840 -1434 -1025 -2250 -238 -1050 -156 -2018 237 -2799 136 -272 357 -572 543 -739 391 -353 861 -575 1370 -649 139 -20 543 -17 680 5 709 116 1291 495 1641 1067 206 338 324 771 324 1190 0 192 -27 551 -56 745 -80 529 -325 914 -797 1253 -226 162 -385 249 -977 534 -746 359 -946 689 -711 1173 111 227 358 545 745 959 179 193 432 390 824 646 539 351 644 422 739 499 160 128 247 247 260 350 7 59 -18 148 -51 189 -45 53 -149 65 -311 36z"/>
-                                <path d="M11640 8915 c-8 -2 -49 -9 -90 -15 -506 -82 -1567 -615 -2341 -1177 -590 -429 -928 -774 -1273 -1301 -515 -785 -843 -1704 -948 -2657 -17 -160 -18 -762 0 -905 85 -697 295 -1234 671 -1717 282 -363 779 -684 1265 -818 242 -66 350 -79 641 -80 273 0 340 6 543 51 173 39 342 98 517 183 716 347 1165 985 1256 1781 8 70 10 192 6 370 -9 377 -36 626 -93 855 -146 578 -571 1006 -1394 1403 -102 49 -255 123 -341 165 -440 211 -678 411 -771 646 -32 83 -32 256 0 361 54 171 177 378 367 615 102 128 400 466 506 575 169 174 494 410 1080 785 274 175 407 273 516 380 125 123 163 192 163 296 0 87 -34 159 -88 185 -34 16 -154 28 -192 19z"/>
-                            </g>
-                        </svg>
+                        .foundator__quore
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 960.000000" preserveAspectRatio="xMidYMid meet" id='svg-quore'>
+                                <desc>quore</desc>
+                                <g transform="translate(0.000000,960.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+                                    <path d="M5425 8934 c-509 -91 -1448 -550 -2205 -1077 -567 -395 -923 -722 -1230 -1132 -474 -632 -840 -1434 -1025 -2250 -238 -1050 -156 -2018 237 -2799 136 -272 357 -572 543 -739 391 -353 861 -575 1370 -649 139 -20 543 -17 680 5 709 116 1291 495 1641 1067 206 338 324 771 324 1190 0 192 -27 551 -56 745 -80 529 -325 914 -797 1253 -226 162 -385 249 -977 534 -746 359 -946 689 -711 1173 111 227 358 545 745 959 179 193 432 390 824 646 539 351 644 422 739 499 160 128 247 247 260 350 7 59 -18 148 -51 189 -45 53 -149 65 -311 36z"/>
+                                    <path d="M11640 8915 c-8 -2 -49 -9 -90 -15 -506 -82 -1567 -615 -2341 -1177 -590 -429 -928 -774 -1273 -1301 -515 -785 -843 -1704 -948 -2657 -17 -160 -18 -762 0 -905 85 -697 295 -1234 671 -1717 282 -363 779 -684 1265 -818 242 -66 350 -79 641 -80 273 0 340 6 543 51 173 39 342 98 517 183 716 347 1165 985 1256 1781 8 70 10 192 6 370 -9 377 -36 626 -93 855 -146 578 -571 1006 -1394 1403 -102 49 -255 123 -341 165 -440 211 -678 411 -771 646 -32 83 -32 256 0 361 54 171 177 378 367 615 102 128 400 466 506 575 169 174 494 410 1080 785 274 175 407 273 516 380 125 123 163 192 163 296 0 87 -34 159 -88 185 -34 16 -154 28 -192 19z"/>
+                                </g>
+                            </svg>
                         blockquote.foundator__quote To create a better everyday for many people
             .foundator__container
                 .container
-                    .foundator__resume Мы не могли продолжать работать по прежнему сценарию, но и отменить съемки мы  тоже не могли, у нас были договоренности с IKEA. Посоветовавшись внутри команды, мы  приняли решение, что должны внести изменения в задачи фильма. </br>Теперь это будет фильм не только о компании, это будет фильм о великом человеке,  посвятивший себя служению людям.
+                    .foundator__resume Мы не могли продолжать работать по прежнему сценарию, но и отменить съемки мы  тоже не могли, у нас были договоренности с IKEA. Посоветовавшись внутри команды, мы  приняли решение, что должны внести изменения в задачи фильма. <br>Теперь это будет фильм не только о компании, это будет фильм о великом человеке,  посвятивший себя служению людям.
 
     section.section.section_background_draft-chairs
         .camera
@@ -134,18 +135,19 @@ block content
                     figure.camera__item.camera__item_third
                         img(src="img/manager.png", alt="manager")
                         figcaption.section__figcaption.section__figcaption_rotate_left-15
-                            .section__figcaption-title 
-                                span Исак Ярнхель 
+                            .section__figcaption-title Исак Ярнхель 
                                 span.section__line.section__line_after
                             | Менеджер по работе с клиентами
                     .camera__partition.camera__partition_theme_history
                         .section__subtitle История
-                        p Нужно показать зрителям, </br> что компания уже давно на рынке
+                        .camera__text
+                            p Нужно показать зрителям, <br> что компания уже давно на рынке
                         figure.camera__item.camera__item_history-first
                             img(src="img/meatballs.png", alt="meatballs")
                     .camera__partition.camera__partition_theme_production
-                        .section__subtitle Производство
-                        p В этом блоке мы показываем, </br> как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков
+                        .section__subtitle.section__subtitle_style_big-sm Производство
+                        .camera__text 
+                                p В этом блоке мы показываем, <br> как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков
                         figure.camera__item.camera__item_production-first
                             img(src="img/people.png", alt="people")
                         figure.camera__item.camera__item_production-second
@@ -162,9 +164,9 @@ block content
                                 span.section__line.section__line_before-reverse 
                                 span Проверка качества с помощью роботов
 
-                    .camera__logo
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="85%" height="15%" viewBox="0 0 1072.000000 249.000000" preserveAspectRatio="xMidYMid meet">
-                            <desc id="title">IKEA-color-blue</desc>
+                    .camera__logo 
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1072.000000 249.000000" preserveAspectRatio="xMidYMid meet">
+                            <desc>IKEA-color-blue</desc>
                             <g transform="translate(0.000000,189.000000) scale(0.100000,-0.100000)" fill="#81b1d9" stroke="none">
                                 <path d="M23 1854 c37 -37 41 -89 33 -489 -3 -192 -6 -562 -6 -821 l-1 -470 -25 -37 -25 -37 651 0 651 0 -20 28 c-11 15 -25 47 -30 72 -7 28 -11 353 -11 876 l0 831 25 37 24 36 -646 0 -646 0 26 -26z"/>
                                 <path d="M1869 1846 c21 -33 21 -40 21 -895 0 -619 -3 -868 -11 -884 -6 -12 -21 -32 -32 -44 l-20 -23 631 0 631 0 -20 34 c-19 32 -20 54 -22 375 -1 188 1 341 4 341 4 0 10 -8 14 -17 3 -10 36 -65 72 -123 313 -499 332 -536 304 -589 l-12 -21 746 0 c410 0 745 2 745 5 0 3 -22 19 -49 35 -60 37 -116 104 -186 222 -11 20 -30 49 -233 373 -174 276 -227 360 -269 426 l-32 49 72 102 c134 187 117 163 276 389 124 175 156 215 204 250 l40 29 -633 0 c-598 0 -632 -1 -625 -17 15 -35 17 -71 4 -94 -7 -13 -49 -75 -93 -138 -45 -62 -93 -131 -108 -152 -16 -21 -40 -56 -55 -78 -16 -21 -62 -86 -103 -144 -41 -59 -77 -107 -80 -107 -3 0 -3 152 0 338 4 301 7 341 23 365 l17 27 -621 0 -621 0 21 -34z"/>
@@ -184,14 +186,14 @@ block content
                             blockquote.camera__blockquote Мы продаем не товары, а идеи для обустройства дома
 
                     .camera__partition.camera__partition_theme_design
-                        .section__subtitle Дизайн
-                        p IKEA открыла для человечества новые интерьеры, которые теперь можно увидеть по всему миру
+                        .section__subtitle.section__subtitle_style_big-sm Дизайн
+                        .camera__text 
+                            p IKEA открыла для человечества новые интерьеры, которые теперь можно увидеть по всему миру
                         figure.camera__item.camera__item_design-first
                             img(src="img/design-people.png", alt="design-people")
                         figure.camera__item.camera__item_design-second
                             img(src="img/design-carpet.png", alt="design-carpet")
-                            figcaption.section__figcaption.section__figcaption_style_floating-bottom
-                                span Коллаборация с Off-White
+                            figcaption.section__figcaption.section__figcaption_style_floating-bottom Коллаборация с Off-White
                                 span.section__line.section__line_after.section__line_rotate_right
                         figure.camera__item.camera__item_design-third
                             img(src="img/design-lead.png", alt="design-lead")
@@ -199,10 +201,10 @@ block content
                                 span.section__line.section__line_before
                                 .section__figcaption-title Хенрик Мост
                                 | Кративный директор IKEA of Sweden
-    //- section.section.section_background_drafts
-    //-     .voice 
-    //-         .container.voice__container
-    //-             .section__title.section__title_style_center Дикторская озвучка
+    //- //- section.section.section_background_drafts
+    //- //-     .voice 
+    //- //-         .container.voice__container
+    //- //-             .section__title.section__title_style_center Дикторская озвучка
 
 
 

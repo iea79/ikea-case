@@ -1,10 +1,4 @@
 .section {
-    // @media (min-width: 768px) {
-    //     padding: 40px 0 28px;
-    // }
-    // @media (max-width: 767px) {
-    //     padding: 24px 0 12px;
-    // }
     &_theme_black {
         background-color: #000;
         color: #ffffff;
@@ -14,62 +8,72 @@
         position: relative;
         
         &:before {
-            content: '';
-            position: absolute;
-            bottom: -12.5em;
-            left: -26em;
-            z-index: 1;
-            background-image: url('../img/clouds-left.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 58em;
-            height: 88.2em;
-            // opacity: 0.5;
+            @include desktop {
+                content: '';
+                position: absolute;
+                bottom: -12.5em;
+                left: -26em;
+                z-index: 1;
+                background-image: url('../img/clouds-left.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 58em;
+                height: 88.2em;
+            }
         }
 
         &:after {
             content: '';
             position: absolute;
-            bottom: -9em;
-            right: -38em;
+            bottom: 5.2em;
+            right: 0em;
             z-index: 1;
             background-image: url('../img/clouds-right.png');
             background-repeat: no-repeat;
             background-size: cover;
-            width: 81.313em;
-            height: 57.938em;
+            width: 17.313em;
+            height: 30em;
+
+            @include desktop {
+                bottom: -6em;
+                right: -36em;
+                width: 81.313em;
+                height: 57.938em;
+            }
         }
     }
-    &_background_draft-chairs {
-        // overflow: hidden;
-        position: relative;
-        
-        &:before {
-            content: '';
-            position: absolute;
-            top: 67em;
-            left: -8em;
-            z-index: 1;
-            background-image: url('../img/room-draft-left.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 39em;
-            height: 43.9em;
-            opacity: -1.39;
-        }
 
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 37em;
-            right: -7.6em;
-            z-index: 1;
-            background-image: url('../img/room-draft-right.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 34.556em;
-            height: 42.334em;
-            opacity: 0.55;
+    &_background_draft-chairs {
+        @include desktop {
+            position: relative;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: 67em;
+                left: -8em;
+                z-index: 1;
+                background-image: url('../img/room-draft-left.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 39em;
+                height: 43.9em;
+                opacity: -1.39;
+            }
+    
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 37em;
+                right: -7.6em;
+                z-index: 1;
+                background-image: url('../img/room-draft-right.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 34.556em;
+                height: 42.334em;
+                opacity: 0.55;
+            }
         }
     }
 
@@ -77,31 +81,38 @@
         position: relative;
         z-index: 1;
     }
+
     &__title {
         font-family: "SF Pro Display", sans-serif;
         font-size: 2.5em;
         font-weight: 700;
-        line-height: 1.5em;
+        line-height: 1.4em;
+        letter-spacing: 0.001em;
         
         @include desktop {
             font-size: 4.1em;
             line-height: 1.3em;
+            letter-spacing: inherit;
 
         }
         
         &_style_center {
-            text-align: center;
+            text-align: left;
+
+            @include desktop {
+                text-align: center;
+            }
         }
         
         &_style_margin {
-            margin-left: 1.4em;
+            margin-right: 1em;
+
+            @include desktop {
+                margin-right: 0;
+                margin-left: 1.4em;
+            }
         }
-        
-        // &_style_sm {
-        //     max-width: 10em;
-        // }
     }
-    
     
     &__heading {
         font-family: 'SF Pro Display', sans-serif;
@@ -128,109 +139,134 @@
 
     &__subtitle {
         font-family: "SF Pro Display";
-        font-size: 2.938em;
         font-weight: 700;
+        font-size: 2.1em;
         line-height: 1em;
         letter-spacing: -0.06em;
-    }
 
-    &__text {
+        @include desktop {
+            font-size: 2.938em;
+        }
 
-    }
+        &_style_big-sm {
+            font-size: 2.5em;
+            letter-spacing: 0;
 
-    &__photo {
-        // box-shadow: 0 1.25em 3.563em rgba(0, 0, 0, 0.15);
-        // border: 0.813em solid #ffffff;
-        // object-fit: cover;
-        // object-position: 80% 10%;
-        // height: 100%;
-    }
-    &__img {
-        // &_rotate_left {
-        //     transform: rotate(-5deg);
-        // }
-        // &_rotate_left-more {
-        //     transform: rotate(-16deg);
-        // }
-        // &_rotate_right {
-        //     transform: rotate(5deg);
-        // }
-        // &_size_xl {
-        //     width: 35em;
-        // }
-        // &_size_lg {
-        //     width: 27em;
-        // }
-        // &_size_sm {
-        //     width: 23em;
-        // }
+            @include desktop {
+                font-size: 2.938em;
+                letter-spacing: -0.06em;
+            } 
+        }
     }
 
     &__figcaption {
         font-family: 'GentlemensScript', sans-serif;
         color: rgba(0, 0, 0, 0.46);
         font-size: 1.7em;
-        // line-height: 1.113em;
-        // opacity: 0.66;
-        // font-size: 1em;
         line-height: 0.83em;
         position: absolute;
-        &_style_bold{
-            // color: rgba(0, 0, 0, 1);
-            // font-size: 2.3em;
-            // line-height: 1.029em;
-        }
+
         &_rotate_left-5{
             transform: rotate(-5deg);
-            bottom: 0.4em;
-            left: 5.1em;
+            bottom: 1.4em;
+            left: 4.3em;
+
+            @include desktop {
+                bottom: 0.4em;
+                left: 5.1em;
+            }
         }
+
         &_rotate_left-15{
             transform: rotate(-15deg);
             bottom: 0.7em;
-            left: 4.6em;
+            left: 4.1em;
+
+            @include desktop {
+                left: 4.6em;
+            }
         }
+
         &_margin-l{
-            bottom: 0.9em;
-            left: 8.4em;
+            bottom: 1.7em;
+            left: 6.7em;
+            @include desktop {
+                bottom: 0.9em;
+                left: 8.4em;
+            }
         }
+
         &_rotate_left-17{
             transform: rotate(-17deg);
             bottom: 0.3em;
             left: 5.2em;
         }
+
         &_rotate_right-13{
             transform: rotate(13deg);
             bottom: 0.4em;
-            left: 4em;
+            left: 3.4em;
+
+            @include desktop {
+                left: 4em;
+            }
         }
+
         &-title{
             color: #000;
             font-size: 1.3em;
             line-height: 0.9em;
+
+            &_span-sm{
+                display: inline;
+                margin-right: 0.4em;
+
+                @include desktop {
+                    margin-right: 0;
+                    display: block;
+                }
+            }
         }
-        // &_style_light{
-        //     font-size: 1em;
-        //     line-height: 0.83em;
-        //     opacity: 0.46;
-        // }
         
         &_style_floating-top {
-            top: -1.2em;
-            left: 7.1em;
+            transform: rotate(-8deg);
+            top: 13.3em;
+            left: 5.1em;
+
+            @include desktop {
+                transform: rotate(-6deg);
+                top: -1.2em;
+                left: 7.1em;
+            }
         }
+
         &_style_floating-bottom {
-            bottom: 1.5em;
-            left: -6.9em;
+            transform: rotate(11deg);
+            bottom: 1.6em;
+            left: 2.1em;
+
+            @include desktop {
+                transform: rotate(0deg);
+                bottom: 1.5em;
+                left: -6.9em;
+            }
         }
+
         &_style_sm {
-            max-width: 5em;
-            bottom: -0.7em;
-            left: 10.7em;
+            bottom: 1.3em;
+            left: 2.7em;
+
+            @include desktop {
+                max-width: 5em;
+                bottom: -0.7em;
+                left: 10.7em;
+            }
         }
     }
+
     &__line {
         position: relative;
+
         &:before {
             content: '';
             color: rgba(0, 0, 0, 0.4);
@@ -244,47 +280,80 @@
             &:before {
                 width: 2.1em;
                 height: 2.6em;
-                top: -2.2em;
-                left: -2.3em;
+                top: -1.8em;
+                left: -2em;
+
+                @include desktop {
+                    top: -2.2em;
+                    left: -2.3em;
+                }
             }
         }
+
         &_before-sm {
             &:before {
                 width: 1.233em;
                 height: 1.9em;
                 top: -1.2em;
-                left: -1.2em;
-                // transform: rotate(-45deg);
+                left: -0.8em;
+                transform: rotate(6deg);
+
+                @include desktop {
+                    left: -1.2em;
+                    transform: rotate(0deg);
+
+                }
             }
         }
         &_before-reverse {
             &:before {
-                width: 2em;
-                height: 3em;
-                top: 0.3em;
-                left: -2.5em;
-                transform: rotate(40deg);
+                width: 1.8em;
+                height: 2.3em;
+                top: -1.4em;
+                left: -1.7em;
+
+                @include desktop {
+                    width: 2em;
+                    height: 3em;
+                    top: 0.3em;
+                    left: -2.5em;
+                    transform: rotate(40deg);
+
+                }
             }
         }
+
         &_after {
             &:before {
-                width: 2em;
-                height: 2.4em;
-                top: -1.6em;
-                left: 0.4em;
+                width: 1.5em;
+                height: 1.9em;
+                top: -1em;
+                left: 0em;
                 transform: rotate(-135deg);
+
+                @include desktop {
+                    top: -1.6em;
+                    width: 2em;
+                    height: 2.4em;
+                    left: 0.4em;
+                }
             }
         }
+
         &_rotate_right {
             &:before {
-                top: -1.3em;
+                top: -0.9em;
                 left: 1em;
                 transform: rotate(-115deg);
+
+                @include desktop {
+                    top: -1.3em;
+                }
             }
         }
+
         &_rotate_left {
             &:before {
-                // top: -1.3em;
                 left: -0.6em;
                 transform: rotate(5deg);
             }

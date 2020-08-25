@@ -1,56 +1,26 @@
-// Main wrappers =====================================
-
 body {
 	display: flex;
 	flex-direction: column;
-	// font-size: calc(.034 * 100vw + 0px);
 	height: auto;
 	min-height: 100%;
-	// font-size: $main_font_size;
     letter-spacing: $main_letter_spacing;
-	// color: $color_withe;
-	
-	// background-color: #101010;
-	
-	// @media (min-width: 768px) {
-		// 	font-size: calc(.012 * 100vw + 0px);
-		// }
-		
-		// @media (min-width: 1400px) {
-			// 	font-size: calc(.00838 * 100vw + 0px);
-			// }
-			
-			// @media (min-width: 1600px) {
-				// 	font-size: calc(.00838 * 100vw + 0px);
-				// }
 	font-size: 12px;
+
 	@include desktop {
 		font-size: calc(.00937 * 100vw + 0px);
 	}
 
 }
 
-.wrapper {
-	font-size: $main_font_size;
-	// margin: 0 auto (-$footer_height); // отрицательный нижний отступ на высоту футера
-}
-
-/* Middle
- ----------------------------------------------------------------------------- */
-.main_content {
-	flex-grow: 1;
-	// padding-bottom: $footer_height;
-	// @extend %clear_a;
-}
-
 p {
-	// margin-top: 0px;
-	margin-top: 5px;
-	margin-bottom: 35px;
+	margin-top: 15px;
+	margin-bottom: 22px;
 	@include desktop {
 		margin-top: 15px;
+		margin-bottom: 35px;
 	}
 }
+
 figure {
     margin: 0;
 }
@@ -60,11 +30,8 @@ figure {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 94%;
+
 	@include desktop {
 		max-width: $container_width;
 	}
-	// .camera & {
-	// 	position: relative;
-	// 	z-index: 2;
-	// }
 }

@@ -1,8 +1,4 @@
 .btn {
-	// color: $btn_default_text_color;
-	// font-family: $main_font_family;
-	// font-size: 16px;
-	// font-weight: 300;
 	font-size: inherit;
 	border: none;
 	border-radius: 50%;
@@ -16,29 +12,34 @@
 	transition: all 0.3s;
 	text-decoration: none;
 	padding: 2.1em;
+
 	@include desktop {
 		padding: 2.3em;
 	}
+
 	&:hover {
 		background-color: #fff;
-		// color: #000;
 		text-decoration: none;
 	}
+
 	&:focus,&:active {
 		background-color: transparentize(#000, .2);
-		// color: #000;
 	}
+
 	.header__video-btn & {
 		position: relative;
 		z-index: 2;
 	}
+
 	&_theme_video-play {
 		&:hover {
 			background-color: #131313;
+
 			&:before{
 				border-color: transparent transparent transparent $color_primary;
 			}
 		}
+
 		&:before {
 			content: '';
 			font-size: inherit;
@@ -49,6 +50,7 @@
 			border-style: solid;
 			border-color: transparent transparent transparent #fff;
 			border-width: 0.6em 0 0.6em 1.2em;
+			
 			@include desktop {
 				border-width: 0.7em 0 0.7em 1.2em;
 			}

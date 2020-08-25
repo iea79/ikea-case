@@ -1,0 +1,12 @@
+.parallax {
+    &Mouse {
+        display: none;
+        
+        @include desktop {
+            display: block;
+            perspective: 200em;
+            transform-style: preserve-3d;
+            transition: transform 0.1s linear;
+        }
+    }
+}

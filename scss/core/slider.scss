@@ -3,12 +3,12 @@
         color: rgba(0,0,0, 0.48);
         border: 0.063em solid;
         border-radius: 50%;
-        // padding: 1.13em;
         padding: 1.0566em;
         cursor: pointer;
         transition: all 0.3s;
         line-height: 0;
         display: none;
+
         @include desktop {
             display: inline-block;
         }
@@ -50,8 +50,10 @@
             margin-left: 2.2em;
         }
     }
+
     &__top {
         margin: 4em 0 0 2.9em;
+
         @include desktop {
             margin: 2em 0 0 3.4em;
         }
@@ -61,6 +63,7 @@
         @include desktop {
             margin-right: 5.2em;
         }
+
         & ul {
             border-radius: 0.188em;
             border: 0.125em solid rgba(0,0,0,0.22);
@@ -78,6 +81,7 @@
             }
         }
     }
+
     &__dot {
         padding: 1.25em 2.4em;
         text-transform: uppercase;
@@ -90,6 +94,7 @@
         
         li:not(:first-child) & {
             position: relative;
+            
             &:before{
                 content: '';
                 position: absolute;

@@ -7,33 +7,57 @@
         &_theme_black {
             background-color: #000;
             color: #fff;
-            word-spacing: 0.2em;
+
+            @include desktop {
+                word-spacing: 0.2em;
+            }
         }
     }
     
     &__text {
         font-size: 2.4em;
         font-weight: 300;
-        line-height: 1.4em;
+        line-height: 1.36em;
         margin-bottom: 0.9em;
+
+        @include desktop {
+            line-height: 1.4em;
+        }
+    }
+    &__quore {
+        width: 9%;
+
+        @include desktop {
+            width: 7%;
+        }
     }
     
     &__img {
         position: absolute;
-        bottom: 0;
-        left: 13em;
         z-index: 1;
-        width: 57.723em;
-        height: 38.5em;
+        bottom: 0em;
+        left: -1.5em;
+        width: 40.2em;
+
+        @include desktop {
+            bottom: 0;
+            left: 13em;
+            width: 57.723em;
+        }
     }
     
     &__content {
-        font-size: 1em;
+        font-size: 0.8em;
         line-height: 1.5em;
         font-weight: 300;
         position: relative;
         z-index: 2;
-        padding: 6.96em 4em 6.7em 31.2em;
+        padding: 5.1em 0 36em;
+
+        @include desktop {
+            font-size: 1em;
+            padding: 6.96em 4em 6.7em 31.2em;
+        }
     }
     
     &__quote {
@@ -41,15 +65,31 @@
         font-weight: 400;
         line-height: 1.274em;
         font-style: italic;
-        margin-left: 2.5em;
-        margin-top: 0.8em;
+        margin-top: 0.2em;
+        margin-left: 1.6em;
+        margin-right: 1em;
+        letter-spacing: 0em;
+
+        @include desktop {
+            margin-left: 2.5em;
+            margin-top: 0.8em;
+            letter-spacing: inherit;
+        }
     }
 
     &__resume {
-        font-size: 1.67em;
-        line-height: 1.55em;
-        margin: 3.4em auto 2.3em;
-        text-align: center;
-        max-width: 38.7em;
+        font-size: 1.27em;
+        margin: 0.9em auto 0;
+        line-height: 1.35em;
+        word-spacing: -0.03em;
+        
+        @include desktop {
+            line-height: 1.55em;
+            margin: 3.4em auto 2.3em;
+            text-align: center;
+            font-size: 1.67em;
+            max-width: 38.7em;
+            word-spacing: inherit;
+        }
     }
 }

@@ -1,14 +1,14 @@
 .design {
     &__container {
         position: relative;
-        padding-top: 2.4em;
+        padding-top: 2.5em;
         padding-left: 2.1em;
-        padding-bottom: 106.8em;
+        padding-bottom: 107em;
+
         @include desktop {
             padding-top: 2.5em;
             padding-bottom: 51.2em;
             padding-left: 3.1em;
-            // padding-bottom: 41.8em;
             padding-right: 30em;
 
         }
@@ -17,12 +17,13 @@
     &__item {
         position: absolute;
 
-        &_first{
+        &_first {
             top: 33.4em;
             left: -1.4em;
             z-index: 1;
             width: 27em;
-            height: 25.9em;
+            height: 25.8em;
+
             @include desktop {
                 top: 14em;
                 left: 1.2em;
@@ -30,60 +31,62 @@
                 height: 29.4em;
             }
         }
-        &_second{
+
+        &_second {
             top: 59.9em;
             left: -0.5em;
             z-index: 3;
             width: 25.2em;
-            height: 31.6em;
+
             @include desktop {
                 top: 23.7em;
                 left: 20em;
                 width: 33.3em;
-                height: 31.6em;
+
             }
         }
-        &_third{
+
+        &_third {
             z-index: 2;
             top: 77.3em;
             left: 2.1em;
             width: 19.9em;
-            height: 21.875em;
+
             @include desktop {
                 top: 26.5em;
                 left: 46.4em;
                 width: 27.063em;
-                height: 21.875em;
             }
             
         }
-        &_fourth{
+
+        &_fourth {
             z-index: 4;
-            bottom: 3.2em;
-            left: 1.2em;
+            bottom: 5.5em;
+            left: 1.1em;
             width: 21em;
-            height: 21.563em;
             transform: rotate(-15deg);
+
             @include desktop {
                 bottom: 1em;
                 left: 8em;
                 width: 23.875em;
-                height: 21.563em;
                 transform: rotate(0deg);
             }
         }
+
         &_pentagon {
             top: 11.9em;
             left: 1.8em;
             width: 20.445em;
-            height: 20.167em;
+
             @include desktop {
                 top: -4em;
                 left: 40.5em;
                 width: 27.445em;
-                height: 26.167em;
             }
         }
+
         &_text {
             font-family: 'GentlemensScript', sans-serif;
             color: rgba(0, 0, 0, 1);
@@ -92,6 +95,7 @@
             bottom: 0;
             left: 1.7em;
             transform: rotate(-5deg);
+
             @include desktop {
                 transform: rotate(-17deg);
                 font-size: 2.3em;
@@ -102,6 +106,4 @@
             }
         }
     }
-
-
 }

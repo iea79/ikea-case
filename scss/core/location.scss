@@ -1,28 +1,56 @@
 .location {
     padding-top: 1.3em;
-
+    
     &__container {
         position: relative;
-        padding: 26em 0 16.5em;
+        padding-top: 71.9em;
+
+        @include desktop {
+            padding-top: 42.3em;
+        }
     }
     
     &__img {
         position: absolute;
-        top: -3em;
-        right: -23em;
+        top: 1.2em;
+        right: -21.3em;
+        background-image: url('../img/location-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 46.3em;
+        height: 62em;
+
+        @include desktop {
+            background-image: url('../img/location.png');
+            top: -3em;
+            right: -23.7em;
+            width: 94.556em;
+            height: 40.9em;
+
+        }
     }
 
     &__list-item {
         position: absolute;
 
         &_left {
-            bottom: 7.5em;
-            left: 7em;
+            bottom: 36.4em;
+            left: 1em;
+
+            @include desktop {
+                bottom: 7.5em;
+                left: 7em;
+            }
         }
 
         &_right {
-            bottom: 6.1em;
-            right: 29em;
+            bottom: 3em;
+            right: 10.6em;
+            
+            @include desktop {
+                bottom: 6.1em;
+                right: 29em;
+            }
         }
     }
 }

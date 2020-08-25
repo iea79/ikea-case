@@ -13,7 +13,9 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
-    overflow: hidden;
+    @include desktop {
+        overflow: hidden;
+    }
 }
 
 .slick-list {
@@ -70,6 +72,13 @@
     height: 100%;
     min-height: 1px;
     outline: 0;
+    visibility: hidden;
+    &.slick-current {
+        visibility: visible;
+    }
+    @include desktop {
+        visibility: visible;
+    }
 
     [dir="rtl"] & {
         float: right;
@@ -91,13 +100,13 @@
 
     .slick-initialized & {
         display: block;
-        visibility: hidden;
-        &.slick-active {
-            visibility: visible;
-        }
-        @include desktop {
-            visibility: visible;
-        }
+        // visibility: hidden;
+        // &.slick-current {
+        //     visibility: visible;
+        // }
+        // @include desktop {
+        //     visibility: visible;
+        // }
     }
 
     .slick-loading & {

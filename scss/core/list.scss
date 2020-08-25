@@ -4,20 +4,27 @@
     
     &__item {
         font-family: "Berlingske Sans";
-        font-size: 1em;
-        line-height: 2.3em;
-
-        
+        font-size: 1.4em;
+        line-height: 2.5em;
         list-style-type: none;
+
+        @include desktop {
+            line-height: 2.3em;
+            font-size: 1em;
+        }
         
         &:before {
             content: ""; 
             display: inline-block;
-            margin-right: 0.278em;
+            margin-right: 0.4em;
             width: 0.667em;
             height: 0.667em;
             border: 1px dashed #000;
             border-radius: 50%;
+            
+            @include desktop {
+                margin-right: 0.278em;
+            }
         }
     }
 }
