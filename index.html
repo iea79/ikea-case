@@ -24,7 +24,7 @@
         </div>
         <div class="header__sub">Документальный фильм</div>
         <div class="header__video-btn">
-          <button class="btn btn_theme_video-play"></button>
+          <button class="btn btn_theme_video-play" data-toggle="modal" data-target="#play"></button>
         </div>
       </div>
     </header>
@@ -32,8 +32,8 @@
       <section class="section parallaxBox">
         <div class="tasks">
           <div class="container">
-            <figure class="tasks__background tasks__background_left parallaxMouse" data-speed="1"><img src="img/pencil.png" alt="pencil"/></figure>
-            <figure class="tasks__background tasks__background_right parallaxMouse" data-speed="-1"><img src="img/ruler.png" alt="ruler"/></figure>
+            <figure class="tasks__background tasks__background_left parallaxMouse" data-speed="1"><img src="img/pencil.png" loading="lazy" alt="pencil"/></figure>
+            <figure class="tasks__background tasks__background_right parallaxMouse" data-speed="-1"><img src="img/ruler.png" loading="lazy" alt="ruler"/></figure>
             <div class="tasks__container">
               <div class="section__heading section__heading_align_center">Задачи документального фильма</div>
               <div class="tasks__content">
@@ -52,14 +52,14 @@
                   </div>
                 </div>
               </div>
-              <figure class="tasks__img"><img src="img/tasks.png" alt="futniture-draft"/></figure>
+              <figure class="tasks__img"><img src="img/tasks.png" loading="lazy" alt="futniture-draft"/></figure>
             </div>
           </div>
         </div>
       </section>
       <section class="section section_on-top">
         <div class="container">
-          <div class="slider js-slider">
+          <div class="slider js-slider" data-slider-dots="true" data-slider-dots-class="slider__dots" data-slider-arrows="true">
             <div class="slider__top flex-wrapper flex-wrapper_align_start">
               <div class="slider__dots"></div>
               <div class="slider__arrow"></div>
@@ -73,15 +73,15 @@
                   <div class="history__text">
                     <p>IKEA была основана в далеком 1943 году Ингваром Кампрадом и расшифровывалась как  Ingvar Kamprad Elmtaryd Agunnaryd.</p>
                   </div>
-                  <figure class="history__item history__item_first"><img src="img/history-first.png" alt="history-first"/>
+                  <figure class="history__item history__item_first wow"><img src="img/history-first.png" loading="lazy" alt="history-first"/>
                     <figcaption class="section__figcaption section__figcaption_style_sm"><span class="section__line section__line_before-sm section__line_rotate_left"></span>
                       <div class="section__figcaption-title section__figcaption-title_span-sm">Ингвар Кампрад </div>Основатель IKEA
                     </figcaption>
                   </figure>
-                  <figure class="history__item history__item_second"><img src="img/history-second.png" alt="history-second"/></figure>
-                  <figure class="history__item history__item_third"><img src="img/history-third.png" alt="history-third"/></figure>
-                  <figure class="history__item history__item_fourth"><img src="img/history-fourth.png" alt="history-fourth"/></figure>
-                  <figure class="history__item history__item_fifth"><img src="img/history-fifth.png" alt="history-fifth"/></figure>
+                  <figure class="history__item history__item_second wow"><img src="img/history-second.png" loading="lazy" alt="history-second"/></figure>
+                  <figure class="history__item history__item_third wow"><img src="img/history-third.png" loading="lazy" alt="history-third"/></figure>
+                  <figure class="history__item history__item_fourth wow"><img src="img/history-fourth.png" loading="lazy" alt="history-fourth"/></figure>
+                  <figure class="history__item history__item_fifth wow"><img src="img/history-fifth.png" loading="lazy" alt="history-fifth"/></figure>
                 </div>
               </div>
             </div>
@@ -89,15 +89,15 @@
               <div class="design">
                 <div class="design__container">
                   <div class="section__title">Демократичный дизайн от IKEA</div>
-                  <figure class="design__item design__item_first"><img src="img/first.png" alt="first"/>
+                  <figure class="design__item design__item_first wow"><img src="img/first.png" loading="lazy" alt="first"/>
                     <figcaption class="section__figcaption section__figcaption_rotate_left-5"><span class="section__line section__line_before-sm"></span>
                       <div class="section__figcaption-title section__figcaption-title_span-sm">1958 год  </div>первый магазин
                     </figcaption>
                   </figure>
-                  <figure class="design__item design__item_second"><img src="img/second.png" alt="second"/></figure>
-                  <figure class="design__item design__item_third"><img src="img/third.png" alt="third"/></figure>
-                  <figure class="design__item design__item_fourth"><img src="img/fourth.png" alt="fourth"/></figure>
-                  <figure class="design__item design__item_pentagon"><img src="img/pentagon.png" alt="pentagon"/></figure>
+                  <figure class="design__item design__item_second wow"><img src="img/second.png" loading="lazy" alt="second"/></figure>
+                  <figure class="design__item design__item_third wow"><img src="img/third.png" loading="lazy" alt="third"/></figure>
+                  <figure class="design__item design__item_fourth wow"><img src="img/fourth.png" loading="lazy" alt="fourth"/></figure>
+                  <figure class="design__item design__item_pentagon"><img src="img/pentagon.png" loading="lazy" alt="pentagon"/></figure>
                   <figure class="design__item design__item_text">Каждый десятый европеец сделан на нашей кровати</figure>
                 </div>
               </div>
@@ -109,7 +109,7 @@
         <div class="container">
           <div class="cenario">
             <div class="cenario__container">
-              <figure class="cenario__img"><img src="img/cenario.png" alt=""/></figure>
+              <figure class="cenario__img"><img src="img/cenario.png" loading="lazy" alt=""/></figure>
               <div class="cenario__descr">
                 <div class="section__title">Подготовка сценария</div>
                 <div class="cenario__text"> 
@@ -151,7 +151,7 @@
         <div class="foundator">
           <div class="foundator__container foundator__container_theme_black">
             <div class="container">
-              <div class="foundator__img"><img src="img/foundator.png" alt="foundator"/></div>
+              <div class="foundator__img"><img src="img/foundator.png" loading="lazy" alt="foundator"/></div>
               <div class="foundator__content">
                 <div class="foundator__text">Когда мы прилетели в Швецию, нам передали, что накануне ночью ушел из жизни основатель компании IKEA – Ингвар Кампрад. Это был настоящий удар для всей страны                                </div>
                 <div class="foundator__quore"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 960.000000" preserveAspectRatio="xMidYMid meet" id='svg-quore'>
@@ -178,9 +178,9 @@
           <div class="container camera__container">
             <div class="section__title section__title_style_margin">Камера, мотор!</div>
             <div class="camera__content">
-              <figure class="camera__item camera__item_first"><img src="img/room.png" alt="room"/></figure>
-              <figure class="camera__item camera__item_second"><img src="img/big-room.png" alt="big-room"/></figure>
-              <figure class="camera__item camera__item_third"><img src="img/manager.png" alt="manager"/>
+              <figure class="camera__item camera__item_first wow"><img src="img/room.png" loading="lazy" alt="room"/></figure>
+              <figure class="camera__item camera__item_second wow"><img src="img/big-room.png" loading="lazy" alt="big-room"/></figure>
+              <figure class="camera__item camera__item_third wow"><img src="img/manager.png" loading="lazy" alt="manager"/>
                 <figcaption class="section__figcaption section__figcaption_rotate_left-15">
                   <div class="section__figcaption-title">Исак Ярнхель <span class="section__line section__line_after"></span></div>Менеджер по работе с клиентами
                 </figcaption>
@@ -190,21 +190,21 @@
                 <div class="camera__text">
                   <p>Нужно показать зрителям, <br> что компания уже давно на рынке</p>
                 </div>
-                <figure class="camera__item camera__item_history-first"><img src="img/meatballs.png" alt="meatballs"/></figure>
+                <figure class="camera__item camera__item_history-first wow"><img src="img/meatballs.png" loading="lazy" alt="meatballs"/></figure>
               </div>
               <div class="camera__partition camera__partition_theme_production">
                 <div class="section__subtitle section__subtitle_style_big-sm">Производство</div>
                 <div class="camera__text"> 
                   <p>В этом блоке мы показываем, <br> как компания IKEA контролирует качество производимой продукции, а также как выбирает поставщиков</p>
                 </div>
-                <figure class="camera__item camera__item_production-first"><img src="img/people.png" alt="people"/></figure>
-                <figure class="camera__item camera__item_production-second"><img src="img/production.png" alt="production"/></figure>
-                <figure class="camera__item camera__item_production-third"><img src="img/test-lab-manager.png" alt="test-lab-manager"/>
+                <figure class="camera__item camera__item_production-first wow"><img src="img/people.png" loading="lazy" alt="people"/></figure>
+                <figure class="camera__item camera__item_production-second wow"><img src="img/production.png" loading="lazy" alt="production"/></figure>
+                <figure class="camera__item camera__item_production-third wow"><img src="img/test-lab-manager.png" loading="lazy" alt="test-lab-manager"/>
                   <figcaption class="section__figcaption section__figcaption_rotate_right-13"><span class="section__line section__line_before"></span>
                     <div class="section__figcaption-title">Ларс Альблад</div>Руководитель тестовой лаборатории
                   </figcaption>
                 </figure>
-                <figure class="camera__item camera__item_production-fourth"><img src="img/quality-check.png" alt="quality-check"/>
+                <figure class="camera__item camera__item_production-fourth wow"><img src="img/quality-check.png" loading="lazy" alt="quality-check"/>
                   <figcaption class="section__figcaption section__figcaption_rotate_left-5 section__figcaption_style_floating-top"><span class="section__line section__line_before-reverse"> </span><span>Проверка качества с помощью роботов</span></figcaption>
                 </figure>
               </div>
@@ -234,11 +234,11 @@
                 <div class="camera__text"> 
                   <p>IKEA открыла для человечества новые интерьеры, которые теперь можно увидеть по всему миру</p>
                 </div>
-                <figure class="camera__item camera__item_design-first"><img src="img/design-people.png" alt="design-people"/></figure>
-                <figure class="camera__item camera__item_design-second"><img src="img/design-carpet.png" alt="design-carpet"/>
+                <figure class="camera__item camera__item_design-first wow"><img src="img/design-people.png" loading="lazy" alt="design-people"/></figure>
+                <figure class="camera__item camera__item_design-second wow"><img src="img/design-carpet.png" loading="lazy" alt="design-carpet"/>
                   <figcaption class="section__figcaption section__figcaption_style_floating-bottom">Коллаборация с Off-White<span class="section__line section__line_after section__line_rotate_right"></span></figcaption>
                 </figure>
-                <figure class="camera__item camera__item_design-third"><img src="img/design-lead.png" alt="design-lead"/>
+                <figure class="camera__item camera__item_design-third wow"><img src="img/design-lead.png" loading="lazy" alt="design-lead"/>
                   <figcaption class="section__figcaption section__figcaption_rotate_left-15 section__figcaption_margin-l"><span class="section__line section__line_before"></span>
                     <div class="section__figcaption-title">Хенрик Мост</div>Кративный директор IKEA of Sweden
                   </figcaption>
@@ -248,15 +248,135 @@
           </div>
         </div>
       </section>
+      <section class="section section_background_drafts">
+        <div class="voice-acting"> 
+          <div class="container container_sm">
+            <div class="section__title section__title_style_center">Дикторская озвучка</div>
+            <p>Мы сняли больше десяти полноценных сюжетовна английском языке. Настало время перевести все диалоги участников, <br> подобрать соответсвующие им русскоязычные голоса и сделать озвучивание на студии звукозаписи</p>
+            <div class="voice-acting__slider">
+              <div class="slider js-slider sss" data-slider-dots="false" data-slider-dots-class="" data-slider-arrows="true">
+                <div class="slider__arrow slider__arrow_side_left"></div>
+                <div class="slider__arrow slider__arrow_reverse slider__arrow_side_right"></div>
+                <div class="slider__slide">
+                  <div class="audio-records flex-wrapper">
+                    <div class="audio-records__left flex-wrapper__item">
+                      <div class="lead">
+                        <div class="lead__img"><img class="lead__photo lead__photo_rotate" src="img/design-lead-photo.png" loading="lazy" alt="design-lead"/></div>
+                        <div class="lead__descr">
+                          <div class="lead__title">Хенрик Мост</div>Креативный директор
+                        </div>
+                      </div>
+                    </div>
+                    <div class="audio-records__right flex-wrapper__item">
+                      <div class="audio-records__audio">
+                        <audio src="Queen - Don't Stop Me Now.mp3" preload="auto" controls="controls"></audio>
+                      </div>
+                      <div class="audio-records__audio">
+                        <audio src="Queen - Don't Stop Me Now.mp3" preload="auto" controls="controls"></audio>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="audio-records flex-wrapper">
+                    <div class="audio-records__left flex-wrapper__item">
+                      <div class="lead">
+                        <div class="lead__img"><img class="lead__photo lead__photo_rotate" src="img/design-lead-photo.png" loading="lazy" alt="design-lead"/></div>
+                        <div class="lead__descr">
+                          <div class="lead__title">Хенрик Мост</div>Креативный директор
+                        </div>
+                      </div>
+                    </div>
+                    <div class="audio-records__right flex-wrapper__item">
+                      <div class="audio-records__audio">
+                        <audio src="123.mp3" preload="auto" controls="controls"></audio>
+                      </div>
+                      <div class="audio-records__audio">
+                        <audio src="123.mp3" preload="auto" controls="controls"></audio>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container container_sm">
+          <div class="video-editing"> 
+            <div class="section__title section__title_style_center">Монтаж</div>
+            <p>Финальный этап – соединить все сюжеты в единую историю, используя закадровый голос, архивные видео и фото</p>
+            <div class="flex-wrapper">
+              <div class="video-editing__item flex-wrapper__item">
+                <div class="video-editing__subtitle">Часть 1</div>
+                <div class="video-editing__video">
+                  <div class="video">
+                    <div class="video__wrapper"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="video-editing__utem flex-wrapper__item">
+                <div class="video-editing__subtitle">Часть 2</div>
+                <div class="video-editing__video">
+                  <div class="video">
+                    <div class="video__wrapper"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_background_furniture">
+        <div class="container container_sm">
+          <div class="review">
+            <div class="flex-wrapper">
+              <div class="review__review flex-wrapper__item">
+                <div class="section__subtitle">Отзыв</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec</p>
+                <div class="review__logo">
+                    <svg viewBox="0 0 100 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+<title>IKEA_Color</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="IKEA_Color">
+<path d="M2,20 C2,29.8325359 22.1163311,38 50.0071588,38 C77.8979865,38 98,29.8325359 98,20 C98,10.1674641 77.8836688,2 50.0071588,2 C22.1306488,2 2,10.1674641 2,20 Z" id="Shape" fill="#FBD914"></path>
+<path d="M46.4479479,26.0046997 C46.7632664,26.4523967 47.1072502,26.8721126 47.5085646,27.2498569 L36.6874082,27.2498569 C36.6874082,26.830141 36.2717611,25.9767186 35.8131161,25.3051731 C35.3544711,24.6336276 32.8749213,20.954118 32.8749213,20.954118 L32.8749213,26.0046997 C32.8749213,26.4244156 32.8749213,26.830141 33.0899112,27.2498569 L24.0746696,27.2498569 C24.2896595,26.830141 24.2896595,26.4244156 24.2896595,26.0046997 L24.2896595,14.0008241 C24.2896595,13.5811082 24.2896595,13.1753828 24.0746696,12.7556669 L33.0899112,12.7556669 C32.8749213,13.1753828 32.8749213,13.5811082 32.8749213,14.0008241 L32.8749213,19.2472732 C32.8749213,19.2472732 35.7557855,15.5817541 36.4150877,14.7283317 C36.9167307,14.0847673 37.533035,13.1753828 37.533035,12.7556669 L46.9352583,12.7556669 C46.2902887,13.1753828 45.5736558,13.9308715 44.9860169,14.630398 C44.4700412,15.2459814 41.5461791,18.7296236 41.5461791,18.7296236 C41.5461791,18.7296236 45.8746416,25.1792583 46.4479479,26.0046997 Z M49.2858141,14.0008241 L49.2858141,26.0046997 C49.2858141,26.4244156 49.2858141,26.830141 49.0708242,27.2498569 L66.4706704,27.2498569 L66.4706704,23.220584 C66.0406907,23.430442 65.6250436,23.430442 65.1950639,23.430442 L57.8710759,23.430442 L57.8710759,21.5277298 L64.9084107,21.5277298 L64.9084107,18.477794 L57.8710759,18.477794 L57.8710759,16.5610913 L65.1950639,16.5610913 C65.6250436,16.5610913 66.0406907,16.5610913 66.4706704,16.7569587 L66.4706704,12.7416764 L49.0708242,12.7416764 C49.2858141,13.1753828 49.2858141,13.5811082 49.2858141,14.0008241 Z M90.5782003,26.0046997 C90.7215268,26.4663872 90.965182,26.8861031 91.2805005,27.2498569 L81.8496119,27.2498569 C81.8926098,26.830141 81.7349506,26.4244156 81.5629587,26.0046997 C81.5629587,26.0046997 81.4196321,25.6689269 81.2189749,25.1792583 L81.132979,24.9694004 L75.7009018,24.9694004 L75.6149059,25.1932489 C75.6149059,25.1932489 75.4572466,25.5989743 75.3139201,26.0186902 C75.1705935,26.4384061 75.0129342,26.8441315 75.0702649,27.2638474 L67.6316157,27.2638474 C67.9326015,26.9000936 68.161924,26.4803777 68.3052506,26.0186902 L72.762707,14.0148147 C72.9203663,13.5950987 73.0780255,13.1893733 73.0206949,12.7696574 L85.5904355,12.7696574 C85.4757742,13.1893733 85.7050967,13.5950987 85.8627559,14.0148147 C86.235405,14.9241992 90.2628818,25.1932489 90.5782003,26.0046997 Z M79.9433684,21.9054741 L78.6247639,18.5477467 C78.5101027,18.239955 78.4097741,17.9181728 78.3381108,17.5963906 C78.2807801,17.9181728 78.1947842,18.239955 78.0801229,18.5477467 C78.037125,18.687652 77.4781513,20.1566577 76.8331817,21.9054741 L79.9433684,21.9054741 Z M19.8035377,12.7556669 L10,12.7556669 C10.2149899,13.1753828 10.2149899,13.5811082 10.2149899,14.0008241 L10.2149899,26.0046997 C10.2149899,26.4244156 10.2149899,26.830141 10,27.2498569 L19.8035377,27.2498569 C19.5885478,26.830141 19.5885478,26.4244156 19.5885478,26.0046997 L19.5885478,14.0008241 C19.5885478,13.5811082 19.5885478,13.1753828 19.8035377,12.7556669 Z M87.5683422,13.9028904 C87.5253442,12.8815817 88.3423057,12.0281593 89.3885897,12.0001782 C89.4315877,12.0001782 89.4745856,12.0001782 89.5175836,12.0001782 C90.5782003,11.9861877 91.4524924,12.7976385 91.466825,13.8329378 C91.466825,13.8609188 91.466825,13.8749094 91.466825,13.9028904 C91.4954903,14.9521802 90.6498635,15.8335837 89.5605816,15.8615647 C88.4856323,15.8895458 87.5826748,15.0641045 87.5540095,14.0008241 C87.5683422,13.9728431 87.5683422,13.9308715 87.5683422,13.9028904 Z M87.9553239,13.9028904 C87.9553239,14.7423223 88.6576242,15.4278583 89.5175836,15.4278583 C90.377543,15.4278583 91.0798433,14.7423223 91.0798433,13.9028904 C91.0798433,13.0634586 90.377543,12.3779225 89.5175836,12.3779225 C88.6862895,12.3499415 87.9839893,12.9795154 87.9553239,13.7909662 C87.9553239,13.8189472 87.9553239,13.8609188 87.9553239,13.9028904 Z M89.1306018,15.0361234 L88.7866181,15.0361234 L88.7866181,12.7416764 L89.6609102,12.7416764 C90.0765572,12.7556669 90.3918757,13.0774491 90.3918757,13.4831745 C90.3918757,13.7629851 90.2342165,14.0148147 89.9762286,14.15472 L90.4778716,15.0361234 L90.0908899,15.0361234 L89.6322449,14.2246726 L89.1306018,14.2246726 L89.1306018,15.0361234 Z M89.1306018,13.9028904 L89.6035795,13.9028904 C89.8329021,13.9168809 90.0335593,13.7489946 90.0335593,13.5251461 C90.0335593,13.3012976 89.8759,13.1054302 89.6465775,13.1054302 C89.6322449,13.1054302 89.6179122,13.1054302 89.6035795,13.1054302 L89.1306018,13.1054302 L89.1306018,13.9028904 Z" id="Shape" fill="#0058A3" fill-rule="nonzero"></path>
+</g>
+</g>
+</svg>
+                </div>
+              </div>
+              <div class="review__lead flex-wrapper__item">
+                <div class="lead">
+                  <div class="lead__img"><img class="lead__photo" src="img/design-lead-photo.png" loading="lazy" alt="design-lead"/></div>
+                  <div class="lead__descr">
+                    <div class="lead__title">Хенрик Мост</div>Креативный директор
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="container_center">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
+    <div class="modal fade modal-wrapper" id="play"><a class="modal-wrapper__close modal-close" href="#" data-dismiss="modal"></a>
+      <div class="modal-dialog modal-wrapper__dialog">
+        <div class="video">
+          <div class="video__wrapper">
+            <div id="video"></div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/audioplayer.min.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/function.js?0.1"></script>
   </body>
 </html>

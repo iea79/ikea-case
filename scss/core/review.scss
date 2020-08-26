@@ -1,0 +1,32 @@
+.review {
+    padding: 0 7em 8em;
+    &__review {
+        max-width: 35em;
+        text-align: left;
+        margin-top: 2.6em;
+    }
+
+    &__logo {
+        width: 62%;
+    }
+    
+    &__lead {
+        max-width: 14em;
+        position: relative;
+        
+        &:before {
+            @include desktop {
+                content: '';
+                position: absolute;
+                top: 2em;
+                left: -10em;
+                z-index: 1;
+                background-image: url('../img/line.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 15.813em;
+                height: 3.438em;
+            }
+        }
+    }
+}

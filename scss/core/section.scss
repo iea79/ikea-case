@@ -77,6 +77,74 @@
         }
     }
 
+    &_background_furniture {
+        @include desktop {
+            position: relative;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: -7em;
+                left: 0em;
+                z-index: 1;
+                background-image: url('../img/furniture-left.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 19em;
+                height: 34.5em;
+                // opacity: -1.39;
+            }
+    
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -4em;
+                right: 2.8em;
+                z-index: 1;
+                background-image: url('../img/furniture-right.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 13.575em;
+                height: 17.563em;
+                // opacity: 0.55;
+            }
+        }
+    }
+
+    &_background_drafts {
+        @include desktop {
+            position: relative;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -4.6em;
+                left: -0.2em;
+                z-index: 0;
+                background-image: url('../img/drafts-left.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 17.113em;
+                height: 22.425em;
+                // opacity: -1.39;
+            }
+    
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -18.1em;
+                right: 0em;
+                z-index: 0;
+                background-image: url('../img/drafts-right.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 23.988em;
+                height: 38em;
+                // opacity: 0.55;
+            }
+        }
+    }
+
     &_on-top {
         position: relative;
         z-index: 1;

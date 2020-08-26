@@ -1,0 +1,33 @@
+.lead {
+    &__img {
+        // width: 23.938em;
+        // height: 22.813em;
+        margin: 1em 0 2.5em 0;
+    }
+
+    &__photo {
+        object-position: 0% 0%;
+        object-fit: cover;
+        width: 9.8em;
+        height: 11.9em;
+        &_rotate {
+            transform: rotate(-14deg);
+            object-position: 0% 0%;
+            object-fit: cover;
+            width: 9.2em;
+            height: 7.8em;
+        }
+    }
+
+    &__descr {
+        font-family: "Berlingske Sans";
+        line-height: 1em;
+    }
+
+    &__title {
+        font-family: "SF Pro Display";
+        font-size: 1.9em;
+        font-weight: 700;
+        line-height: 1.3em;
+    }
+}

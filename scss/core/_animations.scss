@@ -1,0 +1,127 @@
+// .wow {
+//     // opacity: 0;
+// }
+
+// @keyframes pulse1 {
+//     from {
+//         // opacity: 0;
+//         transform: translate(-50%, -50%) scale(1);
+//     }
+
+//     60% {
+//         opacity: 0.3;
+//     }
+
+//     to {
+//         opacity: 0;
+//         transform: translate(-50%, -50%) scale(1.2);
+//     }
+// }
+// @keyframes pulse2 {
+//     from {
+//         // opacity: 0;
+//         transform: translate(-50%, -50%) scale(1);
+//     }
+
+//     60% {
+//         opacity: 0.1;
+//     }
+
+//     to {
+//         opacity: 0;
+//         transform: translate(-50%, -50%) scale(1.2);
+//     }
+// }
+// @keyframes tooltipsShow {
+//     from {
+//         opacity: 0;
+//         transform: translate(-1em, -50%);
+//     }
+
+//     to {
+//         opacity: 1;
+//         transform: translate(0, -50%);
+//     }
+// }
+
+// @keyframes shuffled {
+//     0% {
+//         filter: grayscale(0);
+//     }
+
+//     // 50% {
+//     //     opacity: 0.5;
+//     // }
+
+//     100% {
+//         filter: grayscale(1);
+//         // opacity: 1;
+//     }
+// }
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(1.2em);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// @keyframes slideUpLg {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(3.6em);
+//     }
+
+//     70% {
+//         opacity: 1;
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
+
+// @keyframes slideDown {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(-1.2em);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
+
+// @keyframes fadeInOut {
+//     0% {
+//         opacity: 0;
+//     }
+
+//     50% {
+//         opacity: 1;
+//     }
+
+//     100% {
+//         opacity: 0;
+//     }
+// }
+
+// @keyframes fadeIn {
+//     0% {
+//         opacity: 0;
+//     }
+
+//     100% {
+//         opacity: 1;
+//     }
+// }

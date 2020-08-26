@@ -7,6 +7,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title making of IKEA
         //- <link rel="stylesheet" type="text/css" href="css/libs/slick/slick.css"/>
+        //- link(rel="stylesheet", type="text/css", href="css/animate.css")
         link(rel="stylesheet", type="text/css", href="css/style.css?"+version+"")
     body
         include header.pug
@@ -14,6 +15,14 @@ html(lang="ru")
         main.main
             block content
 
-        include footer.pug
+        //- include footer.pug
 
+
+        //- Modal
+        .modal.fade.modal-wrapper#play
+            a.modal-wrapper__close(href="#" class="modal-close" data-dismiss="modal")
+            .modal-dialog.modal-wrapper__dialog
+                .video
+                    .video__wrapper
+                        #video
         include scripts.pug

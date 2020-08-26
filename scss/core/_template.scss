@@ -5,6 +5,7 @@ body {
 	min-height: 100%;
     letter-spacing: $main_letter_spacing;
 	font-size: 12px;
+	font-size: calc(0.0375 * 100vw + 0px);
 
 	@include desktop {
 		font-size: calc(.00937 * 100vw + 0px);
@@ -25,6 +26,10 @@ figure {
     margin: 0;
 }
 
+img {
+	margin: auto;
+}
+
 .container {
 	padding: 0 0.5em;
 	margin-left: auto;
@@ -34,4 +39,10 @@ figure {
 	@include desktop {
 		max-width: $container_width;
 	}
+
+	&_sm {
+        max-width: 66.2em;
+		text-align: center;
+		// font-size: 0.945em;
+    }
 }

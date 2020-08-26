@@ -49,6 +49,26 @@
             transform: rotate(180deg);
             margin-left: 2.2em;
         }
+
+        &_side_left {
+            position: absolute;
+            top: 50%;
+            margin-top: -1.44em;
+            left: 0;
+            z-index: 1;
+        }
+        
+        &_side_right {
+            position: absolute;
+            top: 50%;
+            margin-top: -1.44em;
+            right: 0;
+            z-index: 1;
+        }
+    }
+
+    &__slide {
+        position: relative;
     }
 
     &__top {

@@ -1,0 +1,5 @@
+.animated {
+    @include desktop {
+        animation: 1s slideUp;
+    }
+}

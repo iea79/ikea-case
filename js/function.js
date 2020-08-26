@@ -1,29 +1,77 @@
 $(document).ready(function(){
-    $('.js-slider').slick({
-        slide: '.slider__slide',
-        dots: true,
-        arrows: true,
-        prevArrow: $('.slider__arrow'),
-        nextArrow: $('.slider__arrow.slider__arrow_reverse'),
-        dotsClass: 'slider__dots',
-        appendDots: $('.slider__dots'),
-        customPaging: function(slider, i) {
-            //you can reference the slider being instantiated as slider.$slider
-            var title = $(slider.$slides[i]).data('title');
-            return '<div class="slider__dot"> '+title+' </a>';
-        },
-        responsive: [
-            {
-              breakpoint: 767,
-              settings: {
-                arrows: false,
-              }
+    $('.js-slider').each(function(index, el) {
+        const $slider = $(el);
+        let slideDots = $slider.data('slider-dots');
+        let slideDotsClass = $slider.data('slider-dots-class');
+        let slideArrows = $slider.data('slider-arrows');
+        let appendDots;
+        let prevArrow = $($slider.find('.slider__arrow'))
+        let nextArrow = $($slider.find('.slider__arrow.slider__arrow_reverse'))
+        if (slideDots) {
+            appendDots = $("."+slideDotsClass);
+        } else {
+            appendDots = "";
+        }
+        console.log(slideDotsClass);
+
+        $slider.slick({
+            slide: '.slider__slide',
+            dots: slideDots,
+            arrows: slideArrows,
+            prevArrow: prevArrow,
+            nextArrow: nextArrow,
+            dotsClass: "'"+slideDotsClass+"'",
+            appendDots: appendDots,
+            // variableWidth: true,
+            // respondTo: 'slider',
+            slidesToShow: 1,
+            // width: 'fill',
+            customPaging: function(slider, i) {
+                //you can reference the slider being instantiated as slider.$slider
+                if (slideDots) {
+                    var title = $(slider.$slides[i]).data('title');
+                    return '<div class="slider__dot"> '+title+' </a>';
+                }
             },
-        ]
+            responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    // arrows: false,
+                  }
+                },
+            ]
+        });
+    })
+
+    
+    $('audio').audioPlayer({
+        strPlay: 'Play',
+        strPause: 'Pause',
+        strVolume: 'Volume'
+    });
+    
+    $('.audioplayer-playpause').on('click', function(e) {
+        $('.audioplayer-playpause').not($(this)).each(function(index, el) {
+            if ($(el).attr('title') === 'Pause') {
+                $(el)
+                .attr('title', "Play")
+                .find('a')
+                .text('Play');
+                $(el)
+                .closest('.audioplayer')
+                .removeClass('audioplayer-playing')
+                .addClass('audioplayer-stopped')
+                .find('audio')
+                .trigger('pause');
+            }
+        });
     });
 });
 
 mouseMoveParallax();
+let wowOffset = ($(window).height() / 3).toFixed() * 1;
+console.log(wowOffset);
 
 function fontResize() {
     var windowWidth = $(window).width();
@@ -66,81 +114,50 @@ function mouseMoveParallax() {
     });
 }
 
-// let wowOffset = ($(window).height() / 3).toFixed() * 1;
-// console.log(wowOffset);
-// var wow = new WOW(
-//     {
-//         boxClass:     'wow',      // animated element css class (default is wow)
-//         animateClass: 'animated', // animation css class (default is animated)
-//         offset:       wowOffset,          // distance to the element when triggering the animation (default is 0)
-//         mobile:       true,       // trigger animations on mobile devices (default is true)
-//         live:         true,       // act on asynchronously loaded content (default is true)
-//         callback:     function(box) {
-//             // the callback is fired every time an animation is started
-//             // the argument that is passed in is the DOM node being animated
-//         },
-//         scrollContainer: null,    // optional scroll container selector, otherwise use window,
-//         resetAnimation: false,     // reset animation on end (default is true)
-//     }
-// );
 
-// wow.init();
+var wow = new WOW(
+    {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       wowOffset,          // distance to the element when triggering the animation (default is 0)
+        mobile:       false,       // trigger animations on mobile devices (default is true)
+        live:         true,       // act on asynchronously loaded content (default is true)
+        callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null,    // optional scroll container selector, otherwise use window,
+        resetAnimation: false,     // reset animation on end (default is true)
+    }
+);
 
+wow.init();
 
-// $('audio').audioPlayer({
-//     strPlay: 'Play',
-//     strPause: 'Pause',
-//     strVolume: 'Volume'
-// });
-
-// $('.audioplayer-playpause').on('click', function(e) {
-//     $('.audioplayer-playpause').not($(this)).each(function(index, el) {
-//         if ($(el).attr('title') === 'Pause') {
-//             $(el)
-//                 .attr('title', "Play")
-//                 .find('a')
-//                 .text('Play');
-//             $(el)
-//                 .closest('.audioplayer')
-//                 .removeClass('audioplayer-playing')
-//                 .addClass('audioplayer-stopped')
-//                 .find('audio')
-//                 .trigger('pause');
-//         }
-//     });
-// });
-
-
-// // Видео youtube для страницы
-// function uploadYoutubeVideo() {
-//     if ($(".js-youtube")) {
-
-//         $(".js-youtube").each(function () {
-//             // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
-//             $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
-
-//             // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
-//             $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
-
-//         });
-
-//         $('.video__play, .video__prev').on('click', function () {
-//             // создаем iframe со включенной опцией autoplay
-//             let wrapp = $(this).closest('.js-youtube'),
-//                 videoId = wrapp.attr('id'),
-//                 iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
-
-//             if ($(this).data('params')) iframe_url += '&' + $(this).data('params');
-
-//             // Высота и ширина iframe должны быть такими же, как и у родительского блока
-//             let iframe = $('<iframe/>', {
-//                 'frameborder': '0',
-//                 'src': iframe_url,
-//             })
-
-//             // Заменяем миниатюру HTML5 плеером с YouTube
-//             $(this).closest('.video__wrapper').append(iframe);
-
-//         });
-//     }
+// var options = {
+//     id: 59777392,
+//     width: 400,
+//     loop: true
 // };
+
+// var player = new Vimeo.Player('made-in-ny', options);
+
+// player.setVolume(0);
+
+// player.on('play', function() {
+//     console.log('played the video!');
+// });
+
+
+var options = {
+    id: 59777392,
+};
+
+var player = new Vimeo.Player('video', options);
+
+$('#play').on('show.bs.modal', function() {
+    player.play();
+});
+
+$('#play').on('hide.bs.modal', function() {
+    player.pause();
+});
