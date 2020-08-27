@@ -21,6 +21,10 @@
         justify-content: flex-start;
     }
 
+    &_align_top{
+        align-items: flex-start;
+    }
+
     &_align_bottom {
         align-items: flex-end;
     }

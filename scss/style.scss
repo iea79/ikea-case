@@ -1,10 +1,8 @@
-@import 'mixins/mixin'; // Fonts
-// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900); // Mixin for include fonts
-// @include font-face("ArialMT", 'fonts/CenturyGothic', normal, normal);
-// Import files
+@import 'mixins/mixin';
 @import 'core/fonts';
 @import 'variables/variables';
 @import 'core/reset';
+@import 'core/container';
 @import 'core/template';
 @import 'core/section';
 @import 'core/header';
@@ -12,7 +10,6 @@
 @import 'core/flex-wrapper';
 @import 'core/tasks';
 @import 'core/design';
-// @import 'core/pentagon';
 @import 'core/cenario';
 @import 'core/location';
 @import 'core/list';

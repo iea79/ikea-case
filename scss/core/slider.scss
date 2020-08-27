@@ -3,13 +3,14 @@
         color: rgba(0,0,0, 0.48);
         border: 0.063em solid;
         border-radius: 50%;
-        padding: 1.0566em;
+        padding: 1.6em;
         cursor: pointer;
         transition: all 0.3s;
         line-height: 0;
         display: none;
-
+        
         @include desktop {
+            padding: 1.0566em;
             display: inline-block;
         }
         
@@ -52,18 +53,28 @@
 
         &_side_left {
             position: absolute;
-            top: 50%;
-            margin-top: -1.44em;
-            left: 0;
+            top: 103%;
+            left: 6.7em;
             z-index: 1;
+            
+            @include desktop {
+                top: 50%;
+                left: 0;
+                margin-top: -1.44em;
+            }
         }
         
         &_side_right {
             position: absolute;
-            top: 50%;
-            margin-top: -1.44em;
-            right: 0;
+            top: 103%;
+            right: 6.7em;
             z-index: 1;
+            
+            @include desktop {
+                top: 50%;
+                margin-top: -1.44em;
+                right: 0;
+            }
         }
     }
 
@@ -88,7 +99,7 @@
             border-radius: 0.188em;
             border: 0.125em solid rgba(0,0,0,0.22);
             color: rgba(0,0,0,0.62);
-            font-family: "SF Pro Display";
+            font-family: "SF Pro Display", sans-serif;
             font-size: 0.9em;
             line-height: 1.394em;
             display: flex;

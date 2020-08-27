@@ -1,5 +1,7 @@
 .location {
+    position: relative;
     padding-top: 1.3em;
+    overflow: hidden;
     
     &__container {
         position: relative;
@@ -51,6 +53,34 @@
                 bottom: 6.1em;
                 right: 29em;
             }
+        }
+    }
+
+    &__clouds-left {
+        @include desktop {
+            position: absolute;
+            bottom: -12.5em;
+            left: -26em;
+            z-index: 1;
+            width: 58em;
+            height: 88.2em;
+        }
+    }
+
+    &__clouds-right {
+        
+        position: absolute;
+        bottom: 5.2em;
+        right: 0em;
+        z-index: 1;
+        width: 17.313em;
+        height: 30em;
+
+        @include desktop {
+            bottom: -9.5em;
+            right: -38.5em;
+            width: 81.313em;
+            height: 57.938em;
         }
     }
 }

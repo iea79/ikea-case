@@ -79,7 +79,7 @@
 
     &__blockquote {
         display: inline-block;
-        font-family: "SF Pro Display";
+        font-family: "SF Pro Display", sans-serif;
         font-size: 1em;
         line-height: 1.388em;
         margin: 0 0 0 0.2em;
@@ -291,7 +291,7 @@
         }
     
         &_theme_design {
-            padding: 4.8em 1em 120em 1.7em;
+            padding: 4.8em 1em 68.6em 1.7em;
 
             @include desktop {
                 padding: 29.7em 49em 19.1em 6.5em;

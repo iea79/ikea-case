@@ -24,7 +24,7 @@
         </div>
         <div class="header__sub">Документальный фильм</div>
         <div class="header__video-btn">
-          <button class="btn btn_theme_video-play" data-toggle="modal" data-target="#play"></button>
+          <button class="btn btn_theme_dark" data-toggle="modal" data-target="#play"></button>
         </div>
       </div>
     </header>
@@ -59,7 +59,7 @@
       </section>
       <section class="section section_on-top">
         <div class="container">
-          <div class="slider js-slider" data-slider-dots="true" data-slider-dots-class="slider__dots" data-slider-arrows="true">
+          <div class="slider js-slider" data-slider-dots="true" data-slider-dots-class="slider__dots" data-slider-arrows="true" data-slider-arrows-mobile="false">
             <div class="slider__top flex-wrapper flex-wrapper_align_start">
               <div class="slider__dots"></div>
               <div class="slider__arrow"></div>
@@ -74,8 +74,8 @@
                     <p>IKEA была основана в далеком 1943 году Ингваром Кампрадом и расшифровывалась как  Ingvar Kamprad Elmtaryd Agunnaryd.</p>
                   </div>
                   <figure class="history__item history__item_first wow"><img src="img/history-first.png" loading="lazy" alt="history-first"/>
-                    <figcaption class="section__figcaption section__figcaption_style_sm"><span class="section__line section__line_before-sm section__line_rotate_left"></span>
-                      <div class="section__figcaption-title section__figcaption-title_span-sm">Ингвар Кампрад </div>Основатель IKEA
+                    <figcaption class="section__caption section__caption_style_sm"><span class="section__line section__line_before-sm section__line_rotate_left"></span>
+                      <div class="section__caption-title section__caption-title_span-sm">Ингвар Кампрад </div>Основатель IKEA
                     </figcaption>
                   </figure>
                   <figure class="history__item history__item_second wow"><img src="img/history-second.png" loading="lazy" alt="history-second"/></figure>
@@ -90,8 +90,8 @@
                 <div class="design__container">
                   <div class="section__title">Демократичный дизайн от IKEA</div>
                   <figure class="design__item design__item_first wow"><img src="img/first.png" loading="lazy" alt="first"/>
-                    <figcaption class="section__figcaption section__figcaption_rotate_left-5"><span class="section__line section__line_before-sm"></span>
-                      <div class="section__figcaption-title section__figcaption-title_span-sm">1958 год  </div>первый магазин
+                    <figcaption class="section__caption section__caption_rotate_left-5"><span class="section__line section__line_before-sm"></span>
+                      <div class="section__caption-title section__caption-title_span-sm">1958 год  </div>первый магазин
                     </figcaption>
                   </figure>
                   <figure class="design__item design__item_second wow"><img src="img/second.png" loading="lazy" alt="second"/></figure>
@@ -121,8 +121,10 @@
           </div>
         </div>
       </section>
-      <section class="section section_background_clouds">
+      <section class="section parallaxBox">
         <div class="location">
+          <div class="location__clouds-left parallaxMouse" data-speed="1"><img src="img/clouds-left.png" alt="clouds"/></div>
+          <div class="location__clouds-right parallaxMouse" data-speed="-1"><img src="img/clouds-right.png" alt="clouds"/></div>
           <div class="container">
             <div class="section__title section__title_style_center section__title_style_margin">Выбор локации для съемок</div>
             <div class="location__container">
@@ -181,8 +183,8 @@
               <figure class="camera__item camera__item_first wow"><img src="img/room.png" loading="lazy" alt="room"/></figure>
               <figure class="camera__item camera__item_second wow"><img src="img/big-room.png" loading="lazy" alt="big-room"/></figure>
               <figure class="camera__item camera__item_third wow"><img src="img/manager.png" loading="lazy" alt="manager"/>
-                <figcaption class="section__figcaption section__figcaption_rotate_left-15">
-                  <div class="section__figcaption-title">Исак Ярнхель <span class="section__line section__line_after"></span></div>Менеджер по работе с клиентами
+                <figcaption class="section__caption section__caption_rotate_left-15">
+                  <div class="section__caption-title">Исак Ярнхель <span class="section__line section__line_after"></span></div>Менеджер по работе с клиентами
                 </figcaption>
               </figure>
               <div class="camera__partition camera__partition_theme_history">
@@ -200,12 +202,12 @@
                 <figure class="camera__item camera__item_production-first wow"><img src="img/people.png" loading="lazy" alt="people"/></figure>
                 <figure class="camera__item camera__item_production-second wow"><img src="img/production.png" loading="lazy" alt="production"/></figure>
                 <figure class="camera__item camera__item_production-third wow"><img src="img/test-lab-manager.png" loading="lazy" alt="test-lab-manager"/>
-                  <figcaption class="section__figcaption section__figcaption_rotate_right-13"><span class="section__line section__line_before"></span>
-                    <div class="section__figcaption-title">Ларс Альблад</div>Руководитель тестовой лаборатории
+                  <figcaption class="section__caption section__caption_rotate_right-13"><span class="section__line section__line_before"></span>
+                    <div class="section__caption-title">Ларс Альблад</div>Руководитель тестовой лаборатории
                   </figcaption>
                 </figure>
                 <figure class="camera__item camera__item_production-fourth wow"><img src="img/quality-check.png" loading="lazy" alt="quality-check"/>
-                  <figcaption class="section__figcaption section__figcaption_rotate_left-5 section__figcaption_style_floating-top"><span class="section__line section__line_before-reverse"> </span><span>Проверка качества с помощью роботов</span></figcaption>
+                  <figcaption class="section__caption section__caption_rotate_left-5 section__caption_style_floating-top"><span class="section__line section__line_before-reverse"> </span><span>Проверка качества с помощью роботов</span></figcaption>
                 </figure>
               </div>
               <div class="camera__logo">
@@ -236,11 +238,11 @@
                 </div>
                 <figure class="camera__item camera__item_design-first wow"><img src="img/design-people.png" loading="lazy" alt="design-people"/></figure>
                 <figure class="camera__item camera__item_design-second wow"><img src="img/design-carpet.png" loading="lazy" alt="design-carpet"/>
-                  <figcaption class="section__figcaption section__figcaption_style_floating-bottom">Коллаборация с Off-White<span class="section__line section__line_after section__line_rotate_right"></span></figcaption>
+                  <figcaption class="section__caption section__caption_style_floating-bottom">Коллаборация с Off-White<span class="section__line section__line_after section__line_rotate_right"></span></figcaption>
                 </figure>
                 <figure class="camera__item camera__item_design-third wow"><img src="img/design-lead.png" loading="lazy" alt="design-lead"/>
-                  <figcaption class="section__figcaption section__figcaption_rotate_left-15 section__figcaption_margin-l"><span class="section__line section__line_before"></span>
-                    <div class="section__figcaption-title">Хенрик Мост</div>Кративный директор IKEA of Sweden
+                  <figcaption class="section__caption section__caption_rotate_left-15 section__caption_margin-l"><span class="section__line section__line_before"></span>
+                    <div class="section__caption-title">Хенрик Мост</div>Кративный директор IKEA of Sweden
                   </figcaption>
                 </figure>
               </div>
@@ -252,9 +254,11 @@
         <div class="voice-acting"> 
           <div class="container container_sm">
             <div class="section__title section__title_style_center">Дикторская озвучка</div>
-            <p>Мы сняли больше десяти полноценных сюжетовна английском языке. Настало время перевести все диалоги участников, <br> подобрать соответсвующие им русскоязычные голоса и сделать озвучивание на студии звукозаписи</p>
+            <div class="voice-acting__text"> 
+              <p>Мы сняли больше десяти полноценных сюжетовна английском языке. Настало время перевести все диалоги участников, <br> подобрать соответсвующие им русскоязычные голоса и сделать озвучивание на студии звукозаписи</p>
+            </div>
             <div class="voice-acting__slider">
-              <div class="slider js-slider sss" data-slider-dots="false" data-slider-dots-class="" data-slider-arrows="true">
+              <div class="slider js-slider" data-slider-dots="false" data-slider-dots-class="" data-slider-arrows="true" data-slider-arrows-mobile="true">
                 <div class="slider__arrow slider__arrow_side_left"></div>
                 <div class="slider__arrow slider__arrow_reverse slider__arrow_side_right"></div>
                 <div class="slider__slide">
@@ -269,10 +273,10 @@
                     </div>
                     <div class="audio-records__right flex-wrapper__item">
                       <div class="audio-records__audio">
-                        <audio src="Queen - Don't Stop Me Now.mp3" preload="auto" controls="controls"></audio>
+                        <audio src="123.mp3" preload="auto" controls="controls"></audio>
                       </div>
                       <div class="audio-records__audio">
-                        <audio src="Queen - Don't Stop Me Now.mp3" preload="auto" controls="controls"></audio>
+                        <audio src="123.mp3" preload="auto" controls="controls"></audio>
                       </div>
                     </div>
                   </div>
@@ -306,21 +310,34 @@
         <div class="container container_sm">
           <div class="video-editing"> 
             <div class="section__title section__title_style_center">Монтаж</div>
-            <p>Финальный этап – соединить все сюжеты в единую историю, используя закадровый голос, архивные видео и фото</p>
-            <div class="flex-wrapper">
+            <div class="video-editing__text"> 
+              <p>Финальный этап – соединить все сюжеты в единую историю, используя закадровый голос, архивные видео и фото</p>
+            </div>
+            <div class="flex-wrapper flex-wrapper_align_top">
               <div class="video-editing__item flex-wrapper__item">
                 <div class="video-editing__subtitle">Часть 1</div>
                 <div class="video-editing__video">
-                  <div class="video">
-                    <div class="video__wrapper"></div>
+                  <div class="video video_style_rect-top">
+                    <div class="video__frame">
+                      <div class="video__wrapper">
+                        <div class="js-video" id="video-sm-first" data-video-id="59777392"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div class="video-editing__caption">
+                  <div class="section__caption">Посмотрите, что у нас получилось<span class="section__line section__line_after-lg"></span></div>
+                </div>
               </div>
-              <div class="video-editing__utem flex-wrapper__item">
+              <div class="video-editing__item flex-wrapper__item">
                 <div class="video-editing__subtitle">Часть 2</div>
                 <div class="video-editing__video">
-                  <div class="video">
-                    <div class="video__wrapper"></div>
+                  <div class="video video_style_rect-bottom">
+                    <div class="video__frame">
+                      <div class="video__wrapper">
+                        <div class="js-video" id="video-sm-second" data-video-id="59777392"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -333,11 +350,12 @@
           <div class="review">
             <div class="flex-wrapper">
               <div class="review__review flex-wrapper__item">
-                <div class="section__subtitle">Отзыв</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec</p>
+                <div class="section__subtitle section__subtitle_align_center-sm">Отзыв</div>
+                <div class="review__text"> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec</p>
+                </div>
                 <div class="review__logo">
                     <svg viewBox="0 0 100 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
 <title>IKEA_Color</title>
 <desc>Created with Sketch.</desc>
 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -350,7 +368,7 @@
                 </div>
               </div>
               <div class="review__lead flex-wrapper__item">
-                <div class="lead">
+                <div class="lead lead_style_big">
                   <div class="lead__img"><img class="lead__photo" src="img/design-lead-photo.png" loading="lazy" alt="design-lead"/></div>
                   <div class="lead__descr">
                     <div class="lead__title">Хенрик Мост</div>Креативный директор
@@ -366,7 +384,7 @@
       <div class="modal-dialog modal-wrapper__dialog">
         <div class="video">
           <div class="video__wrapper">
-            <div id="video"></div>
+            <div class="js-video-modal" id="video" data-video-id="427327018"></div>
           </div>
         </div>
       </div>

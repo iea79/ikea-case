@@ -4,6 +4,7 @@ $(document).ready(function(){
         let slideDots = $slider.data('slider-dots');
         let slideDotsClass = $slider.data('slider-dots-class');
         let slideArrows = $slider.data('slider-arrows');
+        let slideArrowsMobile = $slider.data('slider-arrows-mobile');
         let appendDots;
         let prevArrow = $($slider.find('.slider__arrow'))
         let nextArrow = $($slider.find('.slider__arrow.slider__arrow_reverse'))
@@ -22,10 +23,7 @@ $(document).ready(function(){
             nextArrow: nextArrow,
             dotsClass: "'"+slideDotsClass+"'",
             appendDots: appendDots,
-            // variableWidth: true,
-            // respondTo: 'slider',
             slidesToShow: 1,
-            // width: 'fill',
             customPaging: function(slider, i) {
                 //you can reference the slider being instantiated as slider.$slider
                 if (slideDots) {
@@ -37,7 +35,7 @@ $(document).ready(function(){
                 {
                   breakpoint: 767,
                   settings: {
-                    // arrows: false,
+                    arrows: slideArrowsMobile,
                   }
                 },
             ]
@@ -70,50 +68,9 @@ $(document).ready(function(){
 });
 
 mouseMoveParallax();
+
 let wowOffset = ($(window).height() / 3).toFixed() * 1;
 console.log(wowOffset);
-
-function fontResize() {
-    var windowWidth = $(window).width();
-    if (windowWidth >= 1200) {
-    	var fontSize = windowWidth/19.05;
-    } else if (windowWidth < 1200) {
-    	var fontSize = 60;
-    }
-	$('body').css('fontSize', fontSize + '%');
-}
-
-function mouseMoveParallax() {
-    let wrapper = $('.parallaxBox');
-    let item = wrapper.find('.parallaxMouse');
-    let speed = 0;
-    let offsetX;
-    let offsetY;
-    let isXsWidth = $(window).width();
-
-    wrapper.on('mousemove', function(even) {
-        offsetX = -(even.clientX - $(window).width() / 2);
-        offsetY = -(even.clientY - $(window).width() / 2);
-
-        if (isXsWidth < 768) {
-            item.removeAttr('style');
-        } else {
-            item.each(function(index, el) {
-                speed = $(el).data('speed');
-                $(el).attr('style', 'transform: translate3d('+(offsetX*speed/1000)+'em, '+(offsetY*speed/1000)+'em , 0)');
-            });
-        }
-
-    });
-
-    wrapper.on('mouseleave', function(even) {
-        item.each(function(index, el) {
-            speed = $(el).data('speed');
-            $(el).attr('style', 'transform: translate3d(0, 0 , 0)');
-        });
-    });
-}
-
 
 var wow = new WOW(
     {
@@ -133,31 +90,99 @@ var wow = new WOW(
 
 wow.init();
 
-// var options = {
-//     id: 59777392,
-//     width: 400,
-//     loop: true
-// };
+showModalVideo();
 
-// var player = new Vimeo.Player('made-in-ny', options);
+$(".js-video").each(function () {
+    let video = $(this);
+    console.log(video);
+    let videoId = video.data('video-id');
 
-// player.setVolume(0);
+    $.ajax({
+        type:'GET',
+        url: 'http://vimeo.com/api/v2/video/' + videoId + '.json',
+        jsonp: 'callback',
+        dataType: 'jsonp',
+        success: function(data){
+            let thumbnailSrc = data[0].thumbnail_medium;
+            let videoWrapper = video.closest('.video__wrapper');
 
-// player.on('play', function() {
-//     console.log('played the video!');
-// });
+            videoWrapper.css('background-image', 'url('+thumbnailSrc+')');
+        }
+    });
 
+    $(this).append($('<div class="video__play btn btn_theme_light"></div>'));        
+    
+    $('body').on('click', '.video__play', function () {
+        let id = $(this).closest('.js-video').attr('id');
+        let videoId = video.data('video-id');
+        let player = setPlayer(id, videoId);
 
-var options = {
-    id: 59777392,
-};
+        player.play();
+        $(this).remove();
+    })
+})
 
-var player = new Vimeo.Player('video', options);
+// fontResize();
+// function fontResize() {
+//     var windowWidth = $(window).width();
+//     if (windowWidth >= 1200) {
+//         var fontSize = windowWidth/19.05;
+//     } else if (windowWidth < 1200) {
+//         var fontSize = 60;
+//     }
+// 	$('body').css('fontSize', fontSize + '%');
+// }
 
-$('#play').on('show.bs.modal', function() {
-    player.play();
-});
+function mouseMoveParallax() {
+    let wrapper = $('.parallaxBox');
+    let item = wrapper.find('.parallaxMouse');
+    let speed = 0;
+    let offsetX;
+    let offsetY;
+    let isXsWidth = $(window).width();
+    
+    wrapper.on('mousemove', function(even) {
+        offsetX = -(even.clientX - $(window).width() / 2);
+        offsetY = -(even.clientY - $(window).width() / 2);
+        
+        if (isXsWidth < 768) {
+            item.removeAttr('style');
+        } else {
+            item.each(function(index, el) {
+                speed = $(el).data('speed');
+                $(el).attr('style', 'transform: translate3d('+(offsetX*speed/1000)+'em, '+(offsetY*speed/1000)+'em , 0)');
+            });
+        }
 
-$('#play').on('hide.bs.modal', function() {
-    player.pause();
-});
+    });
+    
+    wrapper.on('mouseleave', function(even) {
+        item.each(function(index, el) {
+            speed = $(el).data('speed');
+            $(el).attr('style', 'transform: translate3d(0, 0 , 0)');
+        });
+    });
+}
+    
+function showModalVideo() {
+    let videoModal = $('.js-video-modal');
+    let id = videoModal.attr('id');
+    let videoModalId = videoModal.data('video-id');
+    let playerModal = setPlayer(id, videoModalId);
+
+    $('#play').on('show.bs.modal', function() {
+        playerModal.play();
+    });
+
+    $('#play').on('hide.bs.modal', function() {
+        playerModal.pause();
+    });
+}
+
+function setPlayer(id, videoId) {
+    let options = {
+        id: videoId,
+    };
+
+    return new Vimeo.Player(id, options);
+}

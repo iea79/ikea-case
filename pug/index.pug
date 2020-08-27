@@ -25,7 +25,7 @@ block content
                         img(src="img/tasks.png", loading="lazy", alt="futniture-draft")
     section.section.section_on-top
         .container
-             .slider.js-slider(data-slider-dots="true" data-slider-dots-class="slider__dots" data-slider-arrows="true")
+             .slider.js-slider(data-slider-dots="true" data-slider-dots-class="slider__dots" data-slider-arrows="true" data-slider-arrows-mobile="false")
                 .slider__top.flex-wrapper.flex-wrapper_align_start
                     .slider__dots
                     .slider__arrow
@@ -39,9 +39,9 @@ block content
                                 p IKEA была основана в далеком 1943 году Ингваром Кампрадом и расшифровывалась как  Ingvar Kamprad Elmtaryd Agunnaryd.
                             figure.history__item.history__item_first.wow
                                 img(src="img/history-first.png", loading="lazy", alt="history-first")
-                                figcaption.section__figcaption.section__figcaption_style_sm
+                                figcaption.section__caption.section__caption_style_sm
                                     span.section__line.section__line_before-sm.section__line_rotate_left
-                                    .section__figcaption-title.section__figcaption-title_span-sm Ингвар Кампрад 
+                                    .section__caption-title.section__caption-title_span-sm Ингвар Кампрад 
                                     | Основатель IKEA
                             figure.history__item.history__item_second.wow
                                 img(src="img/history-second.png", loading="lazy", alt="history-second")
@@ -57,9 +57,9 @@ block content
                             .section__title Демократичный дизайн от IKEA
                             figure.design__item.design__item_first.wow
                                 img(src="img/first.png", loading="lazy", alt="first")
-                                figcaption.section__figcaption.section__figcaption_rotate_left-5
+                                figcaption.section__caption.section__caption_rotate_left-5
                                     span.section__line.section__line_before-sm
-                                    .section__figcaption-title.section__figcaption-title_span-sm 1958 год  
+                                    .section__caption-title.section__caption-title_span-sm 1958 год  
                                     | первый магазин
                             figure.design__item.design__item_second.wow
                                 img(src="img/second.png", loading="lazy", alt="second")
@@ -83,13 +83,16 @@ block content
                             p Это был один из самых сложных этапов, так как нам требовалось связать в единую динамичную историю интервью десятков сотрудников и топ-менеджеров IKEA из разных стран.
                             p Отдельным лирическим сюжетом была встреча с Ингваром Кампрадом. Мы ехали в Швецию, чтобы пожать ему руку и сказать "спасибо". Потому что он является примером для миллионов предпринимателей со всего мира
     
-    section.section.section_background_clouds
+    section.section.parallaxBox
         .location
+            .location__clouds-left.parallaxMouse(data-speed="1")
+                img(src="img/clouds-left.png", alt="clouds")
+            .location__clouds-right.parallaxMouse(data-speed="-1")
+                img(src="img/clouds-right.png", alt="clouds")
             .container
                 .section__title.section__title_style_center.section__title_style_margin Выбор локации для съемок
                 .location__container
                     .location__img
-                            //- img(src="img/location.png", loading="lazy", alt="countries")
                     .location__lists.flex-wrapper.flex-wrapper_align_bottom
                         .location__list-item.location__list-item_left
                             ul.list
@@ -134,8 +137,8 @@ block content
                         img(src="img/big-room.png", loading="lazy", alt="big-room")
                     figure.camera__item.camera__item_third.wow
                         img(src="img/manager.png", loading="lazy", alt="manager")
-                        figcaption.section__figcaption.section__figcaption_rotate_left-15
-                            .section__figcaption-title Исак Ярнхель 
+                        figcaption.section__caption.section__caption_rotate_left-15
+                            .section__caption-title Исак Ярнхель 
                                 span.section__line.section__line_after
                             | Менеджер по работе с клиентами
                     .camera__partition.camera__partition_theme_history
@@ -154,13 +157,13 @@ block content
                             img(src="img/production.png", loading="lazy", alt="production")
                         figure.camera__item.camera__item_production-third.wow
                             img(src="img/test-lab-manager.png", loading="lazy", alt="test-lab-manager")
-                            figcaption.section__figcaption.section__figcaption_rotate_right-13
+                            figcaption.section__caption.section__caption_rotate_right-13
                                 span.section__line.section__line_before
-                                .section__figcaption-title Ларс Альблад
+                                .section__caption-title Ларс Альблад
                                 | Руководитель тестовой лаборатории
                         figure.camera__item.camera__item_production-fourth.wow
                             img(src="img/quality-check.png", loading="lazy", alt="quality-check")
-                            figcaption.section__figcaption.section__figcaption_rotate_left-5.section__figcaption_style_floating-top
+                            figcaption.section__caption.section__caption_rotate_left-5.section__caption_style_floating-top
                                 span.section__line.section__line_before-reverse 
                                 span Проверка качества с помощью роботов
 
@@ -193,21 +196,22 @@ block content
                             img(src="img/design-people.png", loading="lazy", alt="design-people")
                         figure.camera__item.camera__item_design-second.wow
                             img(src="img/design-carpet.png", loading="lazy", alt="design-carpet")
-                            figcaption.section__figcaption.section__figcaption_style_floating-bottom Коллаборация с Off-White
+                            figcaption.section__caption.section__caption_style_floating-bottom Коллаборация с Off-White
                                 span.section__line.section__line_after.section__line_rotate_right
                         figure.camera__item.camera__item_design-third.wow
                             img(src="img/design-lead.png", loading="lazy", alt="design-lead")
-                            figcaption.section__figcaption.section__figcaption_rotate_left-15.section__figcaption_margin-l
+                            figcaption.section__caption.section__caption_rotate_left-15.section__caption_margin-l
                                 span.section__line.section__line_before
-                                .section__figcaption-title Хенрик Мост
+                                .section__caption-title Хенрик Мост
                                 | Кративный директор IKEA of Sweden
     section.section.section_background_drafts
         .voice-acting 
             .container.container_sm
                 .section__title.section__title_style_center Дикторская озвучка
-                p Мы сняли больше десяти полноценных сюжетовна английском языке. Настало время перевести все диалоги участников, <br> подобрать соответсвующие им русскоязычные голоса и сделать озвучивание на студии звукозаписи
+                .voice-acting__text 
+                    p Мы сняли больше десяти полноценных сюжетовна английском языке. Настало время перевести все диалоги участников, <br> подобрать соответсвующие им русскоязычные голоса и сделать озвучивание на студии звукозаписи
                 .voice-acting__slider
-                    .slider.js-slider.sss(data-slider-dots="false" data-slider-dots-class="" data-slider-arrows="true")
+                    .slider.js-slider(data-slider-dots="false" data-slider-dots-class="" data-slider-arrows="true" data-slider-arrows-mobile="true")
                         .slider__arrow.slider__arrow_side_left
                         .slider__arrow.slider__arrow_reverse.slider__arrow_side_right
                         .slider__slide
@@ -221,9 +225,9 @@ block content
                                                 | Креативный директор
                                     .audio-records__right.flex-wrapper__item
                                         .audio-records__audio
-                                            audio(src="Queen - Don't Stop Me Now.mp3" preload="auto" controls="controls")
+                                            audio(src="123.mp3" preload="auto" controls="controls")
                                         .audio-records__audio
-                                            audio(src="Queen - Don't Stop Me Now.mp3" preload="auto" controls="controls")
+                                            audio(src="123.mp3" preload="auto" controls="controls")
                         .slider__slide
                             .audio-records.flex-wrapper
                                     .audio-records__left.flex-wrapper__item
@@ -242,28 +246,37 @@ block content
         .container.container_sm
             .video-editing 
                 .section__title.section__title_style_center Монтаж
-                p Финальный этап – соединить все сюжеты в единую историю, используя закадровый голос, архивные видео и фото
-                .flex-wrapper
+                .video-editing__text 
+                    p Финальный этап – соединить все сюжеты в единую историю, используя закадровый голос, архивные видео и фото
+                .flex-wrapper.flex-wrapper_align_top
                     .video-editing__item.flex-wrapper__item
                         .video-editing__subtitle Часть 1
                         .video-editing__video
-                            .video
-                                .video__wrapper
-                    .video-editing__utem.flex-wrapper__item
+                            .video.video_style_rect-top
+                                .video__frame
+                                    .video__wrapper
+                                        .js-video#video-sm-first(data-video-id="59777392")
+                        .video-editing__caption
+                            .section__caption Посмотрите, что у нас получилось
+                                span.section__line.section__line_after-lg
+                    .video-editing__item.flex-wrapper__item
                         .video-editing__subtitle Часть 2
                         .video-editing__video
-                            .video
-                                .video__wrapper
+                            .video.video_style_rect-bottom
+                                .video__frame
+                                    .video__wrapper
+                                        .js-video#video-sm-second(data-video-id="59777392")
+
     section.section.section_background_furniture
         .container.container_sm
             .review
                 .flex-wrapper
                     .review__review.flex-wrapper__item
-                        .section__subtitle Отзыв
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec
+                        .section__subtitle.section__subtitle_align_center-sm Отзыв
+                        .review__text 
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec
                         .review__logo   
                             <svg viewBox="0 0 100 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
                                 <title>IKEA_Color</title>
                                 <desc>Created with Sketch.</desc>
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -274,7 +287,7 @@ block content
                                 </g>
                             </svg>
                     .review__lead.flex-wrapper__item
-                        .lead
+                        .lead.lead_style_big
                             .lead__img
                                 img.lead__photo(src="img/design-lead-photo.png", loading="lazy", alt="design-lead")
                             .lead__descr
@@ -282,26 +295,4 @@ block content
                                 | Креативный директор
 
 
-//- <div class="audioplayer audioplayer-stopped">
-//-     <audio src="123.mp3" preload="auto" controls="controls" style="width: 0px; height: 0px; visibility: hidden;"></audio>
-//-     <div class="audioplayer-playpause" title="Play">
-//-         <a href="#">Play</a>
-//-     </div>
-//-     <div class="audioplayer-time audioplayer-time-current">00:00</div>
-//-     <div class="audioplayer-bar">
-//-         <div class="audioplayer-bar-loaded"></div>
-//-         <div class="audioplayer-bar-played"></div>
-//-     </div>
-//-     <div class="audioplayer-time audioplayer-time-duration">…</div>
-//-     <div class="audioplayer-volume">
-//-         <div class="audioplayer-volume-button" title="Volume">
-//-             <a href="#">Volume</a>
-//-         </div>
-//-         <div class="audioplayer-volume-adjust">
-//-             <div>
-//-                 <div style="height: 100%;"></div>
-//-             </div>
-//-         </div>
-//-     </div>
-//- </div>
 

@@ -1,19 +1,23 @@
 .audioplayer {
     display: flex;
     align-items: center;
-    // font-size: 1.9em;
+    justify-content: space-between;
     padding: 0.3em 0 0.3em;
     border: 0.063em solid #ebeceb;
 
     &-bar {
-        // position: relative;
-        width: 27.2em;
+        width: 17.2em;
         height: 0.375em;
         background-color: #d8d8d8;
-        // background-color: #ffffff;
         cursor: pointer;
+        
+        @include desktop {
+          width: 27.2em;
+        }
+
       &-loaded {
       }
+
       &-played {
         height: 0.375em;
         width: 0;
@@ -24,28 +28,20 @@
             content: '';
             position: absolute;
             top: -0.175em;
-            right: -0.175em;
+            right: -0.375em;
             border-radius: 50%;
             width: 0.7em;
             height: 0.7em;
             background-color: #6472c7;
-            // background-color: #ebeceb;
         }
-        // background-color: #ffffff;
       }
     }
+
     &-playpause {
         font-size: inherit;
         transition: all 0.3s;
-        // display: block;
-        // width: 0;
-        // height: 0;
-        // border-style: solid;
-        // border-color: transparent transparent transparent #000;
-        // border-width: 0.6em 0 0.6em 1.2em;
         width: 1.1em;
         height: 1.1em;
-        margin: 0 0.8em;
         background: url("../img/play.svg") 0 0 no-repeat;
         background-size: contain;
         cursor: pointer;
@@ -56,9 +52,7 @@
             background: url("../img/pause.svg") 0 0 no-repeat;
             background-size: contain;
         }
-        // @include desktop {
-        //     border-width: 0.7em 0 0.7em 1.2em;
-        // }
+
       a {
           font-size: 0;
         &:hover {}
@@ -66,27 +60,31 @@
         &:focus {}
       }
     }
+
     &-time{
         font-size: 0;
+
         &.audioplayer-time-current {
         }
         &.audioplayer-time-duration {
         }
     }
+
     &-volume {
         .audioplayer-volume-button {
-            width: 1em;
-            height: 0.938em;
+            width: 1.2em;
+            height: 1em;
             font-size: inherit;
             background: url("../img/volume.svg") 0 0 no-repeat;
-            background-size: cover;
-            transition: all 0.3s;
-            margin-left: 1.1em;
+            background-size: contain;
+            // transition: all 0.3s;
+            margin-right: 0.8em;
             cursor: pointer;
             .audioplayer-muted  & {
                 font-size: inherit;
-                width: 0.938em;
-                height: 0.938em;
+                width: 1em;
+                height: 1em;
+                margin-right: 1em;
                 background: url("../img/volume-muted.svg") 0 0 no-repeat;
                 background-size: cover;
             }
@@ -101,52 +99,6 @@
           div {
           }
         }
-      }
-      &.audioplayer-muted {
-      }
-      &.audioplayer-stopped {
-        audio {
-        }
-        // .audioplayer-playpause {
-        //     font-size: inherit;
-        //     transition: all 0.3s;
-        //     display: block;
-        //     width: 0;
-        //     height: 0;
-        //     border-style: solid;
-        //     border-color: transparent transparent transparent #000;
-        //     border-width: 0.6em 0 0.6em 1.2em;
-            
-        //     @include desktop {
-        //         border-width: 0.7em 0 0.7em 1.2em;
-        //     }
-        //   a {
-        //     &:hover {}
-        //     &:active {}
-        //     &:focus {}
-        //   }
-        // }
-        // .audioplayer-time{
-        //     font-size: 0;
-        //     &.audioplayer-time-current {
-        //     }
-        //     &.audioplayer-time-duration {
-        //     }
-        // }
-        
-        // .audioplayer-volume {
-        //   .audioplayer-volume-button {
-        //     a {
-        //       &:hover {}
-        //       &:active {}
-        //       &:focus {}
-        //     }
-        //   }
-        //   .audioplayer-volume-adjust {
-        //     div {
-        //     }
-        //   }
-        // }
       }
   }
 

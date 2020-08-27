@@ -3,46 +3,7 @@
         background-color: #000;
         color: #ffffff;
     }
-    &_background_clouds {
-        overflow: hidden;
-        position: relative;
-        
-        &:before {
-            @include desktop {
-                content: '';
-                position: absolute;
-                bottom: -12.5em;
-                left: -26em;
-                z-index: 1;
-                background-image: url('../img/clouds-left.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 58em;
-                height: 88.2em;
-            }
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 5.2em;
-            right: 0em;
-            z-index: 1;
-            background-image: url('../img/clouds-right.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 17.313em;
-            height: 30em;
-
-            @include desktop {
-                bottom: -6em;
-                right: -36em;
-                width: 81.313em;
-                height: 57.938em;
-            }
-        }
-    }
-
+    
     &_background_draft-chairs {
         @include desktop {
             position: relative;
@@ -167,6 +128,10 @@
         &_style_center {
             text-align: left;
 
+            .video-editing & {
+                text-align: center;
+            }
+
             @include desktop {
                 text-align: center;
             }
@@ -206,14 +171,23 @@
     }
 
     &__subtitle {
-        font-family: "SF Pro Display";
+        font-family: "SF Pro Display", sans-serif;
         font-weight: 700;
         font-size: 2.1em;
         line-height: 1em;
         letter-spacing: -0.06em;
 
+        
         @include desktop {
             font-size: 2.938em;
+        }
+        
+        &_align_center-sm {
+            text-align: center;
+
+            @include desktop {
+                text-align: left;
+            }
         }
 
         &_style_big-sm {
@@ -227,7 +201,7 @@
         }
     }
 
-    &__figcaption {
+    &__caption {
         font-family: 'GentlemensScript', sans-serif;
         color: rgba(0, 0, 0, 0.46);
         font-size: 1.7em;
@@ -404,6 +378,26 @@
                     width: 2em;
                     height: 2.4em;
                     left: 0.4em;
+                }
+            }
+        }
+
+        &_after-lg {
+            &:before {
+                width: 1.5em;
+                height: 1.9em;
+                top: -1em;
+                left: 0em;
+                transform: rotate(0deg);
+                border: none;
+                background: url("../img/line-round.png") 0 0 no-repeat;
+                background-size: contain;
+
+                @include desktop {
+                    top: -1.4em;
+                    left: 0.6em;
+                    width: 3.563em;
+                    height: 2.813em;
                 }
             }
         }
