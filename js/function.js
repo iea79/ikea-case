@@ -103,7 +103,7 @@ $(".js-video").each(function () {
         jsonp: 'callback',
         dataType: 'jsonp',
         success: function(data){
-            let thumbnailSrc = data[0].thumbnail_medium;
+            let thumbnailSrc = data[0].thumbnail_large;
             let videoWrapper = video.closest('.video__wrapper');
 
             videoWrapper.css('background-image', 'url('+thumbnailSrc+')');
@@ -113,25 +113,15 @@ $(".js-video").each(function () {
     $(this).append($('<div class="video__play btn btn_theme_light"></div>'));        
     
     $('body').on('click', '.video__play', function () {
-        let id = $(this).closest('.js-video').attr('id');
-        let videoId = video.data('video-id');
+        let currentVideo = $(this).closest('.js-video');
+        let id = currentVideo.attr('id');
+        let videoId = currentVideo.data('video-id');
         let player = setPlayer(id, videoId);
 
         player.play();
         $(this).remove();
     })
 })
-
-// fontResize();
-// function fontResize() {
-//     var windowWidth = $(window).width();
-//     if (windowWidth >= 1200) {
-//         var fontSize = windowWidth/19.05;
-//     } else if (windowWidth < 1200) {
-//         var fontSize = 60;
-//     }
-// 	$('body').css('fontSize', fontSize + '%');
-// }
 
 function mouseMoveParallax() {
     let wrapper = $('.parallaxBox');
