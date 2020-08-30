@@ -156,14 +156,14 @@
 
         &_production-first {
             z-index: 5;
-            top: 15.8em;
+            bottom: 67.8em;
             right: -2em;
             width: 27.7em;
             transform: rotate(-9deg);
 
             @include desktop {
                 transform: rotate(0deg);
-                top: -1em;
+                bottom: 30em;
                 right: 2em;
                 width: 34.7em;
             }
@@ -171,13 +171,13 @@
 
         &_production-second {
             z-index: 5;
-            top: 34.4em;
+            bottom: 48.4em;
             left: -2.9em;
             width: 29.5em;
 
             @include desktop {
                 z-index: 6;
-                top: 14em;
+                bottom: 26.2em;
                 left: 22.5em;
                 width: 23.7em;
             }
@@ -185,14 +185,14 @@
 
         &_production-third {
             z-index: 6;
-            top: 52.2em;
+            bottom: 29.2em;
             left: -1.7em;
             width: 27em;
             height: 28.4em;
 
             @include desktop {
                 z-index: 5;
-                top: 21em;
+                bottom: 6.5em;
                 left: 2.7em;
                 width: 37.313em;
                 height: 34.4em;
@@ -201,12 +201,12 @@
 
         &_production-fourth {
             z-index: 6;
-            top: 84em;
+            bottom: 0em;
             right: -2.1em;
             width: 28em;
 
             @include desktop {
-                top: 34.5em;
+                bottom: 6.3em;
                 right: 9.2em;
                 width: 30.063em;
                 height: 21.438em;
@@ -225,7 +225,7 @@
                 transform: rotate(0deg);
                 top: 1.1em;
                 left: 4.2em;
-                width: 24.625em;
+                width: 22.625em;
             }
         }
 

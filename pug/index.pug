@@ -69,7 +69,7 @@ block content
                                 img(src="img/fourth.png", loading="lazy", alt="fourth")
                             figure.design__item.design__item_pentagon
                                 img(src="img/pentagon.png", loading="lazy", alt="pentagon")
-                            figure.design__item.design__item_text Каждый десятый европеец сделан на нашей кровати
+                            .design__item.design__item_text Каждый десятый европеец сделан на нашей кровати
                 
     section.section
         .container
@@ -87,7 +87,7 @@ block content
         .location
             .location__clouds-left.parallaxMouse(data-speed="1")
                 img(src="img/clouds-left.png", alt="clouds")
-            .location__clouds-right.parallaxMouse(data-speed="-1")
+            .location__clouds-right.parallaxMouse.parallaxMouse_show-mobile(data-speed="-1")
                 img(src="img/clouds-right.png", alt="clouds")
             .container
                 .section__title.section__title_style_center.section__title_style_margin Выбор локации для съемок
@@ -224,10 +224,11 @@ block content
                                                 .lead__title Хенрик Мост
                                                 | Креативный директор
                                     .audio-records__right.flex-wrapper__item
+                                        | Double Violin Concerto 1st Movement - J.S. Bach 
                                         .audio-records__audio
-                                            audio(src="123.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/Double Violin Concerto 1st Movement - J.S. Bach.mp3" preload="auto" controls="controls")
                                         .audio-records__audio
-                                            audio(src="123.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/Double Violin Concerto 1st Movement - J.S. Bach.mp3" preload="auto" controls="controls")
                         .slider__slide
                             .audio-records.flex-wrapper
                                     .audio-records__left.flex-wrapper__item
@@ -239,9 +240,9 @@ block content
                                                 | Креативный директор
                                     .audio-records__right.flex-wrapper__item
                                         .audio-records__audio
-                                            audio(src="123.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/123.mp3" preload="auto" controls="controls")
                                         .audio-records__audio
-                                            audio(src="123.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/123.mp3" preload="auto" controls="controls")
     section.section
         .container.container_sm
             .video-editing 

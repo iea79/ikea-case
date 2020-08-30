@@ -8,5 +8,9 @@
             transform-style: preserve-3d;
             transition: transform 0.1s linear;
         }
+        
+        &_show-mobile {
+            display: block;
+        }
     }
 }

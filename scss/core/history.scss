@@ -41,22 +41,22 @@
 
         &_first {
             z-index: 4;
-            top: 18.7em;
+            bottom: 73.2em;
             left: -2em;
             width: 27.9em;
             height: 27.4em;
 
             @include desktop {
-                top: -2.5em;
+                bottom: 37em;
                 left: 42.1em;
-                width: 32.375em;
+                width: 30.375em;
                 height: 29.4em;
             }
         }
 
         &_second {
             z-index: 1;
-            top: 47em;
+            bottom: 50em;
             left: -0.7em;
             width: 25.3em;
             transform: rotate(-8deg);
@@ -64,20 +64,20 @@
             @include desktop {
                 transform: rotate(0deg);
                 z-index: 3;
-                top: 12.5em;
+                bottom: 25em;
                 left: 30.3em;
-                width: 33.3em;
+                width: 29.3em;
             }
         }
 
         &_third {
             z-index: 2;
-            top: 60em;
+            bottom: 33em;
             left: -2.5em;
             width: 28.2em;
 
             @include desktop {
-                top: 23.5em;
+                bottom: 13.5em;
                 left: 19em;
                 width: 28.2em;
             }
@@ -91,7 +91,7 @@
 
             @include desktop {
                 z-index: 1;
-                bottom: 15.7em;
+                bottom: 10.7em;
                 left: 2.4em;
                 width: 28.375em;
             }
@@ -106,9 +106,9 @@
 
             @include desktop {
                 transform: rotate(0deg);
-                bottom: 4.5em;
+                bottom: 5em;
                 left: 43.4em;
-                width: 28.375em;
+                width: 22.375em;
             }
         }
     }

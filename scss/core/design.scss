@@ -18,14 +18,14 @@
         position: absolute;
 
         &_first {
-            top: 33.4em;
+            bottom: 57.4em;
             left: -1.4em;
             z-index: 1;
             width: 27em;
             height: 25.8em;
 
             @include desktop {
-                top: 14em;
+                bottom: 21em;
                 left: 1.2em;
                 width: 32.375em;
                 height: 29.4em;
@@ -33,13 +33,13 @@
         }
 
         &_second {
-            top: 59.9em;
+            bottom: 32.9em;
             left: -0.5em;
             z-index: 3;
             width: 25.2em;
 
             @include desktop {
-                top: 23.7em;
+                bottom: 9.2em;
                 left: 20em;
                 width: 33.3em;
 
@@ -48,12 +48,12 @@
 
         &_third {
             z-index: 2;
-            top: 77.3em;
+            bottom: 21.3em;
             left: 2.1em;
             width: 19.9em;
 
             @include desktop {
-                top: 26.5em;
+                bottom: 13em;
                 left: 46.4em;
                 width: 27.063em;
             }

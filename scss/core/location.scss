@@ -70,11 +70,11 @@
     &__clouds-right {
         
         position: absolute;
-        bottom: 5.2em;
-        right: 0em;
+        bottom: 7.2em;
+        right: -20em;
         z-index: 1;
-        width: 17.313em;
-        height: 30em;
+        width: 36em;
+        height: 26em;
 
         @include desktop {
             bottom: -9.5em;

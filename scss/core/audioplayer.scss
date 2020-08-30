@@ -72,22 +72,22 @@
 
     &-volume {
         .audioplayer-volume-button {
-            width: 1.2em;
-            height: 1em;
-            font-size: inherit;
-            background: url("../img/volume.svg") 0 0 no-repeat;
-            background-size: contain;
-            // transition: all 0.3s;
-            margin-right: 0.8em;
-            cursor: pointer;
-            .audioplayer-muted  & {
-                font-size: inherit;
-                width: 1em;
-                height: 1em;
-                margin-right: 1em;
-                background: url("../img/volume-muted.svg") 0 0 no-repeat;
-                background-size: cover;
-            }
+            // width: 1.2em;
+            // height: 1em;
+            // font-size: inherit;
+            // background: url("../img/volume.svg") 0 0 no-repeat;
+            // background-size: contain;
+            // // transition: all 0.3s;
+            // margin-right: 0.8em;
+            // cursor: pointer;
+            // .audioplayer-muted  & {
+            //     font-size: inherit;
+            //     width: 1em;
+            //     height: 1em;
+            //     margin-right: 1em;
+            //     background: url("../img/volume-muted.svg") 0 0 no-repeat;
+            //     background-size: cover;
+            // }
             a {
                 font-size: 0;
             &:hover {}
