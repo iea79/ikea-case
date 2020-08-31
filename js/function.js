@@ -172,6 +172,7 @@ function showModalVideo() {
 function setPlayer(id, videoId) {
     let options = {
         id: videoId,
+        title: false,
     };
 
     return new Vimeo.Player(id, options);
