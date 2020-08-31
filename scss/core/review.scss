@@ -44,14 +44,14 @@
         &:before {
             content: '';
             position: absolute;
-            top: -1.5em;
-            left: 0.4em;
+            top: -1.4em;
+            left: 1em;
             z-index: 1;
             background-image: url('../img/line.png');
             background-repeat: no-repeat;
             background-size: cover;
-            width: 5.813em;
-            height: 1.438em;
+            width: 6.813em;
+            height: 1.938em;
             transform: rotate(-90deg);
             
             @include desktop {

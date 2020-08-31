@@ -1,0 +1,15 @@
+.hidden-sm {
+    display: none;
+
+    @include desktop {
+        display: inline-block;
+    }            
+}
+
+.hidden-md {
+    display: inline-block;
+
+    @include desktop {
+        display: none;
+    }            
+}

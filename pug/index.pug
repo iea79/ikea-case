@@ -40,7 +40,7 @@ block content
                             figure.history__item.history__item_first.wow
                                 img(src="img/history-first.png", loading="lazy", alt="history-first")
                                 figcaption.section__caption.section__caption_style_sm
-                                    span.section__line.section__line_before-sm.section__line_rotate_left
+                                    span.section__line.section__line_before-sm
                                     .section__caption-title.section__caption-title_span-sm Ингвар Кампрад 
                                     | Основатель IKEA
                             figure.history__item.history__item_second.wow
@@ -58,7 +58,7 @@ block content
                             figure.design__item.design__item_first.wow
                                 img(src="img/first.png", loading="lazy", alt="first")
                                 figcaption.section__caption.section__caption_rotate_left-5
-                                    span.section__line.section__line_before-sm
+                                    span.section__line.section__line_before-sm.section__line_rotate-left
                                     .section__caption-title.section__caption-title_span-sm 1958 год  
                                     | первый магазин
                             figure.design__item.design__item_second.wow
@@ -224,11 +224,10 @@ block content
                                                 .lead__title Хенрик Мост
                                                 | Креативный директор
                                     .audio-records__right.flex-wrapper__item
-                                        | Double Violin Concerto 1st Movement - J.S. Bach 
                                         .audio-records__audio
-                                            audio(src="audio/Double Violin Concerto 1st Movement - J.S. Bach.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/1 minute.mp3" preload="auto" controls="controls")
                                         .audio-records__audio
-                                            audio(src="audio/Double Violin Concerto 1st Movement - J.S. Bach.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/1 minute.mp3" preload="auto" controls="controls")
                         .slider__slide
                             .audio-records.flex-wrapper
                                     .audio-records__left.flex-wrapper__item
@@ -240,9 +239,9 @@ block content
                                                 | Креативный директор
                                     .audio-records__right.flex-wrapper__item
                                         .audio-records__audio
-                                            audio(src="audio/123.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/1 minute.mp3" preload="auto" controls="controls")
                                         .audio-records__audio
-                                            audio(src="audio/123.mp3" preload="auto" controls="controls")
+                                            audio(src="audio/1 minute.mp3" preload="auto" controls="controls")
     section.section
         .container.container_sm
             .video-editing 
@@ -258,8 +257,10 @@ block content
                                     .video__wrapper
                                         .js-video#video-sm-first(data-video-id="452520057")
                         .video-editing__caption
-                            .section__caption Посмотрите, что у нас получилось
-                                span.section__line.section__line_after-lg
+                            .section__caption 
+                                span.section__line.section__line_after-lg.hidden-md
+                                | Посмотрите, что у нас получилось
+                                span.section__line.section__line_after-lg.hidden-sm
                     .video-editing__item.flex-wrapper__item
                         .video-editing__subtitle Часть 2
                         .video-editing__video

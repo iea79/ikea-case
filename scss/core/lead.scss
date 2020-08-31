@@ -1,7 +1,5 @@
 .lead {
     &__img {
-        // width: 23.938em;
-        // height: 22.813em;
         margin: 2em 0 2.5em 0;
 
         @include desktop {
@@ -42,7 +40,6 @@
         @include desktop {
             font-size: inherit;
             line-height: 1em;
-            // text-align: left;
         }
     }
 
@@ -50,7 +47,7 @@
         font-family: "SF Pro Display", sans-serif;
         font-size: 2.2em;
         font-weight: 700;
-        line-height: 1.9em;
+        line-height: 1.8em;
         
         @include desktop {
             line-height: 1.3em;

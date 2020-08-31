@@ -257,7 +257,11 @@
         &-title{
             color: #000;
             font-size: 1.3em;
-            line-height: 0.9em;
+            line-height: 1.1em;
+            
+            @include desktop {
+                line-height: 0.9em;
+            }
 
             &_span-sm{
                 display: inline;
@@ -311,55 +315,52 @@
 
         &:before {
             content: '';
-            color: rgba(0, 0, 0, 0.4);
-            border-radius: 100%;
-            border-left: 2px solid;
             position: absolute;
-            transform: rotate(-45deg);
+            transform: rotate(120deg);
+            background: url(../img/line-circle.png) no-repeat 0 0;
+            background-size: contain;
         }
         
         &_before {
             &:before {
-                width: 2.1em;
-                height: 2.6em;
-                top: -1.8em;
-                left: -2em;
+                width: 2.5em;
+                height: 3em;
+                top: -1.7em;
+                left: -2.5em;
 
                 @include desktop {
-                    top: -2.2em;
-                    left: -2.3em;
+                    top: -1.7em;
+                    left: -2.8em;
                 }
             }
         }
 
         &_before-sm {
             &:before {
+                background: url("../img/line-flat.png") no-repeat 0 0;
+                background-size: contain;
                 width: 1.233em;
                 height: 1.9em;
-                top: -1.2em;
-                left: -0.8em;
-                transform: rotate(6deg);
-
+                top: -1.1em;
+                left: -0.6em;
+                transform: rotate(-6deg);
+                
                 @include desktop {
-                    left: -1.2em;
-                    transform: rotate(0deg);
-
+                    left: -0.6em;
                 }
             }
         }
         &_before-reverse {
             &:before {
-                width: 1.8em;
-                height: 2.3em;
-                top: -1.4em;
-                left: -1.7em;
+                width: 2em;
+                height: 3em;
+                top: -1.8em;
+                left: -1.9em;
 
                 @include desktop {
-                    width: 2em;
-                    height: 3em;
-                    top: 0.3em;
-                    left: -2.5em;
-                    transform: rotate(40deg);
+                    top: 0em;
+                    left: -2.6em;
+                    transform: rotate(220deg);
 
                 }
             }
@@ -367,34 +368,34 @@
 
         &_after {
             &:before {
-                width: 1.5em;
-                height: 1.9em;
+                width: 1.7em;
+                height: 2.1em;
                 top: -1em;
-                left: 0em;
-                transform: rotate(-135deg);
+                left: 0.2em;
+                transform: rotate(25deg);
 
                 @include desktop {
-                    top: -1.6em;
-                    width: 2em;
-                    height: 2.4em;
-                    left: 0.4em;
+                    top: -1.85em;
+                    width: 2.5em;
+                    height: 3em;
+                    left: 0.7em;
                 }
             }
         }
 
         &_after-lg {
             &:before {
-                width: 1.5em;
-                height: 1.9em;
-                top: -1em;
-                left: 0em;
-                transform: rotate(0deg);
-                border: none;
+                width: 2.5em;
+                height: 2.9em;
+                top: -2.7em;
+                left: -3em;
+                transform: rotate(75deg);
                 background: url("../img/line-round.png") 0 0 no-repeat;
                 background-size: contain;
-
+                
                 @include desktop {
-                    top: -1.4em;
+                    transform: rotate(0deg);
+                    top: -2.5em;
                     left: 0.6em;
                     width: 3.563em;
                     height: 2.813em;
@@ -404,20 +405,28 @@
 
         &_rotate_right {
             &:before {
-                top: -0.9em;
-                left: 1em;
-                transform: rotate(-115deg);
-
+                top: -1.25em;
+                left: 0.75em;
+                transform: rotate(45deg);
+                width: 2.5em;
+                height: 3em;
+                
                 @include desktop {
                     top: -1.3em;
+                    left: 1.15em;
                 }
             }
         }
 
-        &_rotate_left {
+        &_rotate-left {
             &:before {
-                left: -0.6em;
-                transform: rotate(5deg);
+                left: -0.7em;
+                top: -1.2em;
+                
+                @include desktop {
+                    left: -1.4em;
+                    transform: rotate(-45deg);
+                }
             }
         }
     }
